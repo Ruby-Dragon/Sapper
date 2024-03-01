@@ -10,6 +10,8 @@ public partial class detector : Node3D
 	public bool Detection = false;
 
 	private float MineDepth = 0.0f;
+
+	private anti_personnel_mine CurrentMine;
 		
 	public override void _Ready()
 	{
@@ -32,6 +34,8 @@ public partial class detector : Node3D
 		MineDepth = ((anti_personnel_mine) Mine).Depth;
 		
 		GD.Print("Found");
+
+		CurrentMine = ((anti_personnel_mine) Mine);
 		
 		SetLights();
 	}
@@ -46,6 +50,8 @@ public partial class detector : Node3D
 		MineDepth = 0.0f;
 		Detection = false;
 		GD.Print("Unfound");
+
+		CurrentMine = null;
 		
 		SetLights();
 	}
@@ -62,6 +68,20 @@ public partial class detector : Node3D
 			{
 				Lights[i].SetInstanceShaderParameter("Brightness", 0.0f);
 			}
+		}
+	}
+
+	public void Flag()
+	{
+		if (Detection)
+		{
+			if (CurrentMine.Flagged)
+			{
+				return;
+			}
+			
+			CurrentMine.Flag();
+			GD.Print("Flag");
 		}
 	}
 }

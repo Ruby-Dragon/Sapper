@@ -11,8 +11,9 @@ height = 1.8
 [sub_resource type="BoxShape3D" id="BoxShape3D_4fpsu"]
 size = Vector3(0.592, 0.157, 0.729)
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector")]
 script = ExtResource("1_sfoyg")
+MetalDetector = NodePath("detector")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_jdyjx")

@@ -11,6 +11,9 @@ public partial class player : CharacterBody3D
 
 	private Camera3D TheCamera;
 
+	[Export]
+	private detector MetalDetector;
+
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
 
@@ -56,6 +59,14 @@ public partial class player : CharacterBody3D
 		{
 			Rotation = new Vector3(Rotation.X, Rotation.Y - ((InputEventMouseMotion)@event).Relative.X * MouseSens, Rotation.Z);
 			TheCamera.Rotation = new Vector3(Math.Clamp(TheCamera.Rotation.X - ((InputEventMouseMotion)@event).Relative.Y * MouseSens, -1.4f, 1.4f), TheCamera.Rotation.Y, TheCamera.Rotation.Z);
+		}
+	}
+
+	public override void _Input(InputEvent @event)
+	{
+		if (@event.IsActionPressed("Flag"))
+		{
+			MetalDetector.Flag();
 		}
 	}
 
