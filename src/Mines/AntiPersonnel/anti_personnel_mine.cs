@@ -9,6 +9,9 @@ public partial class anti_personnel_mine : Area3D
 	[Export] 
 	public Node3D FlagLocation;
 
+	[Signal]
+	public delegate void BeenFlaggedEventHandler();
+
 	public bool Flagged = false;
 
 	private MeshInstance3D MineFlag;
@@ -31,5 +34,7 @@ public partial class anti_personnel_mine : Area3D
 		MineFlag.Position = FlagLocation.Position + new Vector3(0.0f, 0.345f, 0.0f);
 		MineFlag.Visible = true;
 		Flagged = true;
+
+		EmitSignal("BeenFlagged");
 	}
 }

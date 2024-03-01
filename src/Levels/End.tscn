@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=3 uid="uid://s0x57c46lq3i"]
+
+[ext_resource type="Script" path="res://Level.cs" id="1_pb6ut"]
+[ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="2_n5oyx"]
+[ext_resource type="Terrain3DStorage" uid="uid://dwduv52qyu2rr" path="res://devterrain.res" id="3_s0cr8"]
+[ext_resource type="Terrain3DTextureList" uid="uid://dd7br7c080tc0" path="res://Landscape_1_textureList.tres" id="4_71ab0"]
+[ext_resource type="Script" path="res://smoother.gd" id="5_rhkbs"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8hqrf"]
+
+[sub_resource type="Sky" id="Sky_36qml"]
+sky_material = SubResource("ProceduralSkyMaterial_8hqrf")
+
+[sub_resource type="Environment" id="Environment_3smpl"]
+background_mode = 2
+sky = SubResource("Sky_36qml")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 3
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+
+[sub_resource type="Gradient" id="Gradient_g5xko"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vxdhm"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qdcd4"]
+seamless = true
+color_ramp = SubResource("Gradient_g5xko")
+noise = SubResource("FastNoiseLite_vxdhm")
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_obspl"]
+_shader_parameters = {
+"_mouse_layer": 2147483648,
+"blend_sharpness": null,
+"height_blending": null,
+"macro_variation1": null,
+"macro_variation2": null,
+"noise1_angle": null,
+"noise1_offset": null,
+"noise1_scale": null,
+"noise2_scale": null,
+"noise3_scale": null,
+"noise_texture": SubResource("NoiseTexture2D_qdcd4")
+}
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_pb6ut")
+
+[node name="Player" parent="." instance=ExtResource("2_n5oyx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9236, 1.31488, -42.5685)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3smpl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -0.703618, 0.710579, 0, -0.710579, -0.703618, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+storage = ExtResource("3_s0cr8")
+material = SubResource("Terrain3DMaterial_obspl")
+texture_list = ExtResource("4_71ab0")
+mesh_size = 8
+mesh_vertex_spacing = 0.25
+
+[node name="Smoother" type="Node" parent="."]
+script = ExtResource("5_rhkbs")
