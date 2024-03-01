@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsctduvxgu16r"]
+
+[ext_resource type="PackedScene" uid="uid://bijgvtfawtadq" path="res://Mines/AntiPersonnel/antipersonnel.blend" id="1_58uc7"]
+[ext_resource type="Script" path="res://Mines/AntiPersonnel/anti_personnel_mine.cs" id="1_u0wyl"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fdgq8"]
+height = 0.7
+radius = 0.3
+
+[node name="AntiPersonnelMine" type="Area3D"]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("1_u0wyl")
+
+[node name="antipersonnel" parent="." instance=ExtResource("1_58uc7")]
+transform = Transform3D(0.160773, 0, 0, 0, 0.160773, 0, 0, 0, 0.160773, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.306124, 0)
+shape = SubResource("CylinderShape3D_fdgq8")

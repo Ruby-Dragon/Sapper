@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://c3frs0muo08qx"]
+[gd_scene load_steps=13 format=3 uid="uid://c3frs0muo08qx"]
 
 [ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_o81fx"]
-[ext_resource type="Terrain3DStorage" uid="uid://dwduv52qyu2rr" path="res://devterrain.res" id="2_11t6i"]
+[ext_resource type="Terrain3DStorage" uid="uid://dwduv52qyu2rr" path="res://devterrain.res" id="2_yn4eg"]
+[ext_resource type="Terrain3DTextureList" uid="uid://dd7br7c080tc0" path="res://Landscape_1_textureList.tres" id="3_ykfjj"]
+[ext_resource type="PackedScene" uid="uid://bsctduvxgu16r" path="res://Mines/AntiPersonnel/anti_personnel_mine.tscn" id="4_gvqx8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8hqrf"]
 
@@ -11,12 +13,18 @@ sky_material = SubResource("ProceduralSkyMaterial_8hqrf")
 [sub_resource type="Environment" id="Environment_3smpl"]
 background_mode = 2
 sky = SubResource("Sky_36qml")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 3
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
 
-[sub_resource type="Gradient" id="Gradient_jvqo7"]
+[sub_resource type="Gradient" id="Gradient_g5xko"]
 offsets = PackedFloat32Array(0.2, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_vh54p"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vxdhm"]
 noise_type = 2
 frequency = 0.03
 cellular_jitter = 3.0
@@ -28,18 +36,14 @@ domain_warp_fractal_type = 2
 domain_warp_fractal_lacunarity = 1.5
 domain_warp_fractal_gain = 1.0
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_h3hse"]
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qdcd4"]
 seamless = true
-color_ramp = SubResource("Gradient_jvqo7")
-noise = SubResource("FastNoiseLite_vh54p")
+color_ramp = SubResource("Gradient_g5xko")
+noise = SubResource("FastNoiseLite_vxdhm")
 
-[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_jum3m"]
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_obspl"]
 _shader_parameters = {
 "_mouse_layer": 2147483648,
-"auto_base_texture": null,
-"auto_height_reduction": null,
-"auto_overlay_texture": null,
-"auto_slope": null,
 "blend_sharpness": null,
 "height_blending": null,
 "macro_variation1": null,
@@ -49,25 +53,42 @@ _shader_parameters = {
 "noise1_scale": null,
 "noise2_scale": null,
 "noise3_scale": null,
-"noise_texture": SubResource("NoiseTexture2D_h3hse")
+"noise_texture": SubResource("NoiseTexture2D_qdcd4")
 }
-auto_shader = true
-show_checkered = true
 
-[sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_n2bfm"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_x0oie"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_o81fx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6668, 1.31488, -58.1049)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9236, 1.31488, -42.5685)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3smpl")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
 transform = Transform3D(1, 0, 0, 0, -0.703618, 0.710579, 0, -0.710579, -0.703618, 0, 0, 0)
+shadow_enabled = true
 
 [node name="Terrain3D" type="Terrain3D" parent="."]
-storage = ExtResource("2_11t6i")
-material = SubResource("Terrain3DMaterial_jum3m")
-texture_list = SubResource("Terrain3DTextureList_n2bfm")
+storage = ExtResource("2_yn4eg")
+material = SubResource("Terrain3DMaterial_obspl")
+texture_list = ExtResource("3_ykfjj")
+mesh_size = 8
+mesh_vertex_spacing = 0.25
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.5954, 1.03711, -46.0487)
+mesh = SubResource("CapsuleMesh_x0oie")
+
+[node name="AntiPersonnelMine" parent="." instance=ExtResource("4_gvqx8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.7782, -0.123634, -46.0839)
+Depth = 1.0
+
+[node name="AntiPersonnelMine2" parent="." instance=ExtResource("4_gvqx8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.1933, -0.354378, -46.4701)
+Depth = 3.0
+
+[node name="AntiPersonnelMine3" parent="." instance=ExtResource("4_gvqx8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5633, -0.298111, -48.0214)
+Depth = 5.0

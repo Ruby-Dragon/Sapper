@@ -1,0 +1,13 @@
+[gd_resource type="Terrain3DTextureList" load_steps=4 format=3 uid="uid://dd7br7c080tc0"]
+
+[ext_resource type="Texture2D" uid="uid://skq1st2st6c8" path="res://Dirt_001/Diffuse.png" id="1_jrunk"]
+[ext_resource type="Texture2D" uid="uid://8est45crsoqv" path="res://Dirt_001/normal-rough-packed.png" id="2_fr4lm"]
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_mavlh"]
+name = "Dirt"
+albedo_texture = ExtResource("1_jrunk")
+normal_texture = ExtResource("2_fr4lm")
+uv_scale = 1.0
+
+[resource]
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_mavlh")])

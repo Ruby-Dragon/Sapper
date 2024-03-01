@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://lkxjk0wb487k"]
+
+[ext_resource type="Texture2D" uid="uid://c814rxtlw4dy0" path="res://Mines/AntiPersonnel/Albedo.png" id="1_tmavj"]
+[ext_resource type="Texture2D" uid="uid://d26sokwd2wbcx" path="res://Mines/AntiPersonnel/Metallic.png" id="2_f0wsl"]
+[ext_resource type="Texture2D" uid="uid://dfw456bf6pym8" path="res://Mines/AntiPersonnel/Normal.png" id="3_fjkgy"]
+[ext_resource type="Texture2D" uid="uid://eo5vs5osewoo" path="res://Mines/AntiPersonnel/Roughness.png" id="4_6hqus"]
+
+[resource]
+resource_name = "AntiPersonnel"
+cull_mode = 2
+albedo_texture = ExtResource("1_tmavj")
+metallic = 1.0
+metallic_texture = ExtResource("2_f0wsl")
+roughness_texture = ExtResource("4_6hqus")
+normal_enabled = true
+normal_texture = ExtResource("3_fjkgy")

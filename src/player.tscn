@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://demhgiqaiflw4"]
+[gd_scene load_steps=7 format=3 uid="uid://demhgiqaiflw4"]
 
 [ext_resource type="Script" path="res://player.cs" id="1_sfoyg"]
+[ext_resource type="PackedScene" uid="uid://dk2tiah10p1rw" path="res://Detector/detector.blend" id="2_dm284"]
+[ext_resource type="Script" path="res://Detector/detector.cs" id="3_l8hgk"]
+[ext_resource type="ArrayMesh" uid="uid://by52d6u5gbwra" path="res://Detector/detector_Cylinder_light.res" id="4_ret0p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jdyjx"]
 height = 1.8
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4fpsu"]
+size = Vector3(0.592, 0.157, 0.729)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_sfoyg")
@@ -14,3 +20,48 @@ shape = SubResource("CapsuleShape3D_jdyjx")
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.580895, 0)
 current = true
+
+[node name="detector" parent="." node_paths=PackedStringArray("Lights") instance=ExtResource("2_dm284")]
+transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)
+script = ExtResource("3_l8hgk")
+Lights = [NodePath("light_1"), NodePath("light_2"), NodePath("light_3"), NodePath("light_4"), NodePath("light_5"), NodePath("light_6"), NodePath("light_7")]
+
+[node name="light_1" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 4.65661e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -2.79397e-09, 0.0399999, -1.74846e-09, -0.0353439, 0.82579, 0.570819)
+instance_shader_parameters/Brightness = 0.0
+mesh = ExtResource("4_ret0p")
+
+[node name="light_2" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 5.12227e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -3.72529e-09, 0.0399999, -1.74846e-09, -0.0239515, 0.833702, 0.57116)
+mesh = ExtResource("4_ret0p")
+
+[node name="light_3" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 5.58794e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -3.72529e-09, 0.0399999, -1.74846e-09, -0.0110447, 0.838677, 0.572108)
+mesh = ExtResource("4_ret0p")
+
+[node name="light_4" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 5.58794e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -3.72529e-09, 0.0399999, -1.74846e-09, 0.00143641, 0.840349, 0.572143)
+mesh = ExtResource("4_ret0p")
+
+[node name="light_5" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 5.58794e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -3.72529e-09, 0.0399999, -1.74846e-09, 0.013292, 0.838667, 0.571972)
+mesh = ExtResource("4_ret0p")
+
+[node name="light_6" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 5.58794e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -3.72529e-09, 0.0399999, -1.74846e-09, 0.0236287, 0.8332, 0.571832)
+mesh = ExtResource("4_ret0p")
+
+[node name="light_7" type="MeshInstance3D" parent="detector"]
+transform = Transform3D(0.0399999, 4.65661e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -3.72529e-09, 0.0399999, -1.74846e-09, 0.034503, 0.82579, 0.571108)
+mesh = ExtResource("4_ret0p")
+
+[node name="Detection" type="Area3D" parent="detector"]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="detector/Detection"]
+transform = Transform3D(1, 0, -1.75089e-06, 0, 0.999957, 0, 5.06639e-07, 0, 0.999993, -0.0051465, -0.626609, -2.09645)
+shape = SubResource("BoxShape3D_4fpsu")
+
+[connection signal="area_entered" from="detector/Detection" to="detector" method="Detected"]
+[connection signal="area_exited" from="detector/Detection" to="detector" method="EndDetected"]
