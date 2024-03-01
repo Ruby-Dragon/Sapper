@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dk0i5p72hkgg2"]
+
+[ext_resource type="Texture2D" uid="uid://biuf86fqkuj7p" path="res://MineFlag/Albedo.png" id="1_kvrcf"]
+[ext_resource type="Texture2D" uid="uid://b141utl858mdd" path="res://MineFlag/Roughness.png" id="2_elvx4"]
+[ext_resource type="Texture2D" uid="uid://cmkbgwkf73mdn" path="res://MineFlag/Normal.png" id="3_ugkpx"]
+
+[resource]
+resource_name = "Main"
+cull_mode = 2
+albedo_texture = ExtResource("1_kvrcf")
+metallic_texture = ExtResource("2_elvx4")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_elvx4")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_ugkpx")

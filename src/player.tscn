@@ -6,6 +6,7 @@
 [ext_resource type="ArrayMesh" uid="uid://by52d6u5gbwra" path="res://Detector/detector_Cylinder_light.res" id="4_ret0p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jdyjx"]
+radius = 0.4
 height = 1.8
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4fpsu"]
