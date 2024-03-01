@@ -7,6 +7,9 @@ public partial class detector : Node3D
 	[Export]
 	public Godot.Collections.Array<MeshInstance3D> Lights;
 
+	[Export]
+	public MeshInstance3D FlagMesh;
+
 	public bool Detection = false;
 
 	private float MineDepth = 0.0f;
@@ -80,7 +83,7 @@ public partial class detector : Node3D
 				return;
 			}
 			
-			CurrentMine.Flag();
+			CurrentMine.Flag(FlagMesh);
 			GD.Print("Flag");
 		}
 	}

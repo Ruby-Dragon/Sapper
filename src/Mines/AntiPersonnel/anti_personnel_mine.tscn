@@ -7,10 +7,11 @@
 height = 0.7
 radius = 0.3
 
-[node name="AntiPersonnelMine" type="Area3D"]
+[node name="AntiPersonnelMine" type="Area3D" node_paths=PackedStringArray("FlagLocation")]
 collision_layer = 16
 collision_mask = 16
 script = ExtResource("1_u0wyl")
+FlagLocation = NodePath("FlagLocation")
 
 [node name="antipersonnel" parent="." instance=ExtResource("1_58uc7")]
 transform = Transform3D(0.160773, 0, 0, 0, 0.160773, 0, 0, 0, 0.160773, 0, 0, 0)
@@ -18,3 +19,6 @@ transform = Transform3D(0.160773, 0, 0, 0, 0.160773, 0, 0, 0, 0.160773, 0, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.306124, 0)
 shape = SubResource("CylinderShape3D_fdgq8")
+
+[node name="FlagLocation" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.466953, 0)

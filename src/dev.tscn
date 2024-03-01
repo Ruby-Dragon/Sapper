@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://c3frs0muo08qx"]
+[gd_scene load_steps=14 format=3 uid="uid://c3frs0muo08qx"]
 
 [ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_o81fx"]
 [ext_resource type="Terrain3DStorage" uid="uid://dwduv52qyu2rr" path="res://devterrain.res" id="2_yn4eg"]
 [ext_resource type="Terrain3DTextureList" uid="uid://dd7br7c080tc0" path="res://Landscape_1_textureList.tres" id="3_ykfjj"]
 [ext_resource type="PackedScene" uid="uid://bsctduvxgu16r" path="res://Mines/AntiPersonnel/anti_personnel_mine.tscn" id="4_gvqx8"]
-[ext_resource type="PackedScene" uid="uid://vp2xlx8oxo52" path="res://MineFlag/Flag.blend" id="5_uds4w"]
 [ext_resource type="Script" path="res://smoother.gd" id="6_1c180"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8hqrf"]
@@ -87,16 +86,26 @@ mesh = SubResource("CapsuleMesh_x0oie")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.7782, -0.123634, -46.0839)
 Depth = 1.0
 
+[node name="FlagLocation" parent="AntiPersonnelMine" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.132059, 0.204063)
+
 [node name="AntiPersonnelMine2" parent="." instance=ExtResource("4_gvqx8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.1933, -0.354378, -46.4701)
 Depth = 3.0
+
+[node name="FlagLocation" parent="AntiPersonnelMine2" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.341786, 0)
 
 [node name="AntiPersonnelMine3" parent="." instance=ExtResource("4_gvqx8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5633, -0.298111, -48.0214)
 Depth = 5.0
 
-[node name="Flag2" parent="." instance=ExtResource("5_uds4w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.3993, 0.344822, -46.8819)
+[node name="FlagLocation" parent="AntiPersonnelMine3" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.269082, 0)
 
 [node name="Smoother" type="Node" parent="."]
 script = ExtResource("6_1c180")
+
+[editable path="AntiPersonnelMine"]
+[editable path="AntiPersonnelMine2"]
+[editable path="AntiPersonnelMine3"]
