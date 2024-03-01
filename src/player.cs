@@ -8,6 +8,7 @@ public partial class player : CharacterBody3D
 	private const float AirControl = 0.2f;
 	private float Control = 1.0f;
 	public float MouseSens = 0.002f;
+	public float ControllerSens = 0.05f;
 
 	private Camera3D TheCamera;
 
@@ -19,6 +20,15 @@ public partial class player : CharacterBody3D
 
 	public override void _PhysicsProcess(double delta)
 	{
+		if (Input.GetConnectedJoypads().Count > 0)
+		{
+			Vector2 LookDir = Input.GetVector("ControllerLookLeft", "ControllerLookRight", "ControllerLookDown",
+				"ControllerLookUp");
+		
+			Rotation = new Vector3(Rotation.X, Rotation.Y - (LookDir.X * ControllerSens), Rotation.Z);
+			TheCamera.Rotation = new Vector3(Math.Clamp(TheCamera.Rotation.X + (LookDir.Y * ControllerSens), -1.4f, 1.4f), TheCamera.Rotation.Y, TheCamera.Rotation.Z);
+		}
+		
 		Vector3 velocity = Velocity;
 
 		// Add the gravity.
@@ -34,7 +44,7 @@ public partial class player : CharacterBody3D
 
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
-		Vector2 inputDir = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		Vector2 inputDir = Input.GetVector("Left", "Right", "Forward", "Back");
 		Vector3 direction = (Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
 		if (direction != Vector3.Zero)
 		{
