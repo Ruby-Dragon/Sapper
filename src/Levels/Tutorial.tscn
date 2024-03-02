@@ -1,0 +1,135 @@
+[gd_scene load_steps=18 format=3 uid="uid://ii37fsxehx8p"]
+
+[ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_3a5nb"]
+[ext_resource type="Script" path="res://Level.cs" id="1_7osys"]
+[ext_resource type="Texture2D" uid="uid://dp5d3ogm6pops" path="res://TutorialRoom/SkyHDRIForTutorial.exr" id="2_14yes"]
+[ext_resource type="PackedScene" uid="uid://c3frs0muo08qx" path="res://dev.tscn" id="2_kus8i"]
+[ext_resource type="LightmapGIData" uid="uid://cpfko14q2i2ud" path="res://Levels/Tutorial.lmbake" id="2_n0i14"]
+[ext_resource type="PackedScene" uid="uid://bsctduvxgu16r" path="res://Mines/AntiPersonnel/anti_personnel_mine.tscn" id="3_vkx8j"]
+[ext_resource type="VoxelGIData" uid="uid://b55vslscsb11b" path="res://Levels/Tutorial.VoxelGI_data.res" id="4_fuuk1"]
+[ext_resource type="PackedScene" uid="uid://blgkx22yjorq7" path="res://TutorialRoom/tutorialbuilding.blend" id="5_d7vbe"]
+[ext_resource type="Shader" path="res://TutorialRoom/Glass.gdshader" id="6_j44qq"]
+[ext_resource type="Script" path="res://smoother.gd" id="7_lnarj"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_iw34v"]
+panorama = ExtResource("2_14yes")
+
+[sub_resource type="Sky" id="Sky_t8hb0"]
+sky_material = SubResource("PanoramaSkyMaterial_iw34v")
+
+[sub_resource type="Environment" id="Environment_wtp2q"]
+background_mode = 2
+sky = SubResource("Sky_t8hb0")
+sky_rotation = Vector3(0, 6.28319, 0)
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 3
+ssao_enabled = true
+ssil_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_agry4"]
+render_priority = 0
+shader = ExtResource("6_j44qq")
+shader_parameter/albedo = Color(0, 0, 0, 0.356863)
+shader_parameter/roughness = 0.15
+shader_parameter/normal_strength = 1.0
+shader_parameter/edge_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ibfid"]
+material = SubResource("ShaderMaterial_agry4")
+size = Vector3(2.485, 3.45, 0.065)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ua1hy"]
+size = Vector3(17.3398, 1, 13.9125)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j15di"]
+size = Vector3(1, 5.85498, 17.3629)
+
+[node name="Tutorial" type="Node3D"]
+script = ExtResource("1_7osys")
+MinesToFlag = 1
+NextLevel = ExtResource("2_kus8i")
+
+[node name="Player" parent="." instance=ExtResource("1_3a5nb")]
+transform = Transform3D(-0.0151488, 0, 0.999885, 0, 1, 0, -0.999885, 0, -0.0151488, 5.82378, 1.20083, -1.41054)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_wtp2q")
+
+[node name="LightmapGI" type="LightmapGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8898, 0)
+visible = false
+quality = 2
+bounces = 6
+directional = true
+interior = true
+environment_mode = 0
+light_data = ExtResource("2_n0i14")
+
+[node name="AntiPersonnelMine" parent="." instance=ExtResource("3_vkx8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.84209, -0.106474, -1.71744)
+Depth = 1.0
+
+[node name="FlagLocation" parent="AntiPersonnelMine" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0252159, 0.00351609, 0.430324)
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.405305, 2.64481, -1.41102)
+size = Vector3(17.9563, 6.29799, 14.6738)
+data = ExtResource("4_fuuk1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.40255, 2.29644, 5.68013)
+transparency = 0.85
+mesh = SubResource("BoxMesh_ibfid")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.34613, 2.29644, 5.68013)
+transparency = 0.85
+mesh = SubResource("BoxMesh_ibfid")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.35359, 2.29644, 5.68013)
+transparency = 0.85
+mesh = SubResource("BoxMesh_ibfid")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03783, 2.29644, 5.68013)
+transparency = 0.85
+mesh = SubResource("BoxMesh_ibfid")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.911784, 0.410671, 0, -0.410671, 0.911784, 0, 1.48043, 0)
+shadow_enabled = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="tutorialbuilding" parent="StaticBody3D" instance=ExtResource("5_d7vbe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.402111, 2.61794, -1.43217)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.410156, -0.624327, -1.43051)
+shape = SubResource("BoxShape3D_ua1hy")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.54567, 2.42749, -1.42297)
+shape = SubResource("BoxShape3D_j15di")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.75893, 2.42749, -1.42297)
+shape = SubResource("BoxShape3D_j15di")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.403045, 2.42749, -8.83162)
+shape = SubResource("BoxShape3D_j15di")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.403045, 2.42749, 6.00983)
+shape = SubResource("BoxShape3D_j15di")
+
+[node name="Smoother" type="Node" parent="."]
+script = ExtResource("7_lnarj")
+
+[connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]
+
+[editable path="AntiPersonnelMine"]

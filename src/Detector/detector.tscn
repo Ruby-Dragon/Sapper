@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb8sl60bicioj"]
+
+[ext_resource type="PackedScene" uid="uid://dk2tiah10p1rw" path="res://Detector/detector.blend" id="1_1homn"]
+
+[node name="detector" instance=ExtResource("1_1homn")]
+
+[node name="Cylinder" parent="." index="0"]
+gi_mode = 0
