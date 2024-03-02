@@ -30,12 +30,13 @@ ssil_enabled = true
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_agry4"]
 render_priority = 0
 shader = ExtResource("6_j44qq")
-shader_parameter/albedo = Color(0, 0, 0, 0.356863)
+shader_parameter/albedo = Color(0.443137, 0.482353, 0.368627, 0.635294)
 shader_parameter/roughness = 0.15
 shader_parameter/normal_strength = 1.0
 shader_parameter/edge_color = Color(0, 0, 0, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ibfid"]
+lightmap_size_hint = Vector2i(16, 52)
 material = SubResource("ShaderMaterial_agry4")
 size = Vector3(2.485, 3.45, 0.065)
 
@@ -80,7 +81,7 @@ data = ExtResource("4_fuuk1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.40255, 2.29644, 5.68013)
-transparency = 0.85
+transparency = 0.8
 mesh = SubResource("BoxMesh_ibfid")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
@@ -129,6 +130,11 @@ shape = SubResource("BoxShape3D_j15di")
 
 [node name="Smoother" type="Node" parent="."]
 script = ExtResource("7_lnarj")
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.403122, 2.58105, -1.35898)
+size = Vector3(17.9467, 6, 14.3821)
+box_projection = true
 
 [connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]
 
