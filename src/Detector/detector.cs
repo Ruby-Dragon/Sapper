@@ -10,11 +10,17 @@ public partial class detector : Node3D
 	[Export]
 	public MeshInstance3D FlagMesh;
 
+	[Export] 
+	public Node3D FlagPlacementLocation;
+
 	public bool Detection = false;
 
 	private float MineDepth = 0.0f;
 
 	private anti_personnel_mine CurrentMine;
+
+	[Signal]
+	public delegate void FalseFlagEventHandler();
 		
 	public override void _Ready()
 	{
@@ -85,6 +91,20 @@ public partial class detector : Node3D
 			
 			CurrentMine.Flag(FlagMesh);
 			GD.Print("Flag");
+		}
+		else
+		{
+			MeshInstance3D FalseFlag = new MeshInstance3D();
+			FalseFlag.Mesh = FlagMesh.Mesh;
+			
+			GetTree().GetFirstNodeInGroup("LevelRoot").AddChild(FalseFlag);
+
+			FalseFlag.Visible = true;
+
+			FalseFlag.Position = FlagPlacementLocation.GlobalPosition + new Vector3(0.0f, 0.15f, 0.0f);
+			GD.Print("FalseFlag");
+
+			EmitSignal("FalseFlag");
 		}
 	}
 }

@@ -17,6 +17,9 @@ public partial class player : CharacterBody3D
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
+	
+	[Signal]
+	public delegate void FalseFlagEventHandler();
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -91,5 +94,10 @@ public partial class player : CharacterBody3D
 	public void Die()
 	{
 		GetTree().ReloadCurrentScene();
+	}
+
+	public void OnFalseFlag()
+	{
+		EmitSignal("FalseFlag");
 	}
 }

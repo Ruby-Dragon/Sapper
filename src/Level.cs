@@ -7,6 +7,8 @@ public partial class Level : Node3D
 	[Export]
 	public int MinesToFlag;
 
+	public int FalseFlags = 0;
+
 	[Export] 
 	public PackedScene NextLevel;
 	public override void _Ready()
@@ -30,5 +32,10 @@ public partial class Level : Node3D
 	public void GoToNextLevel()
 	{
 		GetTree().ChangeSceneToPacked(NextLevel);
+	}
+
+	public void UpdateFalseFlag()
+	{
+		FalseFlags += 1;
 	}
 }

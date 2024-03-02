@@ -1,10 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://ii37fsxehx8p"]
+[gd_scene load_steps=18 format=3 uid="uid://ii37fsxehx8p"]
 
 [ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_3a5nb"]
 [ext_resource type="Script" path="res://Level.cs" id="1_7osys"]
 [ext_resource type="Texture2D" uid="uid://dp5d3ogm6pops" path="res://TutorialRoom/SkyHDRIForTutorial.exr" id="2_14yes"]
 [ext_resource type="PackedScene" uid="uid://c3frs0muo08qx" path="res://dev.tscn" id="2_kus8i"]
-[ext_resource type="LightmapGIData" uid="uid://cpfko14q2i2ud" path="res://Levels/Tutorial.lmbake" id="2_n0i14"]
 [ext_resource type="PackedScene" uid="uid://bsctduvxgu16r" path="res://Mines/AntiPersonnel/anti_personnel_mine.tscn" id="3_vkx8j"]
 [ext_resource type="VoxelGIData" uid="uid://b55vslscsb11b" path="res://Levels/Tutorial.VoxelGI_data.res" id="4_fuuk1"]
 [ext_resource type="PackedScene" uid="uid://blgkx22yjorq7" path="res://TutorialRoom/tutorialbuilding.blend" id="5_d7vbe"]
@@ -47,7 +46,7 @@ size = Vector3(17.3398, 1, 13.9125)
 [sub_resource type="BoxShape3D" id="BoxShape3D_j15di"]
 size = Vector3(1, 5.85498, 17.3629)
 
-[node name="Level" type="Node3D"]
+[node name="Level" type="Node3D" groups=["LevelRoot"]]
 script = ExtResource("1_7osys")
 MinesToFlag = 1
 NextLevel = ExtResource("2_kus8i")
@@ -57,16 +56,6 @@ transform = Transform3D(-0.0151488, 0, 0.999885, 0, 1, 0, -0.999885, 0, -0.01514
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wtp2q")
-
-[node name="LightmapGI" type="LightmapGI" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8898, 0)
-visible = false
-quality = 2
-bounces = 6
-directional = true
-interior = true
-environment_mode = 0
-light_data = ExtResource("2_n0i14")
 
 [node name="AntiPersonnelMine" parent="." instance=ExtResource("3_vkx8j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.84209, -0.106474, -1.71744)

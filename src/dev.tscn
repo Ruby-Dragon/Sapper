@@ -61,7 +61,7 @@ _shader_parameters = {
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_x0oie"]
 
-[node name="Level" type="Node3D"]
+[node name="Level" type="Node3D" groups=["LevelRoot"]]
 script = ExtResource("1_vie1n")
 MinesToFlag = 3
 NextLevel = ExtResource("2_n41ea")
@@ -111,6 +111,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.269082, 0)
 [node name="Smoother" type="Node" parent="."]
 script = ExtResource("6_1c180")
 
+[connection signal="FalseFlag" from="Player" to="." method="UpdateFalseFlag"]
 [connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]
 [connection signal="BeenFlagged" from="AntiPersonnelMine2" to="." method="UpdateScore"]
 [connection signal="BeenFlagged" from="AntiPersonnelMine3" to="." method="UpdateScore"]

@@ -60,11 +60,12 @@ shape = SubResource("CapsuleShape3D_jdyjx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.580895, 0)
 current = true
 
-[node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagMesh") instance=ExtResource("2_dm284")]
+[node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagMesh", "FlagPlacementLocation") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)
 script = ExtResource("3_l8hgk")
 Lights = [NodePath("light_1"), NodePath("light_2"), NodePath("light_3"), NodePath("light_4"), NodePath("light_5"), NodePath("light_6"), NodePath("light_7")]
 FlagMesh = NodePath("Flag")
+FlagPlacementLocation = NodePath("FlagPlacementNode")
 
 [node name="light_1" type="MeshInstance3D" parent="detector"]
 transform = Transform3D(0.0399999, 4.65661e-09, -1.11022e-16, 0, -1.74845e-09, -0.04, -2.79397e-09, 0.0399999, -1.74846e-09, -0.0353439, 0.82579, 0.570819)
@@ -108,5 +109,9 @@ visible = false
 mesh = SubResource("ArrayMesh_66nkk")
 skeleton = NodePath("")
 
+[node name="FlagPlacementNode" type="Node3D" parent="detector"]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 0.999998, 0, 2.23517e-07, 0, 0.999999, -0.00370905, -0.676234, -2.13391)
+
+[connection signal="FalseFlag" from="detector" to="." method="OnFalseFlag"]
 [connection signal="area_entered" from="detector/Detection" to="detector" method="Detected"]
 [connection signal="area_exited" from="detector/Detection" to="detector" method="EndDetected"]
