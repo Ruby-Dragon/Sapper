@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://vp2xlx8oxo52"
-path="res://.godot/imported/Flag.blend-1af6580a8fd0ad00456aff815940b5b3.scn"
+uid="uid://dyqgc3ypyvn1o"
+path="res://.godot/imported/Fence.blend-7f3dc6972a1d4e1e7fb6fb8047a9a5e4.scn"
 
 [deps]
 
-source_file="res://MineFlag/Flag.blend"
-dest_files=["res://.godot/imported/Flag.blend-1af6580a8fd0ad00456aff815940b5b3.scn"]
+source_file="res://Fence/Fence.blend"
+dest_files=["res://.godot/imported/Fence.blend-7f3dc6972a1d4e1e7fb6fb8047a9a5e4.scn"]
 
 [params]
 
@@ -30,14 +30,8 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
-"materials": {
-"Main": {
-"use_external/enabled": true,
-"use_external/path": "res://MineFlag/Main.tres"
-}
-},
 "meshes": {
-"Flag_Cylinder": {
+"Fence_Cylinder_001": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
@@ -45,11 +39,11 @@ _subresources={
 "lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
-"save_to_file/path": "res://MineFlag/FlagMesh.res"
+"save_to_file/path": ""
 }
 },
 "nodes": {
-"PATH:Cube": {
+"PATH:Fence": {
 "import/skip_import": true
 },
 "PATH:Sun": {

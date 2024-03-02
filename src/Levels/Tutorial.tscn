@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ii37fsxehx8p"]
+[gd_scene load_steps=19 format=3 uid="uid://ii37fsxehx8p"]
 
 [ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_3a5nb"]
 [ext_resource type="Script" path="res://Level.cs" id="1_7osys"]
@@ -10,6 +10,7 @@
 [ext_resource type="Shader" path="res://TutorialRoom/Glass.gdshader" id="6_j44qq"]
 [ext_resource type="Script" path="res://smoother.gd" id="7_lnarj"]
 [ext_resource type="PackedScene" uid="uid://bcegxyrundscl" path="res://TutorialRoom/Lights/Lights.blend" id="11_nxr4h"]
+[ext_resource type="ArrayMesh" uid="uid://jfogrrurct5o" path="res://MineFlag/FlagMesh.res" id="11_rhvau"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_iw34v"]
 panorama = ExtResource("2_14yes")
@@ -152,6 +153,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.65846, 5.33709, -4.25295)
 
 [node name="Lights8" parent="." instance=ExtResource("11_nxr4h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74396, 5.33709, -4.25295)
+
+[node name="Flag" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.762736, 0, 0.64671, 0, 1, 0, -0.64671, 0, -0.762736, -5.35023, 0.243999, -1.03594)
+mesh = ExtResource("11_rhvau")
+skeleton = NodePath("")
+
+[node name="Flag2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.255581, 0, -0.966788, 0, 1, 0, 0.966788, 0, 0.255581, -5.35023, 0.243999, -2.51167)
+mesh = ExtResource("11_rhvau")
+skeleton = NodePath("")
+
+[node name="Flag3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.717032, 0, -0.69704, 0, 1, 0, 0.69704, 0, -0.717032, -6.48507, 0.243999, -2.51167)
+mesh = ExtResource("11_rhvau")
+skeleton = NodePath("")
+
+[node name="Flag4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.269071, 0, 0.96312, 0, 1, 0, -0.96312, 0, -0.269071, -6.48507, 0.243999, -1.03046)
+mesh = ExtResource("11_rhvau")
+skeleton = NodePath("")
 
 [connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]
 
