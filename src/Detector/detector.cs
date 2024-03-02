@@ -89,7 +89,7 @@ public partial class detector : Node3D
 				return;
 			}
 			
-			CurrentMine.Flag(FlagMesh);
+			CurrentMine.Flag(FlagMesh, GetParent<Node3D>().Rotation);
 			GD.Print("Flag");
 		}
 		else
@@ -102,6 +102,7 @@ public partial class detector : Node3D
 			FalseFlag.Visible = true;
 
 			FalseFlag.Position = FlagPlacementLocation.GlobalPosition + new Vector3(0.0f, 0.15f, 0.0f);
+			FalseFlag.Rotation = GetParent<Node3D>().Rotation;
 			GD.Print("FalseFlag");
 
 			EmitSignal("FalseFlag");

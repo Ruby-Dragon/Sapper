@@ -25,13 +25,14 @@ public partial class anti_personnel_mine : Area3D
 	{
 	}
 
-	public void Flag(MeshInstance3D FlagMesh)
+	public void Flag(MeshInstance3D FlagMesh, Vector3 FlagRotation)
 	{
 		MineFlag = new MeshInstance3D();
 		MineFlag.Mesh = FlagMesh.Mesh;
 		AddChild(MineFlag);
 
 		MineFlag.Position = FlagLocation.Position + new Vector3(0.0f, 0.345f, 0.0f);
+		MineFlag.Rotation = FlagRotation;
 		MineFlag.Visible = true;
 		Flagged = true;
 
