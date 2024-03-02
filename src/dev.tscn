@@ -1,14 +1,20 @@
-[gd_scene load_steps=17 format=3 uid="uid://c3frs0muo08qx"]
+[gd_scene load_steps=28 format=3 uid="uid://c3frs0muo08qx"]
 
 [ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_o81fx"]
 [ext_resource type="Script" path="res://Level.cs" id="1_vie1n"]
 [ext_resource type="PackedScene" uid="uid://s0x57c46lq3i" path="res://Levels/End.tscn" id="2_n41ea"]
 [ext_resource type="Terrain3DStorage" uid="uid://dwduv52qyu2rr" path="res://devterrain.res" id="2_yn4eg"]
 [ext_resource type="Terrain3DTextureList" uid="uid://dd7br7c080tc0" path="res://Landscape_1_textureList.tres" id="3_ykfjj"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter.gd" id="4_cvaxf"]
 [ext_resource type="PackedScene" uid="uid://bsctduvxgu16r" path="res://Mines/AntiPersonnel/anti_personnel_mine.tscn" id="4_gvqx8"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="5_l745p"]
 [ext_resource type="Script" path="res://smoother.gd" id="6_1c180"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/create_along_edge_even.gd" id="6_laqyu"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/offset_rotation.gd" id="7_7ci6y"]
 [ext_resource type="ArrayMesh" uid="uid://jfogrrurct5o" path="res://MineFlag/FlagMesh.res" id="8_11hq3"]
-[ext_resource type="PackedScene" uid="uid://b6q1yobsrpipw" path="res://Fence/Fence.tscn" id="9_capuk"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_item.gd" id="8_bka74"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_shape.gd" id="9_8ieaj"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/shapes/path_shape.gd" id="10_4ipfs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8hqrf"]
 
@@ -60,6 +66,45 @@ _shader_parameters = {
 "noise3_scale": null,
 "noise_texture": SubResource("NoiseTexture2D_qdcd4")
 }
+
+[sub_resource type="Resource" id="Resource_fa834"]
+script = ExtResource("6_laqyu")
+spacing = 1.0
+offset = 0.0
+align_to_path = true
+align_up_axis = Vector3(0, 1, 0)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 0
+
+[sub_resource type="Resource" id="Resource_48rij"]
+script = ExtResource("7_7ci6y")
+operation = 0
+rotation = Vector3(0, 90, 0)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 2
+
+[sub_resource type="Resource" id="Resource_xfjiy"]
+script = ExtResource("5_l745p")
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_fa834"), SubResource("Resource_48rij")])
+
+[sub_resource type="Curve3D" id="Curve3D_808bt"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.0420418, 0, 3.65505, 0, 0, 0, 0, 0, 0, -4.0698, -1.19209e-07, 0.848587, 0, 0, 0, 0, 0, 0, -5.11397, -1.19209e-07, -2.03608, 0, 0, 0, 0, 0, 0, -5.86432, -1.19209e-07, -7.93085, 0, 0, 0, 0, 0, 0, -4.40674, -1.19209e-07, -9.73796, 0, 0, 0, 0, 0, 0, -2.9238, -1.19209e-07, -11.5265, 0, 0, 0, 0, 0, 0, 1.07268, -1.19209e-07, -11.1644, 0, 0, 0, 0, 0, 0, 4.60394, -1.19209e-07, -8.62988, 0, 0, 0, 0, 0, 0, 5.3013, -1.19209e-07, -5.61185, 0, 0, 0, 0, 0, 0, 5.26098, -1.19209e-07, -3.05494, 0, 0, 0, 0, 0, 0, 4.95745, -1.19209e-07, -0.749817, 0, 0, 0, 0, 0, 0, 4.18888, -1.19209e-07, 1.13842, 0, 0, 0, 0, 0, 0, 0.0230103, 0, 3.70472),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 13
+
+[sub_resource type="Resource" id="Resource_qqhh5"]
+script = ExtResource("10_4ipfs")
+closed = false
+thickness = 0.0
+curve = SubResource("Curve3D_808bt")
 
 [node name="Level" type="Node3D" groups=["LevelRoot"]]
 script = ExtResource("1_vie1n")
@@ -127,107 +172,23 @@ transform = Transform3D(0.599163, 0, 0.800627, 0, 1, 0, -0.800627, 0, 0.599163, 
 mesh = ExtResource("8_11hq3")
 skeleton = NodePath("")
 
-[node name="Node3D" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.91941, 0, 0.3933, 0, 1, 0, -0.3933, 0, -0.91941, 39.3633, 0.854296, -37.1251)
+[node name="ProtonScatter" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9236, 1.31488, -40.9945)
+script = ExtResource("4_cvaxf")
+render_mode = 1
+keep_static_colliders = true
+modifier_stack = SubResource("Resource_xfjiy")
+Performance/use_chunks = true
+Performance/chunk_dimensions = Vector3(15, 15, 15)
 
-[node name="Node3D2" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.820332, 0, 0.571888, 0, 1, 0, -0.571888, 0, -0.820332, 38.2664, 0.752519, -37.5944)
+[node name="ScatterItem" type="Node3D" parent="ProtonScatter"]
+script = ExtResource("8_bka74")
+path = "res://Fence/Fence.tscn"
 
-[node name="Node3D3" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.745115, 0, 0.666936, 0, 1, 0, -0.666936, 0, -0.745115, 37.233, 0.722071, -38.3148)
-
-[node name="Node3D4" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.435624, 0, 0.900129, 0, 1, 0, -0.900129, 0, -0.435624, 36.3112, 0.675095, -39.1398)
-
-[node name="Node3D5" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.358173, 0, 0.933656, 0, 1, 0, -0.933656, 0, -0.358173, 35.7822, 0.651627, -40.2329)
-
-[node name="Node3D6" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.358173, 0, 0.933656, 0, 1, 0, -0.933656, 0, -0.358173, 35.3556, 0.637622, -41.345)
-
-[node name="Node3D7" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.358173, 0, 0.933656, 0, 1, 0, -0.933656, 0, -0.358173, 34.9131, 0.668158, -42.4984)
-
-[node name="Node3D8" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.297475, 0, 0.95473, 0, 1, 0, -0.95473, 0, -0.297475, 34.4673, 0.668158, -43.6606)
-
-[node name="Node3D9" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.181583, 0, 0.983376, 0, 1, 0, -0.983376, 0, -0.181583, 34.1109, 0.668158, -44.8045)
-
-[node name="Node3D10" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.181583, 0, 0.983376, 0, 1, 0, -0.983376, 0, -0.181583, 33.8817, 0.668158, -46.0455)
-
-[node name="Node3D11" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.0725244, 0, 0.997367, 0, 1, 0, -0.997367, 0, 0.0725244, 33.6607, 0.841467, -47.2427)
-
-[node name="Node3D12" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.0725244, 0, 0.997367, 0, 1, 0, -0.997367, 0, 0.0725244, 33.7498, 0.841467, -48.468)
-
-[node name="Node3D13" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.229421, 0, 0.973327, 0, 1, 0, -0.973327, 0, 0.229421, 33.833, 0.841467, -49.613)
-
-[node name="Node3D14" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.510258, 0, 0.860022, 0, 1, 0, -0.860022, 0, 0.510258, 34.1141, 0.841467, -50.8056)
-
-[node name="Node3D15" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.747474, 0, 0.664292, 0, 1, 0, -0.664292, 0, 0.747474, 34.7244, 0.841467, -51.8343)
-
-[node name="Node3D16" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.921592, 0, 0.388159, 0, 1, 0, -0.388159, 0, 0.921592, 35.626, 0.647544, -52.6355)
-
-[node name="Node3D17" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.966331, 0, 0.257302, 0, 1, 0, -0.257302, 0, 0.966331, 36.7053, 0.647544, -53.0901)
-
-[node name="Node3D18" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.966331, 0, 0.257302, 0, 1, 0, -0.257302, 0, 0.966331, 37.8396, 0.647544, -53.3921)
-
-[node name="Node3D19" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.995949, 0, 0.0899201, 0, 1, 0, -0.0899201, 0, 0.995949, 38.984, 0.647544, -53.7268)
-
-[node name="Node3D20" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.998831, 0, -0.0483441, 0, 1, 0, 0.0483441, 0, 0.998831, 40.1869, 0.647544, -53.8133)
-
-[node name="Node3D21" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.880353, 0, -0.474319, 0, 1, 0, 0.474319, 0, 0.880353, 41.3031, 0.647544, -53.7414)
-
-[node name="Node3D22" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.792002, 0, -0.610518, 0, 1, 0, 0.610518, 0, 0.792002, 42.3923, 0.647544, -53.1546)
-
-[node name="Node3D23" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.792002, 0, -0.610518, 0, 1, 0, 0.610518, 0, 0.792002, 43.3354, 0.647544, -52.4276)
-
-[node name="Node3D24" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.345249, 0, -0.938511, 0, 1, 0, 0.938511, 0, 0.345249, 44.283, 0.647544, -51.6971)
-
-[node name="Node3D25" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.345249, 0, -0.938511, 0, 1, 0, 0.938511, 0, 0.345249, 44.705, 0.722204, -50.55)
-
-[node name="Node3D26" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.345249, 0, -0.938511, 0, 1, 0, 0.938511, 0, 0.345249, 45.1201, 0.722204, -49.4217)
-
-[node name="Node3D27" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.345249, 0, -0.938511, 0, 1, 0, 0.938511, 0, 0.345249, 45.5171, 0.722204, -48.3425)
-
-[node name="Node3D28" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.345249, 0, -0.938511, 0, 1, 0, 0.938511, 0, 0.345249, 45.9372, 0.741792, -47.2005)
-
-[node name="Node3D29" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(0.345249, 0, -0.938511, 0, 1, 0, 0.938511, 0, 0.345249, 46.3614, 0.741792, -46.0475)
-
-[node name="Node3D30" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.0966969, 0, -0.995314, 0, 1, 0, 0.995314, 0, -0.0966969, 46.7869, 0.741792, -44.8907)
-
-[node name="Node3D31" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.0966969, 0, -0.995314, 0, 1, 0, 0.995314, 0, -0.0966969, 46.6666, 0.94787, -43.6522)
-
-[node name="Node3D32" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.0966969, 0, -0.995314, 0, 1, 0, 0.995314, 0, -0.0966969, 46.5434, 0.94787, -42.384)
-
-[node name="Node3D33" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.367849, 0, -0.929886, 0, 1, 0, 0.929886, 0, -0.367849, 46.4298, 0.94787, -41.2145)
-
-[node name="Node3D34" parent="." instance=ExtResource("9_capuk")]
-transform = Transform3D(-0.618504, 0, -0.785782, 0, 1, 0, 0.785782, 0, -0.618504, 45.9762, 0.94787, -40.068)
+[node name="ScatterShape" type="Node3D" parent="ProtonScatter"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, -0.633144, 0)
+script = ExtResource("9_8ieaj")
+shape = SubResource("Resource_qqhh5")
 
 [connection signal="FalseFlag" from="Player" to="." method="UpdateFalseFlag"]
 [connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]
