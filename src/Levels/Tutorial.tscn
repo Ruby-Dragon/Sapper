@@ -47,7 +47,7 @@ size = Vector3(17.3398, 1, 13.9125)
 [sub_resource type="BoxShape3D" id="BoxShape3D_j15di"]
 size = Vector3(1, 5.85498, 17.3629)
 
-[node name="Tutorial" type="Node3D"]
+[node name="Level" type="Node3D"]
 script = ExtResource("1_7osys")
 MinesToFlag = 1
 NextLevel = ExtResource("2_kus8i")
@@ -74,6 +74,9 @@ Depth = 1.0
 
 [node name="FlagLocation" parent="AntiPersonnelMine" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0252159, 0.00351609, 0.430324)
+
+[node name="CollisionShape3D" parent="AntiPersonnelMine/Area3D" index="0"]
+disabled = true
 
 [node name="VoxelGI" type="VoxelGI" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.405305, 2.64481, -1.41102)

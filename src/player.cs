@@ -87,4 +87,9 @@ public partial class player : CharacterBody3D
 
 		TheCamera = GetNode<Camera3D>("Camera");
 	}
+
+	public void Die()
+	{
+		GetTree().ReloadCurrentScene();
+	}
 }

@@ -48,6 +48,8 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6het3")
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector")]
+collision_layer = 9
+collision_mask = 9
 script = ExtResource("1_sfoyg")
 MetalDetector = NodePath("detector")
 

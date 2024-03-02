@@ -37,4 +37,12 @@ public partial class anti_personnel_mine : Area3D
 
 		EmitSignal("BeenFlagged");
 	}
+
+	public void Explode(Node3D Overlapper)
+	{
+		if (Overlapper is player)
+		{
+			((player) Overlapper).Die();
+		}
+	}
 }

@@ -57,7 +57,7 @@ _shader_parameters = {
 "noise_texture": SubResource("NoiseTexture2D_qdcd4")
 }
 
-[node name="Node3D" type="Node3D"]
+[node name="Level" type="Node3D"]
 script = ExtResource("1_pb6ut")
 
 [node name="Player" parent="." instance=ExtResource("2_n5oyx")]

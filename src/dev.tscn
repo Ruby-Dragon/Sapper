@@ -61,7 +61,7 @@ _shader_parameters = {
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_x0oie"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Level" type="Node3D"]
 script = ExtResource("1_vie1n")
 MinesToFlag = 3
 NextLevel = ExtResource("2_n41ea")
