@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dtt1ffkt3y02r"]
+
+[resource]
+resource_name = "Mirror"
+cull_mode = 2
+metallic = 1.0
+roughness = 0.0

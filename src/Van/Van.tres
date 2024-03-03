@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://t4432wcxbxc7"]
+
+[resource]
+resource_name = "Van"
+cull_mode = 2
+albedo_color = Color(0.227456, 0.228537, 0.222933, 1)
+roughness = 0.5

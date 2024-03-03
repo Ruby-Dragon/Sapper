@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dstyih7agmt6y"]
+
+[resource]
+resource_name = "RedLight"
+cull_mode = 2
+albedo_color = Color(0.668181, 0.405616, 0.401702, 1)
+roughness = 0.695455

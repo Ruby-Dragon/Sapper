@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://c3frs0muo08qx"]
+[gd_scene load_steps=29 format=3 uid="uid://c3frs0muo08qx"]
 
 [ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="1_o81fx"]
 [ext_resource type="Script" path="res://Level.cs" id="1_vie1n"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_item.gd" id="8_bka74"]
 [ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_shape.gd" id="9_8ieaj"]
 [ext_resource type="Script" path="res://addons/proton_scatter/src/shapes/path_shape.gd" id="10_4ipfs"]
+[ext_resource type="PackedScene" uid="uid://begxemvgcowv7" path="res://Van/van.tscn" id="16_uobl0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8hqrf"]
 
@@ -67,7 +68,7 @@ _shader_parameters = {
 "noise_texture": SubResource("NoiseTexture2D_qdcd4")
 }
 
-[sub_resource type="Resource" id="Resource_fa834"]
+[sub_resource type="Resource" id="Resource_k2hx8"]
 script = ExtResource("6_laqyu")
 spacing = 1.0
 offset = 0.0
@@ -79,7 +80,7 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_48rij"]
+[sub_resource type="Resource" id="Resource_ym2ox"]
 script = ExtResource("7_7ci6y")
 operation = 0
 rotation = Vector3(0, 90, 0)
@@ -89,13 +90,13 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_xfjiy"]
+[sub_resource type="Resource" id="Resource_6tx5i"]
 script = ExtResource("5_l745p")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_fa834"), SubResource("Resource_48rij")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_k2hx8"), SubResource("Resource_ym2ox")])
 
-[sub_resource type="Curve3D" id="Curve3D_808bt"]
+[sub_resource type="Curve3D" id="Curve3D_768hx"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.0420418, 0, 3.65505, 0, 0, 0, 0, 0, 0, -4.0698, -1.19209e-07, 0.848587, 0, 0, 0, 0, 0, 0, -5.11397, -1.19209e-07, -2.03608, 0, 0, 0, 0, 0, 0, -5.86432, -1.19209e-07, -7.93085, 0, 0, 0, 0, 0, 0, -4.40674, -1.19209e-07, -9.73796, 0, 0, 0, 0, 0, 0, -2.9238, -1.19209e-07, -11.5265, 0, 0, 0, 0, 0, 0, 1.07268, -1.19209e-07, -11.1644, 0, 0, 0, 0, 0, 0, 4.60394, -1.19209e-07, -8.62988, 0, 0, 0, 0, 0, 0, 5.3013, -1.19209e-07, -5.61185, 0, 0, 0, 0, 0, 0, 5.26098, -1.19209e-07, -3.05494, 0, 0, 0, 0, 0, 0, 4.95745, -1.19209e-07, -0.749817, 0, 0, 0, 0, 0, 0, 4.18888, -1.19209e-07, 1.13842, 0, 0, 0, 0, 0, 0, 0.0230103, 0, 3.70472),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -2.29324, -1.19209e-07, 2.36471, 0, 0, 0, 0, 0, 0, -4.0698, -1.19209e-07, 0.848587, 0, 0, 0, 0, 0, 0, -5.11397, -1.19209e-07, -2.03608, 0, 0, 0, 0, 0, 0, -5.86432, -1.19209e-07, -7.93085, 0, 0, 0, 0, 0, 0, -4.40674, -1.19209e-07, -9.73796, 0, 0, 0, 0, 0, 0, -2.9238, -1.19209e-07, -11.5265, 0, 0, 0, 0, 0, 0, 1.07268, -1.19209e-07, -11.1644, 0, 0, 0, 0, 0, 0, 4.60394, -1.19209e-07, -8.62988, 0, 0, 0, 0, 0, 0, 5.3013, -1.19209e-07, -5.61185, 0, 0, 0, 0, 0, 0, 5.26098, -1.19209e-07, -3.05494, 0, 0, 0, 0, 0, 0, 5.69359, -1.19209e-07, -1.49041, 0, 0, 0, 0, 0, 0, 5.76056, -1.19209e-07, 0.847466, 0, 0, 0, 0, 0, 0, 4.95977, -1.19209e-07, 4.12966),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 13
@@ -104,7 +105,7 @@ point_count = 13
 script = ExtResource("10_4ipfs")
 closed = false
 thickness = 0.0
-curve = SubResource("Curve3D_808bt")
+curve = SubResource("Curve3D_768hx")
 
 [node name="Level" type="Node3D" groups=["LevelRoot"]]
 script = ExtResource("1_vie1n")
@@ -177,7 +178,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9236, 1.31488, -40.9945)
 script = ExtResource("4_cvaxf")
 render_mode = 1
 keep_static_colliders = true
-modifier_stack = SubResource("Resource_xfjiy")
+modifier_stack = SubResource("Resource_6tx5i")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
@@ -189,6 +190,13 @@ path = "res://Fence/Fence.tscn"
 transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, -0.633144, 0)
 script = ExtResource("9_8ieaj")
 shape = SubResource("Resource_qqhh5")
+
+[node name="PlayerVan" parent="." instance=ExtResource("16_uobl0")]
+transform = Transform3D(-0.986314, 0, -0.164876, 0, 1, 0, 0.164876, 0, -0.986314, 42.2588, 0.905887, -38.0341)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform3D(0.997271, 0, 0.07383, 0, 1, 0, -0.07383, 0, 0.997271, 42.1189, 1.69327, -38.35)
+size = Vector3(7.94019, 3.26556, 3.36356)
 
 [connection signal="FalseFlag" from="Player" to="." method="UpdateFalseFlag"]
 [connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]

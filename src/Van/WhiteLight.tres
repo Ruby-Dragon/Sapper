@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b0ankpqx785em"]
+
+[resource]
+resource_name = "WhiteLight"
+cull_mode = 2
+albedo_color = Color(0.658316, 0.658316, 0.658316, 1)
+roughness = 0.768182
