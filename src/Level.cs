@@ -25,7 +25,7 @@ public partial class Level : Node3D
 		MinesToFlag -= 1;
 		if (MinesToFlag <= 0)
 		{
-			GoToNextLevel();
+			
 		}
 	}
 

@@ -12,6 +12,8 @@ public partial class player : CharacterBody3D
 
 	private Camera3D TheCamera;
 
+	public bool CanLeave = false;
+
 	[Export]
 	private detector MetalDetector;
 
@@ -62,6 +64,19 @@ public partial class player : CharacterBody3D
 
 		Velocity = velocity;
 		MoveAndSlide();
+		
+		if (Input.IsActionJustPressed("Flag"))
+		{
+			MetalDetector.Flag();
+		}
+
+		if (Input.IsActionJustPressed("Interact"))
+		{
+			if (CanLeave)
+			{
+				GetParent<Level>().GoToNextLevel();
+			}
+		}
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
@@ -72,14 +87,6 @@ public partial class player : CharacterBody3D
 		{
 			Rotation = new Vector3(Rotation.X, Rotation.Y - ((InputEventMouseMotion)@event).Relative.X * MouseSens, Rotation.Z);
 			TheCamera.Rotation = new Vector3(Math.Clamp(TheCamera.Rotation.X - ((InputEventMouseMotion)@event).Relative.Y * MouseSens, -1.4f, 1.4f), TheCamera.Rotation.Y, TheCamera.Rotation.Z);
-		}
-	}
-
-	public override void _Input(InputEvent @event)
-	{
-		if (@event.IsActionPressed("Flag"))
-		{
-			MetalDetector.Flag();
 		}
 	}
 
@@ -99,5 +106,19 @@ public partial class player : CharacterBody3D
 	public void OnFalseFlag()
 	{
 		EmitSignal("FalseFlag");
+	}
+
+	public void ToggleCanLeave()
+	{
+		GD.Print("EnteredTheZone");
+		
+		if (CanLeave)
+		{
+			CanLeave = false;
+		}
+		else
+		{
+			CanLeave = true;
+		}
 	}
 }
