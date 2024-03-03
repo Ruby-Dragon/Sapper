@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://demhgiqaiflw4"]
+[gd_scene load_steps=11 format=3 uid="uid://demhgiqaiflw4"]
 
 [ext_resource type="Script" path="res://player.cs" id="1_sfoyg"]
 [ext_resource type="PackedScene" uid="uid://dk2tiah10p1rw" path="res://Detector/detector.blend" id="2_dm284"]
+[ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_o4mho"]
 [ext_resource type="Script" path="res://Detector/detector.cs" id="3_l8hgk"]
 [ext_resource type="ArrayMesh" uid="uid://by52d6u5gbwra" path="res://Detector/detector_Cylinder_light.res" id="4_ret0p"]
 [ext_resource type="Material" uid="uid://dk0i5p72hkgg2" path="res://MineFlag/Main.tres" id="5_26eos"]
@@ -47,11 +48,12 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_iqgdi")
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel")]
 collision_layer = 9
 collision_mask = 9
 script = ExtResource("1_sfoyg")
 MetalDetector = NodePath("detector")
+InteractLabel = NodePath("Camera/InteractLabel")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_jdyjx")
@@ -59,6 +61,22 @@ shape = SubResource("CapsuleShape3D_jdyjx")
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.580895, 0)
 current = true
+
+[node name="InteractLabel" type="RichTextLabel" parent="Camera"]
+visible = false
+anchors_preset = -1
+anchor_left = 0.52
+anchor_top = 0.718
+anchor_right = 0.52
+anchor_bottom = 0.718
+offset_left = -191.4
+offset_top = -66.4401
+offset_right = 223.6
+offset_bottom = 77.5599
+theme = ExtResource("2_o4mho")
+theme_type_variation = &"Interact"
+bbcode_enabled = true
+text = "Press [b]E[/b] to leave"
 
 [node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagMesh", "FlagPlacementLocation") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)

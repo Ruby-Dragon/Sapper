@@ -17,6 +17,9 @@ public partial class player : CharacterBody3D
 	[Export]
 	private detector MetalDetector;
 
+	[Export] 
+	public RichTextLabel InteractLabel;
+
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
 	
@@ -115,10 +118,12 @@ public partial class player : CharacterBody3D
 		if (CanLeave)
 		{
 			CanLeave = false;
+			InteractLabel.Visible = false;
 		}
 		else
 		{
 			CanLeave = true;
+			InteractLabel.Visible = true;
 		}
 	}
 }
