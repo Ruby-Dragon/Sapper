@@ -12,3 +12,5 @@ Interact/colors/font_outline_color = Color(0, 0, 0, 1)
 Interact/font_sizes/Size = 16
 Interact/font_sizes/bold_font_size = 45
 Interact/font_sizes/normal_font_size = 45
+ScoreText/base_type = &"RichTextLabel"
+ScoreText/font_sizes/normal_font_size = 100

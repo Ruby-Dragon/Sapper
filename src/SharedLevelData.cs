@@ -16,6 +16,7 @@ public partial class SharedLevelData : Node
 	public override void _Ready()
 	{
 		DeathScene = ResourceLoader.Load<PackedScene>("res://Levels/Death.tscn");
+		ScoreScene = ResourceLoader.Load<PackedScene>("res://Levels/Score.tscn");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -34,7 +34,7 @@ public partial class Level : Node3D
 	{
 		GD.Print(CreateScore());
 		GetNode<SharedLevelData>("/root/SharedLevelData").LevelScore = CreateScore();
-		GetTree().ChangeSceneToPacked(NextLevel);
+		GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").ScoreScene);
 	}
 
 	private int CreateScore()
