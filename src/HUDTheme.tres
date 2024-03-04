@@ -4,6 +4,8 @@
 
 [resource]
 default_font = SubResource("SystemFont_ycash")
+DeathText/base_type = &"Label"
+DeathText/font_sizes/font_size = 45
 Interact/base_type = &"RichTextLabel"
 Interact/colors/default_color = Color(1, 1, 1, 1)
 Interact/colors/font_outline_color = Color(0, 0, 0, 1)

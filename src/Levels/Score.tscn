@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv3dpikgknw1u"]
+
+[ext_resource type="Script" path="res://Levels/Score.cs" id="1_ou0i3"]
+
+[node name="Score" type="Node2D"]
+script = ExtResource("1_ou0i3")
+
+[node name="Camera2D" type="Camera2D" parent="."]

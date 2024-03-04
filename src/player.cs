@@ -12,6 +12,8 @@ public partial class player : CharacterBody3D
 
 	private Camera3D TheCamera;
 
+	private bool dead = false;
+
 	public bool CanLeave = false;
 
 	[Export]
@@ -28,6 +30,11 @@ public partial class player : CharacterBody3D
 
 	public override void _PhysicsProcess(double delta)
 	{
+		if (dead)
+		{
+			GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").DeathScene);
+		}
+		
 		if (Input.GetConnectedJoypads().Count > 0)
 		{
 			Vector2 LookDir = Input.GetVector("ControllerLookLeft", "ControllerLookRight", "ControllerLookDown",
@@ -103,7 +110,7 @@ public partial class player : CharacterBody3D
 
 	public void Die()
 	{
-		GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").DeathScene);
+		dead = true;
 	}
 
 	public void OnFalseFlag()
