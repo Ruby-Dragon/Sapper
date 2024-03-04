@@ -52,9 +52,10 @@ _data = {
 "ScoreAnim": SubResource("Animation_uh4ho")
 }
 
-[node name="Score" type="Node2D" node_paths=PackedStringArray("Refrain")]
+[node name="Score" type="Node2D" node_paths=PackedStringArray("Refrain", "ScoreLabel")]
 script = ExtResource("1_ou0i3")
 Refrain = NodePath("AnimationPlayer2/ReasonLabel")
+ScoreLabel = NodePath("AnimationPlayer2/ScoreLabel")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
