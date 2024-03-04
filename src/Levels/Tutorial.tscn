@@ -47,9 +47,11 @@ size = Vector3(17.3398, 1, 13.9125)
 [sub_resource type="BoxShape3D" id="BoxShape3D_j15di"]
 size = Vector3(1, 5.85498, 17.3629)
 
-[node name="Level" type="Node3D" groups=["LevelRoot"]]
+[node name="Level" type="Node3D" node_paths=PackedStringArray("ThePlayer") groups=["LevelRoot"]]
 script = ExtResource("1_7osys")
 MinesToFlag = 1
+MissionText = "Detect the mine"
+ThePlayer = NodePath("Player")
 NextLevel = ExtResource("2_kus8i")
 
 [node name="Player" parent="." instance=ExtResource("1_3a5nb")]

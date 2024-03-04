@@ -22,6 +22,9 @@ public partial class player : CharacterBody3D
 	[Export] 
 	public RichTextLabel InteractLabel;
 
+	[Export] 
+	private RichTextLabel MissionLabel;
+
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
 	
@@ -132,5 +135,10 @@ public partial class player : CharacterBody3D
 			CanLeave = true;
 			InteractLabel.Visible = true;
 		}
+	}
+
+	public void ChangeMissionText(String text)
+	{
+		MissionLabel.Text = text;
 	}
 }

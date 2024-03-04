@@ -7,6 +7,12 @@ public partial class Level : Node3D
 	[Export]
 	public int MinesToFlag = 0;
 
+	[Export]
+	public String MissionText;
+
+	[Export] 
+	public player ThePlayer;
+
 	private float TotalMines;
 
 	public float FalseFlags = 0;
@@ -18,6 +24,8 @@ public partial class Level : Node3D
 		GetNode<SharedLevelData>("/root/SharedLevelData").LastLevel = ResourceLoader.Load<PackedScene>(this.SceneFilePath);
 		GetNode<SharedLevelData>("/root/SharedLevelData").NextLevel = NextLevel;
 		TotalMines = MinesToFlag;
+		
+		ThePlayer.ChangeMissionText(MissionText);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

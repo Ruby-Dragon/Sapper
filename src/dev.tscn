@@ -68,7 +68,7 @@ _shader_parameters = {
 "noise_texture": SubResource("NoiseTexture2D_qdcd4")
 }
 
-[sub_resource type="Resource" id="Resource_2yvts"]
+[sub_resource type="Resource" id="Resource_ej30t"]
 script = ExtResource("6_laqyu")
 spacing = 1.0
 offset = 0.0
@@ -80,7 +80,7 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_2hy5c"]
+[sub_resource type="Resource" id="Resource_ui6v2"]
 script = ExtResource("7_7ci6y")
 operation = 0
 rotation = Vector3(0, 90, 0)
@@ -90,9 +90,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_bw0be"]
+[sub_resource type="Resource" id="Resource_18gl6"]
 script = ExtResource("5_l745p")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_2yvts"), SubResource("Resource_2hy5c")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_ej30t"), SubResource("Resource_ui6v2")])
 
 [sub_resource type="Curve3D" id="Curve3D_768hx"]
 _data = {
@@ -107,9 +107,11 @@ closed = false
 thickness = 0.0
 curve = SubResource("Curve3D_768hx")
 
-[node name="Level" type="Node3D" groups=["LevelRoot"]]
+[node name="Level" type="Node3D" node_paths=PackedStringArray("ThePlayer") groups=["LevelRoot"]]
 script = ExtResource("1_vie1n")
 MinesToFlag = 3
+MissionText = "Flag the 3 Mines"
+ThePlayer = NodePath("Player")
 NextLevel = ExtResource("2_n41ea")
 
 [node name="Player" parent="." instance=ExtResource("1_o81fx")]
@@ -178,7 +180,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9236, 1.31488, -40.9945)
 script = ExtResource("4_cvaxf")
 render_mode = 1
 keep_static_colliders = true
-modifier_stack = SubResource("Resource_bw0be")
+modifier_stack = SubResource("Resource_18gl6")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 

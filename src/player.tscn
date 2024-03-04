@@ -48,12 +48,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_iqgdi")
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel", "MissionLabel")]
 collision_layer = 9
 collision_mask = 9
 script = ExtResource("1_sfoyg")
 MetalDetector = NodePath("detector")
 InteractLabel = NodePath("Camera/InteractLabel")
+MissionLabel = NodePath("Camera/MissionLabel")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_jdyjx")
@@ -77,6 +78,15 @@ theme = ExtResource("2_o4mho")
 theme_type_variation = &"Interact"
 bbcode_enabled = true
 text = "Press [b]E[/b] to leave"
+
+[node name="MissionLabel" type="RichTextLabel" parent="Camera"]
+offset_left = 37.0
+offset_top = 29.0
+offset_right = 901.0
+offset_bottom = 380.0
+theme = ExtResource("2_o4mho")
+theme_type_variation = &"MissionText"
+bbcode_enabled = true
 
 [node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagMesh", "FlagPlacementLocation") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)

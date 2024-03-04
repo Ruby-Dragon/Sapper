@@ -1,16 +1,27 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://pdijop5b0yp4"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://pdijop5b0yp4"]
+
+[ext_resource type="FontFile" uid="uid://cdl1pxdb7immx" path="res://Fonts/NotoSansDisplay-VariableFont_wdth,wght.ttf" id="1_80j72"]
 
 [sub_resource type="SystemFont" id="SystemFont_ycash"]
+font_weight = 200
 
 [resource]
 default_font = SubResource("SystemFont_ycash")
 DeathText/base_type = &"Label"
 DeathText/font_sizes/font_size = 45
+DeathText/fonts/font = ExtResource("1_80j72")
 Interact/base_type = &"RichTextLabel"
 Interact/colors/default_color = Color(1, 1, 1, 1)
 Interact/colors/font_outline_color = Color(0, 0, 0, 1)
 Interact/font_sizes/Size = 16
 Interact/font_sizes/bold_font_size = 45
 Interact/font_sizes/normal_font_size = 45
+Interact/fonts/normal_font = ExtResource("1_80j72")
+MissionText/base_type = &"RichTextLabel"
+MissionText/colors/font_outline_color = Color(0, 0, 0, 1)
+MissionText/constants/outline_size = 1
+MissionText/font_sizes/normal_font_size = 64
+MissionText/fonts/normal_font = ExtResource("1_80j72")
 ScoreText/base_type = &"RichTextLabel"
 ScoreText/font_sizes/normal_font_size = 100
+ScoreText/fonts/normal_font = ExtResource("1_80j72")
