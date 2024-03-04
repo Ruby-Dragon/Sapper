@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dv3dpikgknw1u"]
+[gd_scene load_steps=6 format=3 uid="uid://bt0plgujwf8np"]
 
-[ext_resource type="Script" path="res://Levels/Score.cs" id="1_ou0i3"]
-[ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_87p3v"]
+[ext_resource type="Script" path="res://Levels/Failure.cs" id="1_0l4wg"]
+[ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_da83e"]
 
 [sub_resource type="Animation" id="Animation_cugcy"]
 resource_name = "ReminderAnimation"
@@ -52,10 +52,8 @@ _data = {
 "ScoreAnim": SubResource("Animation_uh4ho")
 }
 
-[node name="Score" type="Node2D" node_paths=PackedStringArray("Refrain", "ScoreLabel")]
-script = ExtResource("1_ou0i3")
-Refrain = NodePath("AnimationPlayer2/ReasonLabel")
-ScoreLabel = NodePath("AnimationPlayer2/ScoreLabel")
+[node name="Failure" type="Node2D"]
+script = ExtResource("1_0l4wg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -71,7 +69,7 @@ offset_left = -956.0
 offset_top = 326.0
 offset_right = 965.0
 offset_bottom = 403.0
-theme = ExtResource("2_87p3v")
+theme = ExtResource("2_da83e")
 theme_type_variation = &"Interact"
 bbcode_enabled = true
 text = "[center]Press E to continue"
@@ -85,10 +83,10 @@ autoplay = "ScoreAnim"
 [node name="ScoreLabel" type="RichTextLabel" parent="AnimationPlayer2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -959.0
-offset_top = -368.0
+offset_top = -201.0
 offset_right = 963.0
-offset_bottom = -25.0
-theme = ExtResource("2_87p3v")
+offset_bottom = -42.0
+theme = ExtResource("2_da83e")
 theme_type_variation = &"ScoreText"
 bbcode_enabled = true
 text = "[center]Score: X, A+"
@@ -99,7 +97,7 @@ modulate = Color(0, 0, 0, 1)
 offset_left = -959.0
 offset_right = 959.0
 offset_bottom = 63.0
-theme = ExtResource("2_87p3v")
+theme = ExtResource("2_da83e")
 theme_type_variation = &"DeathText"
 text = "Please refrain from marking false positives."
 horizontal_alignment = 1

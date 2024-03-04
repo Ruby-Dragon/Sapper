@@ -7,13 +7,15 @@ public partial class Score : Node2D
 	[Export] 
 	public Label Refrain;
 
+	private bool failed = false;
+	
 	[Export] 
 	public RichTextLabel ScoreLabel;
 	
 	public override void _Ready()
 	{
-		//int Score = GetNode<SharedLevelData>("/root/SharedLevelData").LevelScore;
-		int Score = 90;
+		int Score = GetNode<SharedLevelData>("/root/SharedLevelData").LevelScore;
+		
 		if (Score < 100)
 		{
 			Refrain.Visible = true;
@@ -35,6 +37,10 @@ public partial class Score : Node2D
 			case (>=60):
 				ScoreLabel.Text = ScoreLabel.Text + "D";
 				break;
+			default:
+				ScoreLabel.Text = ScoreLabel.Text + "Unacceptable.\nTry Again.";
+				failed = true;
+				break;
 		}
 	}
 
@@ -43,6 +49,11 @@ public partial class Score : Node2D
 	{
 		if (Input.IsActionJustPressed("Interact"))
 		{
+			if (failed)
+			{
+				GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").LastLevel);
+				return;
+			}
 			GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").NextLevel);
 		}
 	}

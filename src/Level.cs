@@ -44,6 +44,11 @@ public partial class Level : Node3D
 			return 0;
 		}
 
+		if (FalseFlags <= 0)
+		{
+			return 100;
+		}
+
 		return (int) ((FalseFlags / TotalMines) * 100.0f);
 	}
 
