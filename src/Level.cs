@@ -15,6 +15,8 @@ public partial class Level : Node3D
 	public PackedScene NextLevel;
 	public override void _Ready()
 	{
+		GetNode<SharedLevelData>("/root/SharedLevelData").LastLevel = ResourceLoader.Load<PackedScene>(this.SceneFilePath);
+		GetNode<SharedLevelData>("/root/SharedLevelData").NextLevel = NextLevel;
 		TotalMines = MinesToFlag;
 	}
 
@@ -31,6 +33,7 @@ public partial class Level : Node3D
 	public void GoToNextLevel()
 	{
 		GD.Print(CreateScore());
+		GetNode<SharedLevelData>("/root/SharedLevelData").LevelScore = CreateScore();
 		GetTree().ChangeSceneToPacked(NextLevel);
 	}
 

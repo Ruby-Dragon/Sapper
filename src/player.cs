@@ -103,7 +103,7 @@ public partial class player : CharacterBody3D
 
 	public void Die()
 	{
-		GetTree().ReloadCurrentScene();
+		GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").DeathScene);
 	}
 
 	public void OnFalseFlag()
