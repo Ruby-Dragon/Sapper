@@ -32,6 +32,12 @@ public partial class Level : Node3D
 
 	public void GoToNextLevel()
 	{
+		if (MinesToFlag > 0)
+		{
+			GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").FailedScene);
+			return;
+		}
+		
 		GD.Print(CreateScore());
 		GetNode<SharedLevelData>("/root/SharedLevelData").LevelScore = CreateScore();
 		GetTree().ChangeSceneToPacked(GetNode<SharedLevelData>("/root/SharedLevelData").ScoreScene);
@@ -39,17 +45,12 @@ public partial class Level : Node3D
 
 	private int CreateScore()
 	{
-		if (MinesToFlag > 0)
-		{
-			return 0;
-		}
-
 		if (FalseFlags <= 0)
 		{
 			return 100;
 		}
 
-		return (int) ((FalseFlags / TotalMines) * 100.0f);
+		return (int) (((TotalMines) / (TotalMines + FalseFlags)) * 100.0f);
 	}
 
 	public void UpdateFalseFlag()

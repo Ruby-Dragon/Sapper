@@ -83,13 +83,14 @@ autoplay = "ScoreAnim"
 [node name="ScoreLabel" type="RichTextLabel" parent="AnimationPlayer2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -959.0
-offset_top = -201.0
+offset_top = -340.0
 offset_right = 963.0
 offset_bottom = -42.0
 theme = ExtResource("2_da83e")
 theme_type_variation = &"ScoreText"
 bbcode_enabled = true
-text = "[center]Score: X, A+"
+text = "[center]You did not flag all the mines.
+Try Again"
 
 [node name="ReasonLabel" type="Label" parent="AnimationPlayer2"]
 visible = false
