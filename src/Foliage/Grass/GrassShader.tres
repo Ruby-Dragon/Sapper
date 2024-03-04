@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cdbu3ivmesrad"]
+
+[ext_resource type="Shader" path="res://Foliage/Grass/GrassShader.gdshader" id="1_f0ujg"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_f0ujg")
+shader_parameter/Angle = 4.0

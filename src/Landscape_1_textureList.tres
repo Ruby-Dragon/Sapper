@@ -1,7 +1,9 @@
-[gd_resource type="Terrain3DTextureList" load_steps=4 format=3 uid="uid://dd7br7c080tc0"]
+[gd_resource type="Terrain3DTextureList" load_steps=7 format=3 uid="uid://dd7br7c080tc0"]
 
 [ext_resource type="Texture2D" uid="uid://skq1st2st6c8" path="res://Dirt_001/Diffuse.png" id="1_jrunk"]
 [ext_resource type="Texture2D" uid="uid://8est45crsoqv" path="res://Dirt_001/normal-rough-packed.png" id="2_fr4lm"]
+[ext_resource type="Texture2D" uid="uid://bdbflimtxwkqo" path="res://GrassTerrainTexture/grass_albedo.png" id="3_7k3c4"]
+[ext_resource type="Texture2D" uid="uid://csbf7mv6cwcmu" path="res://GrassTerrainTexture/grass_normrough.png" id="4_smvvt"]
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_mavlh"]
 name = "Dirt"
@@ -9,5 +11,11 @@ albedo_texture = ExtResource("1_jrunk")
 normal_texture = ExtResource("2_fr4lm")
 uv_scale = 1.0
 
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_l100s"]
+name = "Grass"
+texture_id = 1
+albedo_texture = ExtResource("3_7k3c4")
+normal_texture = ExtResource("4_smvvt")
+
 [resource]
-textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_mavlh")])
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_mavlh"), SubResource("Terrain3DTexture_l100s")])
