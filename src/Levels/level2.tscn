@@ -1,0 +1,247 @@
+[gd_scene load_steps=33 format=3 uid="uid://cxybukaihfs4v"]
+
+[ext_resource type="Script" path="res://Level.cs" id="1_v8kds"]
+[ext_resource type="PackedScene" uid="uid://s0x57c46lq3i" path="res://Levels/End.tscn" id="2_ala0t"]
+[ext_resource type="PackedScene" uid="uid://demhgiqaiflw4" path="res://player.tscn" id="3_dvr7p"]
+[ext_resource type="Terrain3DStorage" uid="uid://dwduv52qyu2rr" path="res://devterrain.res" id="4_c31t8"]
+[ext_resource type="Terrain3DTextureList" uid="uid://dd7br7c080tc0" path="res://Landscape_1_textureList.tres" id="5_dcqfn"]
+[ext_resource type="Script" path="res://smoother.gd" id="6_5kgn2"]
+[ext_resource type="ArrayMesh" uid="uid://ca105coa2cocx" path="res://MineFlag/MarkerFlagMesh.res" id="7_lral5"]
+[ext_resource type="PackedScene" uid="uid://begxemvgcowv7" path="res://Van/van.tscn" id="8_svc0p"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter.gd" id="9_y031g"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="10_ynecx"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/create_along_edge_even.gd" id="11_hl42a"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/project_on_geometry.gd" id="12_0yois"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/offset_rotation.gd" id="12_mj5qc"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_item.gd" id="13_hwr7m"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/offset_position.gd" id="14_cfbee"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_shape.gd" id="14_vre1q"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/shapes/path_shape.gd" id="15_4yy21"]
+[ext_resource type="PackedScene" uid="uid://bsctduvxgu16r" path="res://Mines/AntiPersonnel/anti_personnel_mine.tscn" id="18_l7fje"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8hqrf"]
+
+[sub_resource type="Sky" id="Sky_36qml"]
+sky_material = SubResource("ProceduralSkyMaterial_8hqrf")
+
+[sub_resource type="Environment" id="Environment_3smpl"]
+background_mode = 2
+sky = SubResource("Sky_36qml")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 2
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+fog_light_color = Color(0.533189, 0.568079, 0.622905, 1)
+fog_density = 0.0001
+fog_aerial_perspective = 1.0
+fog_sky_affect = 0.154
+fog_height_density = -0.2
+volumetric_fog_density = 0.0476
+volumetric_fog_sky_affect = 0.5
+
+[sub_resource type="Gradient" id="Gradient_g5xko"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vxdhm"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qdcd4"]
+seamless = true
+color_ramp = SubResource("Gradient_g5xko")
+noise = SubResource("FastNoiseLite_vxdhm")
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_obspl"]
+_shader_parameters = {
+"_mouse_layer": 2147483648,
+"blend_sharpness": null,
+"height_blending": null,
+"macro_variation1": null,
+"macro_variation2": null,
+"noise1_angle": null,
+"noise1_offset": null,
+"noise1_scale": null,
+"noise2_scale": null,
+"noise3_scale": null,
+"noise_texture": SubResource("NoiseTexture2D_qdcd4")
+}
+
+[sub_resource type="Resource" id="Resource_dw2ee"]
+script = ExtResource("11_hl42a")
+spacing = 1.0
+offset = 0.0
+align_to_path = true
+align_up_axis = Vector3(0, 1, 0)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 0
+
+[sub_resource type="Resource" id="Resource_65r25"]
+script = ExtResource("12_mj5qc")
+operation = 0
+rotation = Vector3(0, 90, 0)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 2
+
+[sub_resource type="Resource" id="Resource_3qr22"]
+script = ExtResource("12_0yois")
+ray_direction = Vector3(0, -1, 0)
+ray_length = 10.0
+ray_offset = 1.0
+remove_points_on_miss = true
+align_with_collision_normal = true
+max_slope = 90.0
+collision_mask = 1
+exclude_mask = 0
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 0
+
+[sub_resource type="Resource" id="Resource_4wfld"]
+script = ExtResource("14_cfbee")
+operation = 0
+position = Vector3(0, 0.6, 0)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 2
+
+[sub_resource type="Resource" id="Resource_sqkcw"]
+script = ExtResource("10_ynecx")
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_dw2ee"), SubResource("Resource_65r25"), SubResource("Resource_3qr22"), SubResource("Resource_4wfld")])
+
+[sub_resource type="Curve3D" id="Curve3D_mcjn6"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 169.873, 0, -39.949, 0, 0, 0, 0, 0, 0, 169.892, 0, -46.2536, 0, 0, 0, 0, 0, 0, 169.319, 0, -50.0679, 0, 0, 0, 0, 0, 0, 167.631, 0, -51.2002, 0, 0, 0, 0, 0, 0, 165.546, 0, -51.3021, 0, 0, 0, 0, 0, 0, 164.017, 0, -50.9764, 0, 0, 0, 0, 0, 0, 162.827, 0, -50.4926, 0, 0, 0, 0, 0, 0, 161.285, 0, -47.3312, 0, 0, 0, 0, 0, 0, 160.942, 0, -45.5838, 0, 0, 0, 0, 0, 0, 160.926, 0, -42.2407, 0, 0, 0, 0, 0, 0, 161.6, 0, -39.5859, 0, 0, 0, 0, 0, 0, 163.718, 0, -36.9929, 0, 0, 0, 0, 0, 0, 165.38, 0, -35.9848),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 13
+
+[sub_resource type="Resource" id="Resource_h4n2c"]
+script = ExtResource("15_4yy21")
+closed = false
+thickness = 0.0
+curve = SubResource("Curve3D_mcjn6")
+
+[node name="Level" type="Node3D" node_paths=PackedStringArray("ThePlayer") groups=["LevelRoot"]]
+script = ExtResource("1_v8kds")
+MinesToFlag = 4
+MissionText = "Flag all Mines"
+ThePlayer = NodePath("Player")
+NextLevel = ExtResource("2_ala0t")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3smpl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -0.703618, 0.710579, 0, -0.710579, -0.703618, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+storage = ExtResource("4_c31t8")
+material = SubResource("Terrain3DMaterial_obspl")
+texture_list = ExtResource("5_dcqfn")
+mesh_size = 8
+mesh_vertex_spacing = 0.25
+debug_show_collision = true
+
+[node name="Smoother" type="Node" parent="."]
+script = ExtResource("6_5kgn2")
+
+[node name="Player" parent="." instance=ExtResource("3_dvr7p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 164.582, 1.23704, -38.979)
+
+[node name="MarkerFlagMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.700112, 0, -0.714033, 0, 1, 0, 0.714033, 0, -0.700112, 163.753, 0.464775, -45.1816)
+mesh = ExtResource("7_lral5")
+
+[node name="MarkerFlagMesh3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.47292, 0, 0.881105, 0, 1, 0, -0.881105, 0, -0.47292, 168.146, 0.464775, -45.1816)
+mesh = ExtResource("7_lral5")
+
+[node name="MarkerFlagMesh4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.711327, 0, -0.702861, 0, 1, 0, 0.702861, 0, 0.711327, 168.146, 0.464775, -49.3334)
+mesh = ExtResource("7_lral5")
+
+[node name="MarkerFlagMesh2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.616088, 0, 0.787678, 0, 1, 0, -0.787678, 0, 0.616088, 163.554, 0.59073, -49.3984)
+mesh = ExtResource("7_lral5")
+
+[node name="PlayerVan" parent="." instance=ExtResource("8_svc0p")]
+transform = Transform3D(-0.254045, 0, -0.967192, 0.0758009, 0.996924, -0.01991, 0.964217, -0.0783721, -0.253264, 167.573, 0.993092, -39.1011)
+
+[node name="Fence" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.19882, 0)
+script = ExtResource("9_y031g")
+render_mode = 1
+keep_static_colliders = true
+modifier_stack = SubResource("Resource_sqkcw")
+Performance/use_chunks = true
+Performance/chunk_dimensions = Vector3(15, 15, 15)
+
+[node name="ScatterItem" type="Node3D" parent="Fence"]
+script = ExtResource("13_hwr7m")
+path = "res://Fence/Fence.tscn"
+
+[node name="ScatterShape" type="Node3D" parent="Fence"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, -1.09209, 0)
+script = ExtResource("14_vre1q")
+shape = SubResource("Resource_h4n2c")
+
+[node name="AntiPersonnelMine" parent="." instance=ExtResource("18_l7fje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 164.692, -0.11297, -45.9416)
+Depth = 2.0
+
+[node name="FlagLocation" parent="AntiPersonnelMine" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.142503, -0.0071373)
+
+[node name="AntiPersonnelMine2" parent="." instance=ExtResource("18_l7fje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 164.829, 0, -48.1018)
+Depth = 1.0
+
+[node name="FlagLocation" parent="AntiPersonnelMine2" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0945451, 0.357624)
+
+[node name="AntiPersonnelMine3" parent="." instance=ExtResource("18_l7fje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 166.459, 0, -46.9248)
+Depth = 1.0
+
+[node name="FlagLocation" parent="AntiPersonnelMine3" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.992947, -0.11856, 0, 0.11856, 0.992947, 0, 0.0926199, 0.293053)
+
+[node name="AntiPersonnelMine4" parent="." instance=ExtResource("18_l7fje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, -48.3395)
+Depth = 3.0
+
+[node name="FlagLocation" parent="AntiPersonnelMine4" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.279004, 0)
+
+[connection signal="FalseFlag" from="Player" to="." method="UpdateFalseFlag"]
+[connection signal="BeenFlagged" from="AntiPersonnelMine" to="." method="UpdateScore"]
+[connection signal="BeenFlagged" from="AntiPersonnelMine2" to="." method="UpdateScore"]
+[connection signal="BeenFlagged" from="AntiPersonnelMine3" to="." method="UpdateScore"]
+[connection signal="BeenFlagged" from="AntiPersonnelMine4" to="." method="UpdateScore"]
+
+[editable path="AntiPersonnelMine"]
+[editable path="AntiPersonnelMine2"]
+[editable path="AntiPersonnelMine3"]
+[editable path="AntiPersonnelMine4"]

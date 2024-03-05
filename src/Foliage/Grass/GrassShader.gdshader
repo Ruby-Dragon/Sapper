@@ -20,7 +20,7 @@ void vertex() {
 	//float WindMovement = pow(VERTEX.y, 2) * normalize(texture(Waves, WorldUV)).r * 0.1;
 	
 	//sin based wind generator
-	float WindMovement = pow(VERTEX.y, 2) * (sin((WorldUV.x * Direction.x + WorldUV.y * Direction.y + TIME) * 1.0) + 1.0) * 0.12;
+	float WindMovement = pow(VERTEX.y, 2) * (sin((WorldUV.x * Direction.x + WorldUV.y * Direction.y + TIME) * 1.0) + 1.0) * 0.1;
 	
 	//debug
 	Wind = WindMovement;

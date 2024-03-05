@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://04l2321sw3w3"]
+
+[ext_resource type="Shader" path="res://Foliage/Tree_001/TreeShader.gdshader" id="1_gx7c4"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_gx7c4")
+shader_parameter/Angle = 4.0
