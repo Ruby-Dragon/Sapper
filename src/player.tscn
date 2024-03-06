@@ -60,13 +60,14 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_iqgdi")
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel", "MissionLabel")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel", "MissionLabel", "FogMesh")]
 collision_layer = 9
 collision_mask = 9
 script = ExtResource("1_sfoyg")
 MetalDetector = NodePath("detector")
 InteractLabel = NodePath("Camera/InteractLabel")
 MissionLabel = NodePath("Camera/MissionLabel")
+FogMesh = NodePath("Camera/MeshInstance3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_jdyjx")
@@ -101,6 +102,7 @@ theme_type_variation = &"MissionText"
 bbcode_enabled = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Camera"]
+visible = false
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_0q1mb")
 

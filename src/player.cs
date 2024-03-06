@@ -25,6 +25,12 @@ public partial class player : CharacterBody3D
 	[Export] 
 	private RichTextLabel MissionLabel;
 
+	[Export] 
+	private bool FogEnabled;
+
+	[Export] 
+	private MeshInstance3D FogMesh;
+	
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
 	
@@ -109,6 +115,15 @@ public partial class player : CharacterBody3D
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 
 		TheCamera = GetNode<Camera3D>("Camera");
+
+		if (FogEnabled)
+		{
+			FogMesh.Visible = true;
+		}
+		else
+		{
+			FogMesh.Visible = false;
+		}
 	}
 
 	public void Die()
