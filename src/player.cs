@@ -36,6 +36,9 @@ public partial class player : CharacterBody3D
 	
 	[Signal]
 	public delegate void FalseFlagEventHandler();
+	
+	[Signal]
+	public delegate void UnFalseFlagEventHandler();
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -139,6 +142,11 @@ public partial class player : CharacterBody3D
 	public void OnFalseFlag()
 	{
 		EmitSignal("FalseFlag");
+	}
+
+	public void OnUnFalseFlag()
+	{
+		EmitSignal("UnFalseFlag");
 	}
 
 	public void ToggleCanLeave()

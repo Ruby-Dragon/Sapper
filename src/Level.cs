@@ -38,6 +38,11 @@ public partial class Level : Node3D
 		MinesToFlag -= 1;
 	}
 
+	public void CorrectFlagRemoved()
+	{
+		MinesToFlag += 1;
+	}
+
 	public void GoToNextLevel()
 	{
 		if (MinesToFlag > 0)
@@ -64,5 +69,10 @@ public partial class Level : Node3D
 	public void UpdateFalseFlag()
 	{
 		FalseFlags += 1;
+	}
+
+	public void FalseFlagRemoved()
+	{
+		FalseFlags -= 1;
 	}
 }

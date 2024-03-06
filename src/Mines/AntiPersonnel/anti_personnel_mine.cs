@@ -11,10 +11,13 @@ public partial class anti_personnel_mine : Area3D
 
 	[Signal]
 	public delegate void BeenFlaggedEventHandler();
+	
+	[Signal]
+	public delegate void UnFlaggedEventHandler();
 
 	public bool Flagged = false;
 
-	private MeshInstance3D MineFlag;
+	private MineFlag MineFlagInstance;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -25,18 +28,24 @@ public partial class anti_personnel_mine : Area3D
 	{
 	}
 
-	public void Flag(MeshInstance3D FlagMesh, Vector3 FlagRotation)
+	public void Flag(PackedScene MineFlagScene, Vector3 FlagRotation)
 	{
-		MineFlag = new MeshInstance3D();
-		MineFlag.Mesh = FlagMesh.Mesh;
-		AddChild(MineFlag);
+		MineFlagInstance = MineFlagScene.Instantiate<MineFlag>();
+		AddChild(MineFlagInstance);
 
-		MineFlag.Position = FlagLocation.Position + new Vector3(0.0f, 0.345f, 0.0f);
-		MineFlag.Rotation = FlagRotation;
-		MineFlag.Visible = true;
+		MineFlagInstance.Position = FlagLocation.Position + new Vector3(0.0f, 0.345f, 0.0f);
+		MineFlagInstance.Rotation = FlagRotation;
+		MineFlagInstance.Visible = true;
+		MineFlagInstance.MineOwner = this;
 		Flagged = true;
 
 		EmitSignal("BeenFlagged");
+	}
+
+	public void UnFlag()
+	{
+		Flagged = false;
+		EmitSignal("UnFlagged");
 	}
 
 	public void Explode(Node3D Overlapper)

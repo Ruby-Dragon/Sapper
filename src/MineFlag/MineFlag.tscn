@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk5axh5pqfniv"]
+
+[ext_resource type="ArrayMesh" uid="uid://jfogrrurct5o" path="res://MineFlag/FlagMesh.res" id="1_qlfgt"]
+[ext_resource type="Script" path="res://MineFlag/MineFlag.cs" id="1_ywunw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dqpy0"]
+size = Vector3(0.585205, 0.778809, 0.31958)
+
+[node name="MineFlag" type="Area3D"]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("1_ywunw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qlfgt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.143677, 0.000244141, -0.00891113)
+shape = SubResource("BoxShape3D_dqpy0")

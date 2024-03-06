@@ -7,9 +7,6 @@ public partial class detector : Node3D
 	[Export]
 	public Godot.Collections.Array<MeshInstance3D> Lights;
 
-	[Export]
-	public MeshInstance3D FlagMesh;
-
 	[Export] 
 	public Node3D FlagPlacementLocation;
 
@@ -19,8 +16,16 @@ public partial class detector : Node3D
 
 	private anti_personnel_mine CurrentMine;
 
+	private MineFlag DetectedFlag;
+
+	[Export] 
+	public PackedScene MineFlagScene;
+
 	[Signal]
 	public delegate void FalseFlagEventHandler();
+	
+	[Signal]
+	public delegate void RemoveFalseFlagEventHandler();
 		
 	public override void _Ready()
 	{
@@ -33,6 +38,11 @@ public partial class detector : Node3D
 
 	public void Detected(Area3D Mine)
 	{
+		if (Mine is MineFlag)
+		{
+			DetectedFlag = (MineFlag)Mine;
+		}
+		
 		if (!(Mine is anti_personnel_mine))
 		{
 			return;
@@ -51,6 +61,11 @@ public partial class detector : Node3D
 	
 	public void EndDetected(Area3D Mine)
 	{
+		if (Mine is MineFlag)
+		{
+			DetectedFlag = null;
+		}
+		
 		if (!(Mine is anti_personnel_mine))
 		{
 			return;
@@ -89,13 +104,12 @@ public partial class detector : Node3D
 				return;
 			}
 			
-			CurrentMine.Flag(FlagMesh, GetParent<Node3D>().Rotation);
+			CurrentMine.Flag(MineFlagScene, GetParent<Node3D>().Rotation);
 			GD.Print("Flag");
 		}
 		else
 		{
-			MeshInstance3D FalseFlag = new MeshInstance3D();
-			FalseFlag.Mesh = FlagMesh.Mesh;
+			MineFlag FalseFlag = MineFlagScene.Instantiate<MineFlag>();
 			
 			GetTree().GetFirstNodeInGroup("LevelRoot").AddChild(FalseFlag);
 
@@ -111,6 +125,18 @@ public partial class detector : Node3D
 
 	public void RemoveFlag()
 	{
-		
+		if (DetectedFlag != null)
+		{
+			if (DetectedFlag.MineOwner == null)
+			{
+				EmitSignal("RemoveFalseFlag");
+			}
+			else
+			{
+				DetectedFlag.MineOwner.UnFlag();
+			}
+			
+			DetectedFlag.QueueFree();
+		}
 	}
 }
