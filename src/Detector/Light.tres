@@ -19,7 +19,7 @@ constant = 0.5
 
 [resource]
 code = "shader_type spatial;
-render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_schlick_ggx;
+render_mode blend_mix, depth_draw_always, cull_back, diffuse_lambert, specular_schlick_ggx;
 
 instance uniform float Brightness = 0;
 
@@ -28,10 +28,6 @@ instance uniform float Brightness = 0;
 void fragment() {
 // ColorConstant:2
 	vec4 n_out2p0 = vec4(0.216361, 0.104605, 0.088662, 1.000000);
-
-
-// FloatConstant:6
-	float n_out6p0 = 0.500000;
 
 
 // FloatParameter:3
@@ -48,12 +44,13 @@ void fragment() {
 
 // Output:0
 	ALBEDO = vec3(n_out2p0.xyz);
-	ALPHA = n_out6p0;
 	EMISSION = n_out4p0;
 
 
 }
 "
+graph_offset = Vector2(-287.691, -14.3538)
+modes/depth_draw = 1
 nodes/fragment/2/node = SubResource("VisualShaderNodeColorConstant_sjjuy")
 nodes/fragment/2/position = Vector2(60, 160)
 nodes/fragment/3/node = SubResource("VisualShaderNodeFloatParameter_71j7h")
@@ -64,4 +61,4 @@ nodes/fragment/5/node = SubResource("VisualShaderNodeColorConstant_14amg")
 nodes/fragment/5/position = Vector2(-140, 400)
 nodes/fragment/6/node = SubResource("VisualShaderNodeFloatConstant_iqejl")
 nodes/fragment/6/position = Vector2(60, 220)
-nodes/fragment/connections = PackedInt32Array(3, 0, 4, 0, 5, 0, 4, 1, 4, 0, 0, 5, 2, 0, 0, 0, 6, 0, 0, 1)
+nodes/fragment/connections = PackedInt32Array(3, 0, 4, 0, 5, 0, 4, 1, 4, 0, 0, 5, 2, 0, 0, 0)
