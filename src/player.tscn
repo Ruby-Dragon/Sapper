@@ -16,7 +16,7 @@ height = 1.8
 render_priority = 0
 shader = ExtResource("3_ojfs7")
 shader_parameter/density = 0.011
-shader_parameter/fog_color = Vector4(1, 1, 1, 0)
+shader_parameter/fog_color = Vector4(1, 1, 1, 0.1)
 
 [sub_resource type="QuadMesh" id="QuadMesh_0q1mb"]
 material = SubResource("ShaderMaterial_tcxdl")
