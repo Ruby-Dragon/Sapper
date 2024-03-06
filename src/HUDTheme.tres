@@ -1,6 +1,22 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://pdijop5b0yp4"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://pdijop5b0yp4"]
 
 [ext_resource type="FontFile" uid="uid://cdl1pxdb7immx" path="res://Fonts/NotoSansDisplay-VariableFont_wdth,wght.ttf" id="1_80j72"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b4mtd"]
+bg_color = Color(0.215686, 0.215686, 0.215686, 0.886275)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.592157, 0.592157, 0.592157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktvgv"]
+bg_color = Color(0.188235, 0.231373, 0.117647, 0.858824)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.384314, 0.384314, 0.384314, 1)
 
 [sub_resource type="SystemFont" id="SystemFont_ycash"]
 font_weight = 200
@@ -22,6 +38,13 @@ MissionText/colors/font_outline_color = Color(0, 0, 0, 1)
 MissionText/constants/outline_size = 1
 MissionText/font_sizes/normal_font_size = 64
 MissionText/fonts/normal_font = ExtResource("1_80j72")
+PauseMenuButton/base_type = &"Button"
+PauseMenuButton/colors/font_color = Color(1, 1, 1, 1)
+PauseMenuButton/font_sizes/font_size = 60
+PauseMenuButton/fonts/font = ExtResource("1_80j72")
+PauseMenuButton/styles/hover = SubResource("StyleBoxFlat_b4mtd")
+PauseMenuButton/styles/normal = SubResource("StyleBoxFlat_ktvgv")
 ScoreText/base_type = &"RichTextLabel"
 ScoreText/font_sizes/normal_font_size = 100
 ScoreText/fonts/normal_font = ExtResource("1_80j72")
+VBoxContainer/constants/separation = 25

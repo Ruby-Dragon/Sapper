@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://demhgiqaiflw4"]
+[gd_scene load_steps=15 format=3 uid="uid://demhgiqaiflw4"]
 
 [ext_resource type="Script" path="res://player.cs" id="1_sfoyg"]
 [ext_resource type="PackedScene" uid="uid://dk2tiah10p1rw" path="res://Detector/detector.blend" id="2_dm284"]
 [ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_o4mho"]
 [ext_resource type="Script" path="res://Detector/detector.cs" id="3_l8hgk"]
 [ext_resource type="Shader" path="res://fog.gdshader" id="3_ojfs7"]
+[ext_resource type="Script" path="res://PauseMenu.cs" id="4_dfrhy"]
 [ext_resource type="ArrayMesh" uid="uid://by52d6u5gbwra" path="res://Detector/detector_Cylinder_light.res" id="4_ret0p"]
 [ext_resource type="Material" uid="uid://dk0i5p72hkgg2" path="res://MineFlag/Main.tres" id="5_26eos"]
 
@@ -106,6 +107,46 @@ visible = false
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_0q1mb")
 
+[node name="PauseMenuOwner" type="ColorRect" parent="Camera"]
+process_mode = 3
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.756863)
+script = ExtResource("4_dfrhy")
+
+[node name="PauseMenu" type="VBoxContainer" parent="Camera/PauseMenuOwner"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -169.0
+offset_top = -540.0
+offset_right = 172.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = ExtResource("2_o4mho")
+alignment = 1
+
+[node name="Resume" type="Button" parent="Camera/PauseMenuOwner/PauseMenu"]
+layout_mode = 2
+theme_type_variation = &"PauseMenuButton"
+text = "Resume"
+
+[node name="Settings" type="Button" parent="Camera/PauseMenuOwner/PauseMenu"]
+layout_mode = 2
+theme_type_variation = &"PauseMenuButton"
+text = "Settings"
+
+[node name="Quit" type="Button" parent="Camera/PauseMenuOwner/PauseMenu"]
+layout_mode = 2
+theme_type_variation = &"PauseMenuButton"
+text = "Quit"
+
 [node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagMesh", "FlagPlacementLocation") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)
 script = ExtResource("3_l8hgk")
@@ -158,6 +199,8 @@ skeleton = NodePath("")
 [node name="FlagPlacementNode" type="Node3D" parent="detector"]
 transform = Transform3D(1, 0, -1.78814e-07, 0, 0.999998, 0, 2.23517e-07, 0, 0.999999, -0.00370905, -0.676234, -2.13391)
 
+[connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Resume" to="Camera/PauseMenuOwner" method="Resume"]
+[connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Quit" to="Camera/PauseMenuOwner" method="Quit"]
 [connection signal="FalseFlag" from="detector" to="." method="OnFalseFlag"]
 [connection signal="area_entered" from="detector/Detection" to="detector" method="Detected"]
 [connection signal="area_exited" from="detector/Detection" to="detector" method="EndDetected"]
