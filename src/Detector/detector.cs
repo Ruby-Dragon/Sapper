@@ -108,4 +108,9 @@ public partial class detector : Node3D
 			EmitSignal("FalseFlag");
 		}
 	}
+
+	public void RemoveFlag()
+	{
+		
+	}
 }

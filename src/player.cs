@@ -96,6 +96,11 @@ public partial class player : CharacterBody3D
 				GetParent<Level>().GoToNextLevel();
 			}
 		}
+		
+		if (Input.IsActionJustPressed("RemoveFlag"))
+		{
+			MetalDetector.RemoveFlag();
+		}
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
