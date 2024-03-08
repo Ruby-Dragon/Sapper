@@ -9,6 +9,9 @@ public partial class PauseMenu : ColorRect
 	[Export] 
 	private Control SettingsMenuControls;
 	
+	[Signal]
+	public delegate void UpdateSettingsEventHandler();
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -58,9 +61,9 @@ public partial class PauseMenu : ColorRect
 		SettingsMenuControls.Visible = false;
 	}
 
-	public void SDFGIToggle()
+	public void SDFGIToggle(bool Setting)
 	{
-		GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable =
-			!GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
+		GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable = Setting;
+		EmitSignal("UpdateSettings");
 	}
 }

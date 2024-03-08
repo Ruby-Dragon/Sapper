@@ -19,6 +19,12 @@ public partial class Level : Node3D
 
 	[Export] 
 	public PackedScene NextLevel;
+
+	[Export] 
+	private bool CanUseSDFGI = false;
+
+	[Export] 
+	public WorldEnvironment TheWorld;
 	public override void _Ready()
 	{
 		GetNode<SharedLevelData>("/root/SharedLevelData").LastLevel = ResourceLoader.Load<PackedScene>(this.SceneFilePath);
@@ -26,6 +32,11 @@ public partial class Level : Node3D
 		TotalMines = MinesToFlag;
 		
 		ThePlayer.ChangeMissionText(MissionText);
+		
+		if (CanUseSDFGI)
+		{
+			TheWorld.Environment.SdfgiEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
+		}
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -74,5 +85,15 @@ public partial class Level : Node3D
 	public void FalseFlagRemoved()
 	{
 		FalseFlags -= 1;
+	}
+
+	public void UpdateSettings()
+	{
+		if (CanUseSDFGI)
+		{
+			TheWorld.Environment.SdfgiEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
+			GD.Print("SDFGI is now toggled");
+		}
+		GD.Print("SDFGI is not enabled on this level");
 	}
 }

@@ -73,12 +73,15 @@ visible = false
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_0q1mb")
 
-[node name="PauseMenuOwner" type="ColorRect" parent="Camera"]
+[node name="PauseMenuOwner" type="ColorRect" parent="Camera" node_paths=PackedStringArray("PauseMenuControls", "SettingsMenuControls")]
 process_mode = 3
+visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 0.756863)
 script = ExtResource("4_dfrhy")
+PauseMenuControls = NodePath("PauseMenu")
+SettingsMenuControls = NodePath("SettingsMenu")
 
 [node name="PauseMenu" type="VBoxContainer" parent="Camera/PauseMenuOwner"]
 layout_mode = 1
@@ -113,6 +116,7 @@ theme_type_variation = &"PauseMenuButton"
 text = "Quit"
 
 [node name="SettingsMenu" type="VBoxContainer" parent="Camera/PauseMenuOwner"]
+visible = false
 layout_mode = 0
 offset_left = 622.0
 offset_right = 1383.0
@@ -123,10 +127,11 @@ alignment = 1
 [node name="SDFGI" type="CheckButton" parent="Camera/PauseMenuOwner/SettingsMenu"]
 layout_mode = 2
 theme_type_variation = &"PauseMenuButton"
+button_pressed = true
 text = "Enable SDFGI
 (Performance Impact)"
 
-[node name="Button" type="Button" parent="Camera/PauseMenuOwner/SettingsMenu"]
+[node name="ExitSettings" type="Button" parent="Camera/PauseMenuOwner/SettingsMenu"]
 layout_mode = 2
 theme_type_variation = &"PauseMenuButton"
 text = "Back"
@@ -178,9 +183,12 @@ shape = SubResource("BoxShape3D_4fpsu")
 [node name="FlagPlacementNode" type="Node3D" parent="detector"]
 transform = Transform3D(1, 0, -1.78814e-07, 0, 0.999998, 0, 2.23517e-07, 0, 0.999999, -0.00370905, -0.676234, -2.13391)
 
+[connection signal="UpdateSettings" from="Camera/PauseMenuOwner" to="." method="EmmitUpdateSettings"]
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Resume" to="Camera/PauseMenuOwner" method="Resume"]
+[connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Settings" to="Camera/PauseMenuOwner" method="Settings"]
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Quit" to="Camera/PauseMenuOwner" method="Quit"]
-[connection signal="pressed" from="Camera/PauseMenuOwner/SettingsMenu/SDFGI" to="Camera/PauseMenuOwner" method="SDFGIToggle"]
+[connection signal="toggled" from="Camera/PauseMenuOwner/SettingsMenu/SDFGI" to="Camera/PauseMenuOwner" method="SDFGIToggle"]
+[connection signal="pressed" from="Camera/PauseMenuOwner/SettingsMenu/ExitSettings" to="Camera/PauseMenuOwner" method="ExitSettings"]
 [connection signal="FalseFlag" from="detector" to="." method="OnFalseFlag"]
 [connection signal="RemoveFalseFlag" from="detector" to="." method="OnUnFalseFlag"]
 [connection signal="area_entered" from="detector/Detection" to="detector" method="Detected"]

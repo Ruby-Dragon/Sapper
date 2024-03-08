@@ -39,6 +39,9 @@ public partial class player : CharacterBody3D
 	
 	[Signal]
 	public delegate void UnFalseFlagEventHandler();
+	
+	[Signal]
+	public delegate void UpdateSettingsEventHandler();
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -168,5 +171,10 @@ public partial class player : CharacterBody3D
 	public void ChangeMissionText(String text)
 	{
 		MissionLabel.Text = text;
+	}
+
+	public void EmmitUpdateSettings()
+	{
+		EmitSignal("UpdateSettings");
 	}
 }

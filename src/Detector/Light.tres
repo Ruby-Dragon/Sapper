@@ -49,7 +49,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-287.691, -14.3538)
 modes/depth_draw = 1
 nodes/fragment/2/node = SubResource("VisualShaderNodeColorConstant_sjjuy")
 nodes/fragment/2/position = Vector2(60, 160)
