@@ -37,6 +37,9 @@ public partial class Level : Node3D
 		{
 			TheWorld.Environment.SdfgiEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
 		}
+		
+		TheWorld.Environment.SsilEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SSILEnable;
+		TheWorld.Environment.SsaoEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SSAOEnable;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -92,8 +95,9 @@ public partial class Level : Node3D
 		if (CanUseSDFGI)
 		{
 			TheWorld.Environment.SdfgiEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
-			GD.Print("SDFGI is now toggled");
 		}
-		GD.Print("SDFGI is not enabled on this level");
+		
+		TheWorld.Environment.SsilEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SSILEnable;
+		TheWorld.Environment.SsaoEnabled = GetNode<SharedLevelData>("/root/SharedLevelData").SSAOEnable;
 	}
 }

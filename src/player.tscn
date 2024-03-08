@@ -73,7 +73,7 @@ visible = false
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_0q1mb")
 
-[node name="PauseMenuOwner" type="ColorRect" parent="Camera" node_paths=PackedStringArray("PauseMenuControls", "SettingsMenuControls")]
+[node name="PauseMenuOwner" type="ColorRect" parent="Camera" node_paths=PackedStringArray("PauseMenuControls", "SettingsMenuControls", "SDFGIButton")]
 process_mode = 3
 visible = false
 offset_right = 1920.0
@@ -82,6 +82,7 @@ color = Color(0, 0, 0, 0.756863)
 script = ExtResource("4_dfrhy")
 PauseMenuControls = NodePath("PauseMenu")
 SettingsMenuControls = NodePath("SettingsMenu")
+SDFGIButton = NodePath("SettingsMenu/SDFGI")
 
 [node name="PauseMenu" type="VBoxContainer" parent="Camera/PauseMenuOwner"]
 layout_mode = 1
@@ -126,10 +127,24 @@ alignment = 1
 
 [node name="SDFGI" type="CheckButton" parent="Camera/PauseMenuOwner/SettingsMenu"]
 layout_mode = 2
+tooltip_text = "High performance impact"
 theme_type_variation = &"PauseMenuButton"
 button_pressed = true
-text = "Enable SDFGI
-(Performance Impact)"
+text = "Enable SDFGI"
+
+[node name="SSIL" type="CheckButton" parent="Camera/PauseMenuOwner/SettingsMenu"]
+layout_mode = 2
+tooltip_text = "High performance impact"
+theme_type_variation = &"PauseMenuButton"
+button_pressed = true
+text = "Enable SSIL"
+
+[node name="SSAO" type="CheckButton" parent="Camera/PauseMenuOwner/SettingsMenu"]
+layout_mode = 2
+tooltip_text = "Moderate performance impact"
+theme_type_variation = &"PauseMenuButton"
+button_pressed = true
+text = "Enable SSAO"
 
 [node name="ExitSettings" type="Button" parent="Camera/PauseMenuOwner/SettingsMenu"]
 layout_mode = 2
@@ -188,6 +203,8 @@ transform = Transform3D(1, 0, -1.78814e-07, 0, 0.999998, 0, 2.23517e-07, 0, 0.99
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Settings" to="Camera/PauseMenuOwner" method="Settings"]
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Quit" to="Camera/PauseMenuOwner" method="Quit"]
 [connection signal="toggled" from="Camera/PauseMenuOwner/SettingsMenu/SDFGI" to="Camera/PauseMenuOwner" method="SDFGIToggle"]
+[connection signal="toggled" from="Camera/PauseMenuOwner/SettingsMenu/SSIL" to="Camera/PauseMenuOwner" method="SSILToggle"]
+[connection signal="toggled" from="Camera/PauseMenuOwner/SettingsMenu/SSAO" to="Camera/PauseMenuOwner" method="SSAOToggle"]
 [connection signal="pressed" from="Camera/PauseMenuOwner/SettingsMenu/ExitSettings" to="Camera/PauseMenuOwner" method="ExitSettings"]
 [connection signal="FalseFlag" from="detector" to="." method="OnFalseFlag"]
 [connection signal="RemoveFalseFlag" from="detector" to="." method="OnUnFalseFlag"]

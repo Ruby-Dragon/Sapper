@@ -11,10 +11,14 @@ public partial class PauseMenu : ColorRect
 	
 	[Signal]
 	public delegate void UpdateSettingsEventHandler();
+
+	[Export] 
+	private CheckButton SDFGIButton;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		SDFGIButton.ButtonPressed = GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,6 +28,9 @@ public partial class PauseMenu : ColorRect
 		{
 			if (Visible)
 			{
+				PauseMenuControls.Visible = true;
+				SettingsMenuControls.Visible = false;
+				
 				Visible = false;
 				GetTree().Paused = false;
 				Input.MouseMode = Input.MouseModeEnum.Captured;
@@ -64,6 +71,18 @@ public partial class PauseMenu : ColorRect
 	public void SDFGIToggle(bool Setting)
 	{
 		GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable = Setting;
+		EmitSignal("UpdateSettings");
+	}
+	
+	public void SSILToggle(bool Setting)
+	{
+		GetNode<SharedLevelData>("/root/SharedLevelData").SSILEnable = Setting;
+		EmitSignal("UpdateSettings");
+	}
+	
+	public void SSAOToggle(bool Setting)
+	{
+		GetNode<SharedLevelData>("/root/SharedLevelData").SSAOEnable = Setting;
 		EmitSignal("UpdateSettings");
 	}
 }

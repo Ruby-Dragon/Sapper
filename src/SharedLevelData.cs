@@ -12,6 +12,8 @@ public partial class SharedLevelData : Node
 	public PackedScene FailedScene;
 
 	public bool SDFGIEnable = true;
+	public bool SSILEnable = true;
+	public bool SSAOEnable = true;
 
 	public int LevelScore = 0;
 	
