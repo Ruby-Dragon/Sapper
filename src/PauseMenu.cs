@@ -3,6 +3,12 @@ using System;
 
 public partial class PauseMenu : ColorRect
 {
+	[Export] 
+	private Control PauseMenuControls;
+	
+	[Export] 
+	private Control SettingsMenuControls;
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -38,5 +44,23 @@ public partial class PauseMenu : ColorRect
 	public void Quit()
 	{
 		GetTree().Quit();
+	}
+
+	public void Settings()
+	{
+		PauseMenuControls.Visible = false;
+		SettingsMenuControls.Visible = true;
+	}
+
+	public void ExitSettings()
+	{
+		PauseMenuControls.Visible = true;
+		SettingsMenuControls.Visible = false;
+	}
+
+	public void SDFGIToggle()
+	{
+		GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable =
+			!GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
 	}
 }

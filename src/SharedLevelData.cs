@@ -11,6 +11,8 @@ public partial class SharedLevelData : Node
 	public PackedScene ScoreScene;
 	public PackedScene FailedScene;
 
+	public bool SDFGIEnable = true;
+
 	public int LevelScore = 0;
 	
 	// Called when the node enters the scene tree for the first time.

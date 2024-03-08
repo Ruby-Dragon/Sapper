@@ -75,7 +75,6 @@ mesh = SubResource("QuadMesh_0q1mb")
 
 [node name="PauseMenuOwner" type="ColorRect" parent="Camera"]
 process_mode = 3
-visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 0.756863)
@@ -112,6 +111,25 @@ text = "Settings"
 layout_mode = 2
 theme_type_variation = &"PauseMenuButton"
 text = "Quit"
+
+[node name="SettingsMenu" type="VBoxContainer" parent="Camera/PauseMenuOwner"]
+layout_mode = 0
+offset_left = 622.0
+offset_right = 1383.0
+offset_bottom = 1081.0
+theme = ExtResource("2_o4mho")
+alignment = 1
+
+[node name="SDFGI" type="CheckButton" parent="Camera/PauseMenuOwner/SettingsMenu"]
+layout_mode = 2
+theme_type_variation = &"PauseMenuButton"
+text = "Enable SDFGI
+(Performance Impact)"
+
+[node name="Button" type="Button" parent="Camera/PauseMenuOwner/SettingsMenu"]
+layout_mode = 2
+theme_type_variation = &"PauseMenuButton"
+text = "Back"
 
 [node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagPlacementLocation") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)
@@ -162,6 +180,7 @@ transform = Transform3D(1, 0, -1.78814e-07, 0, 0.999998, 0, 2.23517e-07, 0, 0.99
 
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Resume" to="Camera/PauseMenuOwner" method="Resume"]
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Quit" to="Camera/PauseMenuOwner" method="Quit"]
+[connection signal="pressed" from="Camera/PauseMenuOwner/SettingsMenu/SDFGI" to="Camera/PauseMenuOwner" method="SDFGIToggle"]
 [connection signal="FalseFlag" from="detector" to="." method="OnFalseFlag"]
 [connection signal="RemoveFalseFlag" from="detector" to="." method="OnUnFalseFlag"]
 [connection signal="area_entered" from="detector/Detection" to="detector" method="Detected"]

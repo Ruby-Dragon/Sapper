@@ -47,4 +47,5 @@ PauseMenuButton/styles/normal = SubResource("StyleBoxFlat_ktvgv")
 ScoreText/base_type = &"RichTextLabel"
 ScoreText/font_sizes/normal_font_size = 100
 ScoreText/fonts/normal_font = ExtResource("1_80j72")
+ToggleButton/base_type = &"CheckButton"
 VBoxContainer/constants/separation = 25
