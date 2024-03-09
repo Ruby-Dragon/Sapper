@@ -42,6 +42,18 @@ public partial class player : CharacterBody3D
 	
 	[Signal]
 	public delegate void UpdateSettingsEventHandler();
+	
+	[Signal]
+	public delegate void PlaceFlagEventHandler();
+	
+	[Signal]
+	public delegate void DetectEventHandler();
+	
+	[Signal]
+	public delegate void RemoveFlagEventHandler();
+	
+	[Signal]
+	public delegate void FlagMineEventHandler();
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -176,5 +188,25 @@ public partial class player : CharacterBody3D
 	public void EmmitUpdateSettings()
 	{
 		EmitSignal("UpdateSettings");
+	}
+
+	public void OnFlag()
+	{
+		EmitSignal("PlaceFlag");
+	}
+	
+	public void OnDetect()
+	{
+		EmitSignal("Detect");
+	}
+	
+	public void OnRemoveFlag()
+	{
+		EmitSignal("RemoveFlag");
+	}
+	
+	public void OnFlagMine()
+	{
+		EmitSignal("FlagMine");
 	}
 }

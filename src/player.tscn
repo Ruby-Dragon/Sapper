@@ -151,12 +151,13 @@ layout_mode = 2
 theme_type_variation = &"PauseMenuButton"
 text = "Back"
 
-[node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagPlacementLocation") instance=ExtResource("2_dm284")]
+[node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagPlacementLocation", "ThePlayer") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)
 script = ExtResource("3_l8hgk")
 Lights = [NodePath("light_1"), NodePath("light_2"), NodePath("light_3"), NodePath("light_4"), NodePath("light_5"), NodePath("light_6"), NodePath("light_7")]
 FlagPlacementLocation = NodePath("FlagPlacementNode")
 MineFlagScene = ExtResource("7_ch2mt")
+ThePlayer = NodePath("..")
 
 [node name="light_1" type="MeshInstance3D" parent="detector"]
 transform = Transform3D(0.0399999, 3.25963e-09, -2.77556e-17, 0, -1.74845e-09, -0.04, -1.86265e-09, 0.0399999, -1.74846e-09, -0.0353439, 0.82579, 0.570819)

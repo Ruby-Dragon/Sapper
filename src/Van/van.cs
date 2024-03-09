@@ -4,6 +4,9 @@ using System;
 public partial class van : StaticBody3D
 {
 	// Called when the node enters the scene tree for the first time.
+	[Export] 
+	public bool Enabled = true;
+	
 	public override void _Ready()
 	{
 	}
@@ -15,6 +18,11 @@ public partial class van : StaticBody3D
 
 	public void PlayerNearby(Node3D Player)
 	{
+		if (!Enabled)
+		{
+			return;
+		}
+		
 		if (Player is player)
 		{
 			((player) Player).ToggleCanLeave();
@@ -23,6 +31,11 @@ public partial class van : StaticBody3D
 	
 	public void PlayerLeft(Node3D Player)
 	{
+		if (!Enabled)
+		{
+			return;
+		}
+		
 		if (Player is player)
 		{
 			((player) Player).ToggleCanLeave();

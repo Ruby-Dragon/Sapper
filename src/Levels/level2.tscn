@@ -11303,7 +11303,7 @@ script = ExtResource("24_j6g52")
 root_octree_node = SubResource("Resource_vjuno")
 LOD_variants = Array[ExtResource("22_hrv84")]([SubResource("Resource_1xhij")])
 LOD_max_distance = 9.99
-LOD_kill_distance = 19.99
+LOD_kill_distance = 21.0
 metadata/class = "MMIOctreeManager"
 
 [sub_resource type="Resource" id="Resource_ush75"]

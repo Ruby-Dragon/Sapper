@@ -21,6 +21,9 @@ public partial class detector : Node3D
 	[Export] 
 	public PackedScene MineFlagScene;
 
+	[Export] 
+	private player ThePlayer;
+
 	[Signal]
 	public delegate void FalseFlagEventHandler();
 	
@@ -41,6 +44,7 @@ public partial class detector : Node3D
 		if (Mine is MineFlag)
 		{
 			DetectedFlag = (MineFlag)Mine;
+			return;
 		}
 		
 		if (!(Mine is anti_personnel_mine))
@@ -57,6 +61,8 @@ public partial class detector : Node3D
 		CurrentMine = ((anti_personnel_mine) Mine);
 		
 		SetLights();
+		
+		ThePlayer.OnDetect();
 	}
 	
 	public void EndDetected(Area3D Mine)
@@ -64,6 +70,7 @@ public partial class detector : Node3D
 		if (Mine is MineFlag)
 		{
 			DetectedFlag = null;
+			return;
 		}
 		
 		if (!(Mine is anti_personnel_mine))
@@ -106,6 +113,7 @@ public partial class detector : Node3D
 			
 			CurrentMine.Flag(MineFlagScene, GetParent<Node3D>().Rotation);
 			GD.Print("Flag");
+			ThePlayer.OnFlagMine();
 		}
 		else
 		{
@@ -121,6 +129,8 @@ public partial class detector : Node3D
 
 			EmitSignal("FalseFlag");
 		}
+		
+		ThePlayer.OnFlag();
 	}
 
 	public void RemoveFlag()
@@ -135,6 +145,8 @@ public partial class detector : Node3D
 			{
 				DetectedFlag.MineOwner.UnFlag();
 			}
+
+			ThePlayer.OnRemoveFlag();
 			
 			DetectedFlag.QueueFree();
 		}
