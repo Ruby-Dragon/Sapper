@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://d13ls4vas8q07"]
 
 [ext_resource type="Script" path="res://Levels/MainMenu.cs" id="1_ow6fm"]
-[ext_resource type="PackedScene" uid="uid://c3frs0muo08qx" path="res://dev.tscn" id="2_m0523"]
+[ext_resource type="PackedScene" uid="uid://ii37fsxehx8p" path="res://Levels/Tutorial.tscn" id="2_e6u7o"]
 [ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_sfb48"]
 [ext_resource type="FontFile" uid="uid://cdl1pxdb7immx" path="res://Fonts/NotoSansDisplay-VariableFont_wdth,wght.ttf" id="2_tfgq0"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_ow6fm")
-FirstLevel = ExtResource("2_m0523")
+FirstLevel = ExtResource("2_e6u7o")
 
 [node name="Title" type="Label" parent="."]
 offset_left = 29.0
