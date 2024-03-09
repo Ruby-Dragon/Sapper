@@ -14,11 +14,19 @@ public partial class PauseMenu : ColorRect
 
 	[Export] 
 	private CheckButton SDFGIButton;
+
+	[Export] 
+	private CheckButton SSILButton;
+	
+	[Export] 
+	private CheckButton SSAOButton;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		SDFGIButton.ButtonPressed = GetNode<SharedLevelData>("/root/SharedLevelData").SDFGIEnable;
+		SSILButton.ButtonPressed = GetNode<SharedLevelData>("/root/SharedLevelData").SSILEnable;
+		SSAOButton.ButtonPressed = GetNode<SharedLevelData>("/root/SharedLevelData").SSAOEnable;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

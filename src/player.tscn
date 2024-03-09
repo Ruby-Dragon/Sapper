@@ -73,7 +73,7 @@ visible = false
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_0q1mb")
 
-[node name="PauseMenuOwner" type="ColorRect" parent="Camera" node_paths=PackedStringArray("PauseMenuControls", "SettingsMenuControls", "SDFGIButton")]
+[node name="PauseMenuOwner" type="ColorRect" parent="Camera" node_paths=PackedStringArray("PauseMenuControls", "SettingsMenuControls", "SDFGIButton", "SSILButton", "SSAOButton")]
 process_mode = 3
 visible = false
 offset_right = 1920.0
@@ -83,6 +83,8 @@ script = ExtResource("4_dfrhy")
 PauseMenuControls = NodePath("PauseMenu")
 SettingsMenuControls = NodePath("SettingsMenu")
 SDFGIButton = NodePath("SettingsMenu/SDFGI")
+SSILButton = NodePath("SettingsMenu/SSIL")
+SSAOButton = NodePath("SettingsMenu/SSAO")
 
 [node name="PauseMenu" type="VBoxContainer" parent="Camera/PauseMenuOwner"]
 layout_mode = 1
