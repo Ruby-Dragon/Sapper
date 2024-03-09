@@ -8,6 +8,7 @@ public partial class MainMenu : Node2D
 	private PackedScene FirstLevel;
 	public override void _Ready()
 	{
+		Input.MouseMode = Input.MouseModeEnum.Confined;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

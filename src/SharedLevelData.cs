@@ -10,6 +10,7 @@ public partial class SharedLevelData : Node
 	public PackedScene DeathScene;
 	public PackedScene ScoreScene;
 	public PackedScene FailedScene;
+	public PackedScene MainMenuScene;
 
 	public bool SDFGIEnable = true;
 	public bool SSILEnable = true;
@@ -23,6 +24,7 @@ public partial class SharedLevelData : Node
 		DeathScene = ResourceLoader.Load<PackedScene>("res://Levels/Death.tscn");
 		ScoreScene = ResourceLoader.Load<PackedScene>("res://Levels/Score.tscn");
 		FailedScene = ResourceLoader.Load<PackedScene>("res://Levels/Failure.tscn");
+		MainMenuScene = ResourceLoader.Load<PackedScene>("res://Levels/MainMenu.tscn");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

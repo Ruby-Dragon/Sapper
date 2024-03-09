@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm8tyvie5flnq"]
+
+[ext_resource type="Script" path="res://Levels/TheEnd.cs" id="1_wrvru"]
+[ext_resource type="FontFile" uid="uid://cdl1pxdb7immx" path="res://Fonts/NotoSansDisplay-VariableFont_wdth,wght.ttf" id="2_1kxqe"]
+[ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="3_novd4"]
+
+[node name="TheEnd" type="Node2D"]
+script = ExtResource("1_wrvru")
+
+[node name="EndText" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 374.0
+offset_right = 1921.0
+offset_bottom = 511.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2_1kxqe")
+theme_override_font_sizes/font_size = 100
+text = "You did it. Hooray!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Credit" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 678.0
+offset_right = 1918.0
+offset_bottom = 815.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2_1kxqe")
+theme_override_font_sizes/font_size = 75
+text = "Created by: Ruby-Dragon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 40.0
+offset_right = 1922.0
+offset_bottom = 313.0
+theme_override_colors/font_color = Color(0.466667, 0.54902, 0.462745, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2_1kxqe")
+theme_override_font_sizes/font_size = 200
+text = "Sapper"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 812.0
+offset_top = 902.0
+offset_right = 1109.0
+offset_bottom = 987.0
+theme = ExtResource("3_novd4")
+theme_type_variation = &"PauseMenuButton"
+text = "Menu"
+
+[connection signal="pressed" from="Quit" to="." method="Quit"]
