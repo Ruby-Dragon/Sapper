@@ -85,7 +85,7 @@ mesh = ExtResource("16_wg4hn")
 cast_shadow = 1
 metadata/class = "Greenhouse_LODVariant"
 
-[sub_resource type="Resource" id="Resource_lgh7o"]
+[sub_resource type="Resource" id="Resource_uxl8m"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -106,7 +106,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D31"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gntmj"]
+[sub_resource type="Resource" id="Resource_3cch0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -127,7 +127,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D64"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_tv7g5"]
+[sub_resource type="Resource" id="Resource_67cqx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -144,11 +144,11 @@ extent = 16.0
 bounds = AABB(-79, -11, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D68"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3e6fs"]
+[sub_resource type="Resource" id="Resource_ao5ic"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -169,7 +169,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D69"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_5x8vu"]
+[sub_resource type="Resource" id="Resource_vkfwn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -186,11 +186,11 @@ extent = 16.0
 bounds = AABB(-47, -43, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D70"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_q8ljk"]
+[sub_resource type="Resource" id="Resource_lwy28"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -207,11 +207,11 @@ extent = 16.0
 bounds = AABB(-47, -43, -15, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D71"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_en3qf"]
+[sub_resource type="Resource" id="Resource_ev1uq"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -228,11 +228,11 @@ extent = 16.0
 bounds = AABB(-47, -11, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D72"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ejg60"]
+[sub_resource type="Resource" id="Resource_ftty5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -253,7 +253,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D60"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_p4k7b"]
+[sub_resource type="Resource" id="Resource_dwdae"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -274,7 +274,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D74"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0ymh2"]
+[sub_resource type="Resource" id="Resource_4p5q1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -295,7 +295,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D75"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jqfwi"]
+[sub_resource type="Resource" id="Resource_fhg7d"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -316,7 +316,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D76"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7b7fi"]
+[sub_resource type="Resource" id="Resource_0hiec"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -337,7 +337,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D73"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_y6yip"]
+[sub_resource type="Resource" id="Resource_r2xi0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -358,7 +358,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D81"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xd2no"]
+[sub_resource type="Resource" id="Resource_flwxd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -375,11 +375,11 @@ extent = 4.0
 bounds = AABB(-31, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D82"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vs88u"]
+[sub_resource type="Resource" id="Resource_li800"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -400,7 +400,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D83"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4uhig"]
+[sub_resource type="Resource" id="Resource_xhmhy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -417,11 +417,11 @@ extent = 4.0
 bounds = AABB(-23, -11, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D84"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0p00j"]
+[sub_resource type="Resource" id="Resource_6leki"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -438,11 +438,11 @@ extent = 4.0
 bounds = AABB(-23, -11, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D85"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rstdm"]
+[sub_resource type="Resource" id="Resource_276e8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -459,11 +459,11 @@ extent = 4.0
 bounds = AABB(-23, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D86"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_fhpqk"]
+[sub_resource type="Resource" id="Resource_g3gra"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -484,7 +484,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D77"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_64ouh"]
+[sub_resource type="Resource" id="Resource_lu4uu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -505,7 +505,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D88"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_hl5td"]
+[sub_resource type="Resource" id="Resource_rtpap"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -526,7 +526,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D89"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gg7ng"]
+[sub_resource type="Resource" id="Resource_dp710"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -547,7 +547,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D90"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_hjxcg"]
+[sub_resource type="Resource" id="Resource_g7eyo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -568,7 +568,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D91"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uw3x1"]
+[sub_resource type="Resource" id="Resource_8l1fu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -589,7 +589,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D92"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_owrvd"]
+[sub_resource type="Resource" id="Resource_yejij"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -610,7 +610,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D93"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kuka5"]
+[sub_resource type="Resource" id="Resource_0cjvr"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -631,14 +631,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D94"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xpxa4"]
+[sub_resource type="Resource" id="Resource_2tx56"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_fhpqk"), SubResource("Resource_64ouh"), SubResource("Resource_hl5td"), SubResource("Resource_gg7ng"), SubResource("Resource_hjxcg"), SubResource("Resource_uw3x1"), SubResource("Resource_owrvd"), SubResource("Resource_kuka5")]
+child_nodes = [SubResource("Resource_g3gra"), SubResource("Resource_lu4uu"), SubResource("Resource_rtpap"), SubResource("Resource_dp710"), SubResource("Resource_g7eyo"), SubResource("Resource_8l1fu"), SubResource("Resource_yejij"), SubResource("Resource_0cjvr")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -648,18 +648,18 @@ extent = 4.0
 bounds = AABB(-23, -3, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_du1og"]
+[sub_resource type="Resource" id="Resource_luw6f"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_7b7fi"), SubResource("Resource_y6yip"), SubResource("Resource_xd2no"), SubResource("Resource_vs88u"), SubResource("Resource_4uhig"), SubResource("Resource_0p00j"), SubResource("Resource_rstdm"), SubResource("Resource_xpxa4")]
+child_nodes = [SubResource("Resource_0hiec"), SubResource("Resource_r2xi0"), SubResource("Resource_flwxd"), SubResource("Resource_li800"), SubResource("Resource_xhmhy"), SubResource("Resource_6leki"), SubResource("Resource_276e8"), SubResource("Resource_2tx56")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 4
@@ -669,11 +669,11 @@ extent = 8.0
 bounds = AABB(-31, -11, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ugvoi"]
+[sub_resource type="Resource" id="Resource_im07w"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -694,7 +694,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D27"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qlgxc"]
+[sub_resource type="Resource" id="Resource_gv23v"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -715,7 +715,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D200"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uu0o0"]
+[sub_resource type="Resource" id="Resource_cn1mw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -736,7 +736,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D280"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_pve0p"]
+[sub_resource type="Resource" id="Resource_1nilr"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -757,7 +757,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D291"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_fy35c"]
+[sub_resource type="Resource" id="Resource_odxoy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -778,7 +778,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D292"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_hqctd"]
+[sub_resource type="Resource" id="Resource_hrfml"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -799,7 +799,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D293"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_n7ndh"]
+[sub_resource type="Resource" id="Resource_5t8bh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -820,7 +820,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D294"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nayjf"]
+[sub_resource type="Resource" id="Resource_0ec3k"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -841,7 +841,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D295"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_61slc"]
+[sub_resource type="Resource" id="Resource_boau4"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -862,7 +862,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D296"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2x1e3"]
+[sub_resource type="Resource" id="Resource_l4h3m"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -883,14 +883,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D297"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_h06nk"]
+[sub_resource type="Resource" id="Resource_5nryl"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_uu0o0"), SubResource("Resource_pve0p"), SubResource("Resource_fy35c"), SubResource("Resource_hqctd"), SubResource("Resource_n7ndh"), SubResource("Resource_nayjf"), SubResource("Resource_61slc"), SubResource("Resource_2x1e3")]
+child_nodes = [SubResource("Resource_cn1mw"), SubResource("Resource_1nilr"), SubResource("Resource_odxoy"), SubResource("Resource_hrfml"), SubResource("Resource_5t8bh"), SubResource("Resource_0ec3k"), SubResource("Resource_boau4"), SubResource("Resource_l4h3m")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -904,7 +904,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gajm3"]
+[sub_resource type="Resource" id="Resource_80hw1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -925,7 +925,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D65"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8mpfe"]
+[sub_resource type="Resource" id="Resource_ln161"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -946,7 +946,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D249"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_f785q"]
+[sub_resource type="Resource" id="Resource_hldjw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -967,7 +967,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D250"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_f17fu"]
+[sub_resource type="Resource" id="Resource_td5oo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -988,7 +988,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D251"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qyrk6"]
+[sub_resource type="Resource" id="Resource_mgja5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1009,7 +1009,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D252"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_eceyj"]
+[sub_resource type="Resource" id="Resource_vl37o"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1030,7 +1030,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D253"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_y6hp1"]
+[sub_resource type="Resource" id="Resource_ke2x2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1051,7 +1051,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D254"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_64xfi"]
+[sub_resource type="Resource" id="Resource_im3ph"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1072,14 +1072,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D255"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rg0dp"]
+[sub_resource type="Resource" id="Resource_y252g"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_gajm3"), SubResource("Resource_8mpfe"), SubResource("Resource_f785q"), SubResource("Resource_f17fu"), SubResource("Resource_qyrk6"), SubResource("Resource_eceyj"), SubResource("Resource_y6hp1"), SubResource("Resource_64xfi")]
+child_nodes = [SubResource("Resource_80hw1"), SubResource("Resource_ln161"), SubResource("Resource_hldjw"), SubResource("Resource_td5oo"), SubResource("Resource_mgja5"), SubResource("Resource_vl37o"), SubResource("Resource_ke2x2"), SubResource("Resource_im3ph")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -1093,7 +1093,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_dl0by"]
+[sub_resource type="Resource" id="Resource_me542"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1114,7 +1114,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D203"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rh3pv"]
+[sub_resource type="Resource" id="Resource_770gu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1135,7 +1135,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D204"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ek7bg"]
+[sub_resource type="Resource" id="Resource_pvmkn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1156,7 +1156,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D202"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_yktqx"]
+[sub_resource type="Resource" id="Resource_q8xgu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1177,7 +1177,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D256"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_g4k64"]
+[sub_resource type="Resource" id="Resource_ufkb8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1198,7 +1198,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D257"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_l2ya5"]
+[sub_resource type="Resource" id="Resource_fidq8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1219,7 +1219,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D258"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0sd5a"]
+[sub_resource type="Resource" id="Resource_w7wrp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1240,7 +1240,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D259"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jynw3"]
+[sub_resource type="Resource" id="Resource_kssp5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1261,7 +1261,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D260"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_b0lkc"]
+[sub_resource type="Resource" id="Resource_naj8m"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1282,7 +1282,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D261"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_em2xw"]
+[sub_resource type="Resource" id="Resource_5liuf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1303,14 +1303,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D262"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mvh6h"]
+[sub_resource type="Resource" id="Resource_x34e4"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ek7bg"), SubResource("Resource_yktqx"), SubResource("Resource_g4k64"), SubResource("Resource_l2ya5"), SubResource("Resource_0sd5a"), SubResource("Resource_jynw3"), SubResource("Resource_b0lkc"), SubResource("Resource_em2xw")]
+child_nodes = [SubResource("Resource_pvmkn"), SubResource("Resource_q8xgu"), SubResource("Resource_ufkb8"), SubResource("Resource_fidq8"), SubResource("Resource_w7wrp"), SubResource("Resource_kssp5"), SubResource("Resource_naj8m"), SubResource("Resource_5liuf")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -1324,7 +1324,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wfyss"]
+[sub_resource type="Resource" id="Resource_13qe3"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1345,7 +1345,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D205"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kbh42"]
+[sub_resource type="Resource" id="Resource_htt3o"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1366,7 +1366,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D263"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_n66c6"]
+[sub_resource type="Resource" id="Resource_t2rct"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1387,7 +1387,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D264"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ivup1"]
+[sub_resource type="Resource" id="Resource_pitqh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1408,7 +1408,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D265"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_s1xkh"]
+[sub_resource type="Resource" id="Resource_ku72o"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1429,7 +1429,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D266"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6yys0"]
+[sub_resource type="Resource" id="Resource_cevsl"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1450,7 +1450,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D267"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_cc4h3"]
+[sub_resource type="Resource" id="Resource_dlebv"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1471,7 +1471,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D268"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_us14e"]
+[sub_resource type="Resource" id="Resource_lp8kn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1492,14 +1492,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D269"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_o3k1g"]
+[sub_resource type="Resource" id="Resource_hha3f"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_wfyss"), SubResource("Resource_kbh42"), SubResource("Resource_n66c6"), SubResource("Resource_ivup1"), SubResource("Resource_s1xkh"), SubResource("Resource_6yys0"), SubResource("Resource_cc4h3"), SubResource("Resource_us14e")]
+child_nodes = [SubResource("Resource_13qe3"), SubResource("Resource_htt3o"), SubResource("Resource_t2rct"), SubResource("Resource_pitqh"), SubResource("Resource_ku72o"), SubResource("Resource_cevsl"), SubResource("Resource_dlebv"), SubResource("Resource_lp8kn")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -1513,14 +1513,14 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7mpfo"]
+[sub_resource type="Resource" id="Resource_lyr0c"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ugvoi"), SubResource("Resource_qlgxc"), SubResource("Resource_h06nk"), SubResource("Resource_rg0dp"), SubResource("Resource_dl0by"), SubResource("Resource_rh3pv"), SubResource("Resource_mvh6h"), SubResource("Resource_o3k1g")]
+child_nodes = [SubResource("Resource_im07w"), SubResource("Resource_gv23v"), SubResource("Resource_5nryl"), SubResource("Resource_y252g"), SubResource("Resource_me542"), SubResource("Resource_770gu"), SubResource("Resource_x34e4"), SubResource("Resource_hha3f")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 5
@@ -1530,11 +1530,11 @@ extent = 8.0
 bounds = AABB(-31, -11, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_cowmv"]
+[sub_resource type="Resource" id="Resource_5wxyh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1551,11 +1551,11 @@ extent = 8.0
 bounds = AABB(-31, 5, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D79"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nf26d"]
+[sub_resource type="Resource" id="Resource_k3r1q"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1572,18 +1572,18 @@ extent = 8.0
 bounds = AABB(-31, 5, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D80"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wh8tg"]
+[sub_resource type="Resource" id="Resource_jaw0l"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ejg60"), SubResource("Resource_p4k7b"), SubResource("Resource_0ymh2"), SubResource("Resource_jqfwi"), SubResource("Resource_du1og"), SubResource("Resource_7mpfo"), SubResource("Resource_cowmv"), SubResource("Resource_nf26d")]
+child_nodes = [SubResource("Resource_ftty5"), SubResource("Resource_dwdae"), SubResource("Resource_4p5q1"), SubResource("Resource_fhg7d"), SubResource("Resource_luw6f"), SubResource("Resource_lyr0c"), SubResource("Resource_5wxyh"), SubResource("Resource_k3r1q")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -1593,18 +1593,18 @@ extent = 16.0
 bounds = AABB(-47, -11, -15, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vh737"]
+[sub_resource type="Resource" id="Resource_ol2y6"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_lgh7o"), SubResource("Resource_gntmj"), SubResource("Resource_tv7g5"), SubResource("Resource_3e6fs"), SubResource("Resource_5x8vu"), SubResource("Resource_q8ljk"), SubResource("Resource_en3qf"), SubResource("Resource_wh8tg")]
+child_nodes = [SubResource("Resource_uxl8m"), SubResource("Resource_3cch0"), SubResource("Resource_67cqx"), SubResource("Resource_ao5ic"), SubResource("Resource_vkfwn"), SubResource("Resource_lwy28"), SubResource("Resource_ev1uq"), SubResource("Resource_jaw0l")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 0
@@ -1614,11 +1614,11 @@ extent = 32.0
 bounds = AABB(-79, -43, -47, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_61gxx"]
+[sub_resource type="Resource" id="Resource_qhfbe"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1639,7 +1639,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D206"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wkkni"]
+[sub_resource type="Resource" id="Resource_vmcnx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1660,7 +1660,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D270"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7m2th"]
+[sub_resource type="Resource" id="Resource_3rs08"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1681,7 +1681,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D271"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_w4axp"]
+[sub_resource type="Resource" id="Resource_dbrpl"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1702,7 +1702,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D272"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_eqqyl"]
+[sub_resource type="Resource" id="Resource_2noi0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1723,7 +1723,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D273"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ddxp3"]
+[sub_resource type="Resource" id="Resource_w3a8u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1744,7 +1744,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D274"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ttsu4"]
+[sub_resource type="Resource" id="Resource_1dhqd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1765,7 +1765,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D61"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rol70"]
+[sub_resource type="Resource" id="Resource_iccvi"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1786,7 +1786,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D277"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ruw60"]
+[sub_resource type="Resource" id="Resource_54bo0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1807,7 +1807,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D278"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_26hyp"]
+[sub_resource type="Resource" id="Resource_k8pbh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1828,7 +1828,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D279"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_abb0u"]
+[sub_resource type="Resource" id="Resource_sip20"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1849,7 +1849,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D275"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uwmye"]
+[sub_resource type="Resource" id="Resource_sirar"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1870,7 +1870,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D284"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nxw0o"]
+[sub_resource type="Resource" id="Resource_jjyuv"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1891,7 +1891,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D285"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4ttog"]
+[sub_resource type="Resource" id="Resource_4wu8c"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1912,7 +1912,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D286"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8vtcm"]
+[sub_resource type="Resource" id="Resource_1m5ei"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1933,7 +1933,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D287"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uvmab"]
+[sub_resource type="Resource" id="Resource_vt2lt"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1954,7 +1954,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D288"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_x4cva"]
+[sub_resource type="Resource" id="Resource_horiw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1975,7 +1975,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D289"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1muiw"]
+[sub_resource type="Resource" id="Resource_7jiam"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -1996,14 +1996,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D290"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_a711k"]
+[sub_resource type="Resource" id="Resource_l4dbq"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_abb0u"), SubResource("Resource_uwmye"), SubResource("Resource_nxw0o"), SubResource("Resource_4ttog"), SubResource("Resource_8vtcm"), SubResource("Resource_uvmab"), SubResource("Resource_x4cva"), SubResource("Resource_1muiw")]
+child_nodes = [SubResource("Resource_sip20"), SubResource("Resource_sirar"), SubResource("Resource_jjyuv"), SubResource("Resource_4wu8c"), SubResource("Resource_1m5ei"), SubResource("Resource_vt2lt"), SubResource("Resource_horiw"), SubResource("Resource_7jiam")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 4
@@ -2017,7 +2017,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kbkxi"]
+[sub_resource type="Resource" id="Resource_ki12c"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2038,7 +2038,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D281"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_imapq"]
+[sub_resource type="Resource" id="Resource_kfgck"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2059,7 +2059,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D282"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3q7wb"]
+[sub_resource type="Resource" id="Resource_f5v5u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2080,14 +2080,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D283"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_n3ok7"]
+[sub_resource type="Resource" id="Resource_eb6fs"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ttsu4"), SubResource("Resource_rol70"), SubResource("Resource_ruw60"), SubResource("Resource_26hyp"), SubResource("Resource_a711k"), SubResource("Resource_kbkxi"), SubResource("Resource_imapq"), SubResource("Resource_3q7wb")]
+child_nodes = [SubResource("Resource_1dhqd"), SubResource("Resource_iccvi"), SubResource("Resource_54bo0"), SubResource("Resource_k8pbh"), SubResource("Resource_l4dbq"), SubResource("Resource_ki12c"), SubResource("Resource_kfgck"), SubResource("Resource_f5v5u")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -2101,7 +2101,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_snxlr"]
+[sub_resource type="Resource" id="Resource_w4vvs"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2122,14 +2122,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D276"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_54g6d"]
+[sub_resource type="Resource" id="Resource_hpov0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_61gxx"), SubResource("Resource_wkkni"), SubResource("Resource_7m2th"), SubResource("Resource_w4axp"), SubResource("Resource_eqqyl"), SubResource("Resource_ddxp3"), SubResource("Resource_n3ok7"), SubResource("Resource_snxlr")]
+child_nodes = [SubResource("Resource_qhfbe"), SubResource("Resource_vmcnx"), SubResource("Resource_3rs08"), SubResource("Resource_dbrpl"), SubResource("Resource_2noi0"), SubResource("Resource_w3a8u"), SubResource("Resource_eb6fs"), SubResource("Resource_w4vvs")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 1
@@ -2139,11 +2139,11 @@ extent = 32.0
 bounds = AABB(-79, -43, 17, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kf63a"]
+[sub_resource type="Resource" id="Resource_3k23h"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2160,11 +2160,11 @@ extent = 32.0
 bounds = AABB(-79, 21, -47, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D62"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_p8tmf"]
+[sub_resource type="Resource" id="Resource_jmms0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2181,11 +2181,11 @@ extent = 32.0
 bounds = AABB(-79, 21, 17, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D63"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_y266m"]
+[sub_resource type="Resource" id="Resource_n1weo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2202,11 +2202,11 @@ extent = 16.0
 bounds = AABB(-15, -43, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D39"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4d6vh"]
+[sub_resource type="Resource" id="Resource_bk1t1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2223,11 +2223,11 @@ extent = 16.0
 bounds = AABB(-15, -43, -15, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D40"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ljb3d"]
+[sub_resource type="Resource" id="Resource_wgg6k"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2244,11 +2244,11 @@ extent = 16.0
 bounds = AABB(-15, -11, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D41"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1g44m"]
+[sub_resource type="Resource" id="Resource_r7yvw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2265,11 +2265,11 @@ extent = 4.0
 bounds = AABB(-15, -11, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D16"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7tygb"]
+[sub_resource type="Resource" id="Resource_p6uoe"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2286,11 +2286,11 @@ extent = 4.0
 bounds = AABB(-15, -11, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D19"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_bgcc8"]
+[sub_resource type="Resource" id="Resource_v24vd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2307,11 +2307,11 @@ extent = 2.0
 bounds = AABB(-15, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D24"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_j85va"]
+[sub_resource type="Resource" id="Resource_xj3he"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2328,11 +2328,11 @@ extent = 2.0
 bounds = AABB(-15, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D179"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_h2tfl"]
+[sub_resource type="Resource" id="Resource_epikd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2349,11 +2349,11 @@ extent = 2.0
 bounds = AABB(-15, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D180"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_b6avt"]
+[sub_resource type="Resource" id="Resource_rwhwe"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2370,11 +2370,11 @@ extent = 2.0
 bounds = AABB(-15, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D181"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_y85b0"]
+[sub_resource type="Resource" id="Resource_3siw2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2391,11 +2391,11 @@ extent = 2.0
 bounds = AABB(-11, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D182"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_03pks"]
+[sub_resource type="Resource" id="Resource_r51c0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2412,11 +2412,11 @@ extent = 2.0
 bounds = AABB(-11, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D183"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_thmbf"]
+[sub_resource type="Resource" id="Resource_w4p4n"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2433,11 +2433,11 @@ extent = 2.0
 bounds = AABB(-11, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D184"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_f5wmb"]
+[sub_resource type="Resource" id="Resource_vte4d"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2454,18 +2454,18 @@ extent = 2.0
 bounds = AABB(-11, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D185"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_a64mo"]
+[sub_resource type="Resource" id="Resource_1l1er"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_bgcc8"), SubResource("Resource_j85va"), SubResource("Resource_h2tfl"), SubResource("Resource_b6avt"), SubResource("Resource_y85b0"), SubResource("Resource_03pks"), SubResource("Resource_thmbf"), SubResource("Resource_f5wmb")]
+child_nodes = [SubResource("Resource_v24vd"), SubResource("Resource_xj3he"), SubResource("Resource_epikd"), SubResource("Resource_rwhwe"), SubResource("Resource_3siw2"), SubResource("Resource_r51c0"), SubResource("Resource_w4p4n"), SubResource("Resource_vte4d")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -2475,11 +2475,11 @@ extent = 4.0
 bounds = AABB(-15, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kewc8"]
+[sub_resource type="Resource" id="Resource_dx687"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2500,7 +2500,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D20"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6x1cn"]
+[sub_resource type="Resource" id="Resource_0fona"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2521,7 +2521,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D186"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1ueh6"]
+[sub_resource type="Resource" id="Resource_5tfcd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2542,7 +2542,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D187"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_trl5o"]
+[sub_resource type="Resource" id="Resource_pn7y1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2563,7 +2563,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D188"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_oyl0c"]
+[sub_resource type="Resource" id="Resource_iex0u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2580,11 +2580,11 @@ extent = 2.0
 bounds = AABB(-11, -3, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D189"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ydrb8"]
+[sub_resource type="Resource" id="Resource_25u72"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2605,7 +2605,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D190"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_00vi1"]
+[sub_resource type="Resource" id="Resource_0uma5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2622,11 +2622,11 @@ extent = 2.0
 bounds = AABB(-11, 1, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D191"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_b3xbm"]
+[sub_resource type="Resource" id="Resource_7ges2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2647,14 +2647,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D192"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ckjav"]
+[sub_resource type="Resource" id="Resource_futvq"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_kewc8"), SubResource("Resource_6x1cn"), SubResource("Resource_1ueh6"), SubResource("Resource_trl5o"), SubResource("Resource_oyl0c"), SubResource("Resource_ydrb8"), SubResource("Resource_00vi1"), SubResource("Resource_b3xbm")]
+child_nodes = [SubResource("Resource_dx687"), SubResource("Resource_0fona"), SubResource("Resource_5tfcd"), SubResource("Resource_pn7y1"), SubResource("Resource_iex0u"), SubResource("Resource_25u72"), SubResource("Resource_0uma5"), SubResource("Resource_7ges2")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -2664,11 +2664,11 @@ extent = 4.0
 bounds = AABB(-15, -3, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_umjux"]
+[sub_resource type="Resource" id="Resource_ygh3e"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2685,11 +2685,11 @@ extent = 4.0
 bounds = AABB(-7, -11, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D22"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_c6vuv"]
+[sub_resource type="Resource" id="Resource_1khy5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2706,11 +2706,11 @@ extent = 4.0
 bounds = AABB(-7, -11, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D23"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mvuv0"]
+[sub_resource type="Resource" id="Resource_nqvgy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2727,11 +2727,11 @@ extent = 2.0
 bounds = AABB(-7, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D54"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uyr0w"]
+[sub_resource type="Resource" id="Resource_2rsh3"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2748,11 +2748,11 @@ extent = 2.0
 bounds = AABB(-7, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D172"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ihquc"]
+[sub_resource type="Resource" id="Resource_pmkm7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2769,11 +2769,11 @@ extent = 2.0
 bounds = AABB(-7, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D173"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mesv7"]
+[sub_resource type="Resource" id="Resource_7xac7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2790,11 +2790,11 @@ extent = 2.0
 bounds = AABB(-7, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D174"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3rpc2"]
+[sub_resource type="Resource" id="Resource_ry5fk"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2811,11 +2811,11 @@ extent = 2.0
 bounds = AABB(-3, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D175"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7d5hp"]
+[sub_resource type="Resource" id="Resource_nv4i2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2832,11 +2832,11 @@ extent = 2.0
 bounds = AABB(-3, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D176"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qtq1b"]
+[sub_resource type="Resource" id="Resource_i656w"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2853,11 +2853,11 @@ extent = 2.0
 bounds = AABB(-3, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D177"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_eqqko"]
+[sub_resource type="Resource" id="Resource_qo51d"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2874,18 +2874,18 @@ extent = 2.0
 bounds = AABB(-3, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D178"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_hrkxh"]
+[sub_resource type="Resource" id="Resource_sti5y"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_mvuv0"), SubResource("Resource_uyr0w"), SubResource("Resource_ihquc"), SubResource("Resource_mesv7"), SubResource("Resource_3rpc2"), SubResource("Resource_7d5hp"), SubResource("Resource_qtq1b"), SubResource("Resource_eqqko")]
+child_nodes = [SubResource("Resource_nqvgy"), SubResource("Resource_2rsh3"), SubResource("Resource_pmkm7"), SubResource("Resource_7xac7"), SubResource("Resource_ry5fk"), SubResource("Resource_nv4i2"), SubResource("Resource_i656w"), SubResource("Resource_qo51d")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -2895,11 +2895,11 @@ extent = 4.0
 bounds = AABB(-7, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_k41c2"]
+[sub_resource type="Resource" id="Resource_iybws"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2916,11 +2916,11 @@ extent = 2.0
 bounds = AABB(-7, -3, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D11"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_s8r2n"]
+[sub_resource type="Resource" id="Resource_6hu05"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2941,7 +2941,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D12"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_p0b3s"]
+[sub_resource type="Resource" id="Resource_cosbu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2958,11 +2958,11 @@ extent = 2.0
 bounds = AABB(-7, 1, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D13"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0n8xj"]
+[sub_resource type="Resource" id="Resource_fum2u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -2983,7 +2983,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D14"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_l41od"]
+[sub_resource type="Resource" id="Resource_5fhyv"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3000,11 +3000,11 @@ extent = 2.0
 bounds = AABB(-3, -3, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D15"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nsp6w"]
+[sub_resource type="Resource" id="Resource_gl10w"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3025,7 +3025,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8bkpo"]
+[sub_resource type="Resource" id="Resource_8twgi"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3042,11 +3042,11 @@ extent = 2.0
 bounds = AABB(-3, 1, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D17"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wk3fy"]
+[sub_resource type="Resource" id="Resource_a6s3v"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3063,18 +3063,18 @@ extent = 2.0
 bounds = AABB(-3, 1, -3, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D18"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mbju1"]
+[sub_resource type="Resource" id="Resource_8tm7s"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_k41c2"), SubResource("Resource_s8r2n"), SubResource("Resource_p0b3s"), SubResource("Resource_0n8xj"), SubResource("Resource_l41od"), SubResource("Resource_nsp6w"), SubResource("Resource_8bkpo"), SubResource("Resource_wk3fy")]
+child_nodes = [SubResource("Resource_iybws"), SubResource("Resource_6hu05"), SubResource("Resource_cosbu"), SubResource("Resource_fum2u"), SubResource("Resource_5fhyv"), SubResource("Resource_gl10w"), SubResource("Resource_8twgi"), SubResource("Resource_a6s3v")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -3084,18 +3084,18 @@ extent = 4.0
 bounds = AABB(-7, -3, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3kshs"]
+[sub_resource type="Resource" id="Resource_5bsh7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_1g44m"), SubResource("Resource_7tygb"), SubResource("Resource_a64mo"), SubResource("Resource_ckjav"), SubResource("Resource_umjux"), SubResource("Resource_c6vuv"), SubResource("Resource_hrkxh"), SubResource("Resource_mbju1")]
+child_nodes = [SubResource("Resource_r7yvw"), SubResource("Resource_p6uoe"), SubResource("Resource_1l1er"), SubResource("Resource_futvq"), SubResource("Resource_ygh3e"), SubResource("Resource_1khy5"), SubResource("Resource_sti5y"), SubResource("Resource_8tm7s")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 0
@@ -3105,11 +3105,11 @@ extent = 8.0
 bounds = AABB(-15, -11, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_fdg44"]
+[sub_resource type="Resource" id="Resource_trc13"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3130,7 +3130,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D101"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8xs4g"]
+[sub_resource type="Resource" id="Resource_cuphy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3151,7 +3151,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D130"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_en8nr"]
+[sub_resource type="Resource" id="Resource_gvjq8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3172,7 +3172,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D78"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kwnh6"]
+[sub_resource type="Resource" id="Resource_140p3"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3193,7 +3193,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D207"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_h331g"]
+[sub_resource type="Resource" id="Resource_gji81"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3214,7 +3214,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D208"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gw5yy"]
+[sub_resource type="Resource" id="Resource_2sc3f"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3235,7 +3235,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D209"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ncsr8"]
+[sub_resource type="Resource" id="Resource_dmwdb"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3256,7 +3256,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D210"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2irei"]
+[sub_resource type="Resource" id="Resource_l1oyg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3277,7 +3277,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D211"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qla7q"]
+[sub_resource type="Resource" id="Resource_pwekp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3298,7 +3298,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D212"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_onipb"]
+[sub_resource type="Resource" id="Resource_g2em4"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3319,14 +3319,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D213"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nmvpo"]
+[sub_resource type="Resource" id="Resource_ys0kh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_en8nr"), SubResource("Resource_kwnh6"), SubResource("Resource_h331g"), SubResource("Resource_gw5yy"), SubResource("Resource_ncsr8"), SubResource("Resource_2irei"), SubResource("Resource_qla7q"), SubResource("Resource_onipb")]
+child_nodes = [SubResource("Resource_gvjq8"), SubResource("Resource_140p3"), SubResource("Resource_gji81"), SubResource("Resource_2sc3f"), SubResource("Resource_dmwdb"), SubResource("Resource_l1oyg"), SubResource("Resource_pwekp"), SubResource("Resource_g2em4")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -3340,7 +3340,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_l5kex"]
+[sub_resource type="Resource" id="Resource_u3if0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3361,7 +3361,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D131"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mpwo1"]
+[sub_resource type="Resource" id="Resource_jnkob"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3382,7 +3382,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D214"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_u70q5"]
+[sub_resource type="Resource" id="Resource_fmysd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3403,7 +3403,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D215"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_s2krg"]
+[sub_resource type="Resource" id="Resource_73brm"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3424,7 +3424,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D216"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_i3nrk"]
+[sub_resource type="Resource" id="Resource_p5jwf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3445,7 +3445,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D217"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_oagl7"]
+[sub_resource type="Resource" id="Resource_iaq6t"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3466,7 +3466,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D218"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_p2n12"]
+[sub_resource type="Resource" id="Resource_dxjxo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3487,7 +3487,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D219"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_l7e5k"]
+[sub_resource type="Resource" id="Resource_uxxfc"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3508,14 +3508,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D220"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_amqcm"]
+[sub_resource type="Resource" id="Resource_12awk"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_l5kex"), SubResource("Resource_mpwo1"), SubResource("Resource_u70q5"), SubResource("Resource_s2krg"), SubResource("Resource_i3nrk"), SubResource("Resource_oagl7"), SubResource("Resource_p2n12"), SubResource("Resource_l7e5k")]
+child_nodes = [SubResource("Resource_u3if0"), SubResource("Resource_jnkob"), SubResource("Resource_fmysd"), SubResource("Resource_73brm"), SubResource("Resource_p5jwf"), SubResource("Resource_iaq6t"), SubResource("Resource_dxjxo"), SubResource("Resource_uxxfc")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -3529,7 +3529,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_sl5t0"]
+[sub_resource type="Resource" id="Resource_jxg5e"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3550,7 +3550,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D133"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rhv0c"]
+[sub_resource type="Resource" id="Resource_4sh6p"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3571,7 +3571,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D134"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qjqr6"]
+[sub_resource type="Resource" id="Resource_rhf0f"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3592,7 +3592,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D5"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_va7gc"]
+[sub_resource type="Resource" id="Resource_rvoqp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3613,7 +3613,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D137"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jqa3p"]
+[sub_resource type="Resource" id="Resource_3haq2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3634,7 +3634,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D138"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_62wuv"]
+[sub_resource type="Resource" id="Resource_uxtr0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3655,7 +3655,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D139"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3f5sn"]
+[sub_resource type="Resource" id="Resource_21n2m"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3676,7 +3676,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D140"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_pfqpq"]
+[sub_resource type="Resource" id="Resource_28fcx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3697,7 +3697,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D141"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_cv606"]
+[sub_resource type="Resource" id="Resource_ydgcd"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3718,7 +3718,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D142"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_f7fv5"]
+[sub_resource type="Resource" id="Resource_5kqy7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3739,14 +3739,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D143"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_87rko"]
+[sub_resource type="Resource" id="Resource_2v263"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_qjqr6"), SubResource("Resource_va7gc"), SubResource("Resource_jqa3p"), SubResource("Resource_62wuv"), SubResource("Resource_3f5sn"), SubResource("Resource_pfqpq"), SubResource("Resource_cv606"), SubResource("Resource_f7fv5")]
+child_nodes = [SubResource("Resource_rhf0f"), SubResource("Resource_rvoqp"), SubResource("Resource_3haq2"), SubResource("Resource_uxtr0"), SubResource("Resource_21n2m"), SubResource("Resource_28fcx"), SubResource("Resource_ydgcd"), SubResource("Resource_5kqy7")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -3760,7 +3760,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_u2qix"]
+[sub_resource type="Resource" id="Resource_ty1v1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3781,7 +3781,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D132"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_bxcht"]
+[sub_resource type="Resource" id="Resource_4t65n"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3802,7 +3802,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D221"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wgomk"]
+[sub_resource type="Resource" id="Resource_tcgfi"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3823,7 +3823,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D222"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_y07qw"]
+[sub_resource type="Resource" id="Resource_s06vm"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3844,7 +3844,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D223"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mpevl"]
+[sub_resource type="Resource" id="Resource_h6dgx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3865,7 +3865,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D224"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6v4pd"]
+[sub_resource type="Resource" id="Resource_atcmc"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3886,7 +3886,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D225"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7x0eo"]
+[sub_resource type="Resource" id="Resource_isdr6"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3907,7 +3907,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D226"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0ptw1"]
+[sub_resource type="Resource" id="Resource_5pmvn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3928,14 +3928,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D227"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8lc2g"]
+[sub_resource type="Resource" id="Resource_c4wnq"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_u2qix"), SubResource("Resource_bxcht"), SubResource("Resource_wgomk"), SubResource("Resource_y07qw"), SubResource("Resource_mpevl"), SubResource("Resource_6v4pd"), SubResource("Resource_7x0eo"), SubResource("Resource_0ptw1")]
+child_nodes = [SubResource("Resource_ty1v1"), SubResource("Resource_4t65n"), SubResource("Resource_tcgfi"), SubResource("Resource_s06vm"), SubResource("Resource_h6dgx"), SubResource("Resource_atcmc"), SubResource("Resource_isdr6"), SubResource("Resource_5pmvn")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -3949,14 +3949,14 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_y2ew6"]
+[sub_resource type="Resource" id="Resource_84vps"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_fdg44"), SubResource("Resource_8xs4g"), SubResource("Resource_nmvpo"), SubResource("Resource_amqcm"), SubResource("Resource_sl5t0"), SubResource("Resource_rhv0c"), SubResource("Resource_87rko"), SubResource("Resource_8lc2g")]
+child_nodes = [SubResource("Resource_trc13"), SubResource("Resource_cuphy"), SubResource("Resource_ys0kh"), SubResource("Resource_12awk"), SubResource("Resource_jxg5e"), SubResource("Resource_4sh6p"), SubResource("Resource_2v263"), SubResource("Resource_c4wnq")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 1
@@ -3966,11 +3966,11 @@ extent = 8.0
 bounds = AABB(-15, -11, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_exebe"]
+[sub_resource type="Resource" id="Resource_7o17u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -3987,11 +3987,11 @@ extent = 8.0
 bounds = AABB(-15, 5, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D6"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xf3sh"]
+[sub_resource type="Resource" id="Resource_rooc3"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4008,11 +4008,11 @@ extent = 8.0
 bounds = AABB(-15, 5, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D7"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jje1k"]
+[sub_resource type="Resource" id="Resource_8nnod"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4029,11 +4029,11 @@ extent = 4.0
 bounds = AABB(1, -11, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D87"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kouby"]
+[sub_resource type="Resource" id="Resource_75n82"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4050,11 +4050,11 @@ extent = 4.0
 bounds = AABB(1, -11, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D95"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ijr5c"]
+[sub_resource type="Resource" id="Resource_nncsh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4071,11 +4071,11 @@ extent = 2.0
 bounds = AABB(1, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D8"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_x4ilq"]
+[sub_resource type="Resource" id="Resource_vb33s"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4092,11 +4092,11 @@ extent = 2.0
 bounds = AABB(1, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D102"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_c7r31"]
+[sub_resource type="Resource" id="Resource_mvolh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4113,11 +4113,11 @@ extent = 2.0
 bounds = AABB(1, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D103"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_c8nv8"]
+[sub_resource type="Resource" id="Resource_5e1gy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4134,11 +4134,11 @@ extent = 2.0
 bounds = AABB(1, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D104"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_5tf8j"]
+[sub_resource type="Resource" id="Resource_b13rf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4155,11 +4155,11 @@ extent = 2.0
 bounds = AABB(5, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D105"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_q2t64"]
+[sub_resource type="Resource" id="Resource_212sa"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4176,11 +4176,11 @@ extent = 2.0
 bounds = AABB(5, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D106"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ijko7"]
+[sub_resource type="Resource" id="Resource_2x3kb"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4197,11 +4197,11 @@ extent = 2.0
 bounds = AABB(5, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D107"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jbnil"]
+[sub_resource type="Resource" id="Resource_cnjsg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4218,18 +4218,18 @@ extent = 2.0
 bounds = AABB(5, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D108"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2m08x"]
+[sub_resource type="Resource" id="Resource_sjpg7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ijr5c"), SubResource("Resource_x4ilq"), SubResource("Resource_c7r31"), SubResource("Resource_c8nv8"), SubResource("Resource_5tf8j"), SubResource("Resource_q2t64"), SubResource("Resource_ijko7"), SubResource("Resource_jbnil")]
+child_nodes = [SubResource("Resource_nncsh"), SubResource("Resource_vb33s"), SubResource("Resource_mvolh"), SubResource("Resource_5e1gy"), SubResource("Resource_b13rf"), SubResource("Resource_212sa"), SubResource("Resource_2x3kb"), SubResource("Resource_cnjsg")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -4239,11 +4239,11 @@ extent = 4.0
 bounds = AABB(1, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1qp08"]
+[sub_resource type="Resource" id="Resource_17i33"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4260,11 +4260,11 @@ extent = 2.0
 bounds = AABB(1, -3, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D96"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0xkgt"]
+[sub_resource type="Resource" id="Resource_a4rmq"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4281,11 +4281,11 @@ extent = 2.0
 bounds = AABB(1, -3, -3, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D109"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_blmwk"]
+[sub_resource type="Resource" id="Resource_utoe8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4302,11 +4302,11 @@ extent = 2.0
 bounds = AABB(1, 1, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D110"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vbmhd"]
+[sub_resource type="Resource" id="Resource_cy78g"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4323,11 +4323,11 @@ extent = 2.0
 bounds = AABB(1, 1, -3, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D111"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_cbkj0"]
+[sub_resource type="Resource" id="Resource_6f4cn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4344,11 +4344,11 @@ extent = 2.0
 bounds = AABB(5, -3, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D112"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xaqsg"]
+[sub_resource type="Resource" id="Resource_hvmg5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4365,11 +4365,11 @@ extent = 2.0
 bounds = AABB(5, -3, -3, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D113"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3uogy"]
+[sub_resource type="Resource" id="Resource_gkwcf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4386,11 +4386,11 @@ extent = 2.0
 bounds = AABB(5, 1, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D114"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1lqf4"]
+[sub_resource type="Resource" id="Resource_egccw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4407,18 +4407,18 @@ extent = 2.0
 bounds = AABB(5, 1, -3, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D115"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_eu066"]
+[sub_resource type="Resource" id="Resource_8kpkg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_1qp08"), SubResource("Resource_0xkgt"), SubResource("Resource_blmwk"), SubResource("Resource_vbmhd"), SubResource("Resource_cbkj0"), SubResource("Resource_xaqsg"), SubResource("Resource_3uogy"), SubResource("Resource_1lqf4")]
+child_nodes = [SubResource("Resource_17i33"), SubResource("Resource_a4rmq"), SubResource("Resource_utoe8"), SubResource("Resource_cy78g"), SubResource("Resource_6f4cn"), SubResource("Resource_hvmg5"), SubResource("Resource_gkwcf"), SubResource("Resource_egccw")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -4428,11 +4428,11 @@ extent = 4.0
 bounds = AABB(1, -3, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1m4dd"]
+[sub_resource type="Resource" id="Resource_qc50g"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4449,11 +4449,11 @@ extent = 4.0
 bounds = AABB(9, -11, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D98"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_yjjrn"]
+[sub_resource type="Resource" id="Resource_g48cj"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4470,11 +4470,11 @@ extent = 4.0
 bounds = AABB(9, -11, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D99"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ifybm"]
+[sub_resource type="Resource" id="Resource_d3wrf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4491,11 +4491,11 @@ extent = 2.0
 bounds = AABB(9, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D97"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_fvhsq"]
+[sub_resource type="Resource" id="Resource_dincw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4512,11 +4512,11 @@ extent = 2.0
 bounds = AABB(9, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D116"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_b42ji"]
+[sub_resource type="Resource" id="Resource_e1mjh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4533,11 +4533,11 @@ extent = 2.0
 bounds = AABB(9, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D117"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mdh1n"]
+[sub_resource type="Resource" id="Resource_ng7o8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4554,11 +4554,11 @@ extent = 2.0
 bounds = AABB(9, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D118"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wysi6"]
+[sub_resource type="Resource" id="Resource_bvjrk"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4575,11 +4575,11 @@ extent = 2.0
 bounds = AABB(13, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D119"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1cfhl"]
+[sub_resource type="Resource" id="Resource_w7abx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4596,11 +4596,11 @@ extent = 2.0
 bounds = AABB(13, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D120"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8l8ti"]
+[sub_resource type="Resource" id="Resource_hyogx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4617,11 +4617,11 @@ extent = 2.0
 bounds = AABB(13, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D121"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2srag"]
+[sub_resource type="Resource" id="Resource_kojem"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4638,18 +4638,18 @@ extent = 2.0
 bounds = AABB(13, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D122"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mbup4"]
+[sub_resource type="Resource" id="Resource_5ei8s"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ifybm"), SubResource("Resource_fvhsq"), SubResource("Resource_b42ji"), SubResource("Resource_mdh1n"), SubResource("Resource_wysi6"), SubResource("Resource_1cfhl"), SubResource("Resource_8l8ti"), SubResource("Resource_2srag")]
+child_nodes = [SubResource("Resource_d3wrf"), SubResource("Resource_dincw"), SubResource("Resource_e1mjh"), SubResource("Resource_ng7o8"), SubResource("Resource_bvjrk"), SubResource("Resource_w7abx"), SubResource("Resource_hyogx"), SubResource("Resource_kojem")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -4659,11 +4659,11 @@ extent = 4.0
 bounds = AABB(9, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_53561"]
+[sub_resource type="Resource" id="Resource_u5csf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4684,7 +4684,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D100"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_tba5i"]
+[sub_resource type="Resource" id="Resource_eh30v"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4705,7 +4705,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D123"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rb8us"]
+[sub_resource type="Resource" id="Resource_tjee1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4726,7 +4726,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D124"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vjwq3"]
+[sub_resource type="Resource" id="Resource_suqqp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4747,7 +4747,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D125"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_n5jqb"]
+[sub_resource type="Resource" id="Resource_kjdhr"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4768,7 +4768,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D126"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3jc1p"]
+[sub_resource type="Resource" id="Resource_pfvo1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4789,7 +4789,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D127"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_28ayh"]
+[sub_resource type="Resource" id="Resource_bij76"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4810,7 +4810,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D128"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2rlf0"]
+[sub_resource type="Resource" id="Resource_k17dj"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4831,14 +4831,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D129"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_24dce"]
+[sub_resource type="Resource" id="Resource_s0irj"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_53561"), SubResource("Resource_tba5i"), SubResource("Resource_rb8us"), SubResource("Resource_vjwq3"), SubResource("Resource_n5jqb"), SubResource("Resource_3jc1p"), SubResource("Resource_28ayh"), SubResource("Resource_2rlf0")]
+child_nodes = [SubResource("Resource_u5csf"), SubResource("Resource_eh30v"), SubResource("Resource_tjee1"), SubResource("Resource_suqqp"), SubResource("Resource_kjdhr"), SubResource("Resource_pfvo1"), SubResource("Resource_bij76"), SubResource("Resource_k17dj")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -4848,18 +4848,18 @@ extent = 4.0
 bounds = AABB(9, -3, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_fkl8w"]
+[sub_resource type="Resource" id="Resource_nmwc1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_jje1k"), SubResource("Resource_kouby"), SubResource("Resource_2m08x"), SubResource("Resource_eu066"), SubResource("Resource_1m4dd"), SubResource("Resource_yjjrn"), SubResource("Resource_mbup4"), SubResource("Resource_24dce")]
+child_nodes = [SubResource("Resource_8nnod"), SubResource("Resource_75n82"), SubResource("Resource_sjpg7"), SubResource("Resource_8kpkg"), SubResource("Resource_qc50g"), SubResource("Resource_g48cj"), SubResource("Resource_5ei8s"), SubResource("Resource_s0irj")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 4
@@ -4869,11 +4869,11 @@ extent = 8.0
 bounds = AABB(1, -11, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_lbb85"]
+[sub_resource type="Resource" id="Resource_70mc4"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4894,7 +4894,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D3"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jqggv"]
+[sub_resource type="Resource" id="Resource_pqhul"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4915,7 +4915,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D4"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2aw5f"]
+[sub_resource type="Resource" id="Resource_ott2x"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4936,7 +4936,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D135"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ujwvq"]
+[sub_resource type="Resource" id="Resource_2yvba"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4957,7 +4957,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D144"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_86h7e"]
+[sub_resource type="Resource" id="Resource_lp3au"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4978,7 +4978,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D145"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8kxva"]
+[sub_resource type="Resource" id="Resource_gnvg1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -4999,7 +4999,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D146"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jn253"]
+[sub_resource type="Resource" id="Resource_7p7x1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5020,7 +5020,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D147"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ej0y3"]
+[sub_resource type="Resource" id="Resource_ycn7u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5041,7 +5041,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D148"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0fplb"]
+[sub_resource type="Resource" id="Resource_wh4ip"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5062,7 +5062,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D149"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_tax37"]
+[sub_resource type="Resource" id="Resource_wcmqh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5083,14 +5083,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D150"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1kpss"]
+[sub_resource type="Resource" id="Resource_2vkob"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_2aw5f"), SubResource("Resource_ujwvq"), SubResource("Resource_86h7e"), SubResource("Resource_8kxva"), SubResource("Resource_jn253"), SubResource("Resource_ej0y3"), SubResource("Resource_0fplb"), SubResource("Resource_tax37")]
+child_nodes = [SubResource("Resource_ott2x"), SubResource("Resource_2yvba"), SubResource("Resource_lp3au"), SubResource("Resource_gnvg1"), SubResource("Resource_7p7x1"), SubResource("Resource_ycn7u"), SubResource("Resource_wh4ip"), SubResource("Resource_wcmqh")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -5104,7 +5104,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vk0rh"]
+[sub_resource type="Resource" id="Resource_rais3"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5125,7 +5125,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D21"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4r2ax"]
+[sub_resource type="Resource" id="Resource_k4jbo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5146,7 +5146,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D193"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_khpq2"]
+[sub_resource type="Resource" id="Resource_tn3o0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5167,7 +5167,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D194"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ybfvk"]
+[sub_resource type="Resource" id="Resource_ig26p"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5188,7 +5188,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D195"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7185b"]
+[sub_resource type="Resource" id="Resource_20sxs"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5209,7 +5209,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D196"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qrcou"]
+[sub_resource type="Resource" id="Resource_l6im5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5230,7 +5230,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D197"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uo835"]
+[sub_resource type="Resource" id="Resource_uqph8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5251,7 +5251,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D198"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kp142"]
+[sub_resource type="Resource" id="Resource_8kvup"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5272,14 +5272,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D199"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wpj2m"]
+[sub_resource type="Resource" id="Resource_t2lwg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_vk0rh"), SubResource("Resource_4r2ax"), SubResource("Resource_khpq2"), SubResource("Resource_ybfvk"), SubResource("Resource_7185b"), SubResource("Resource_qrcou"), SubResource("Resource_uo835"), SubResource("Resource_kp142")]
+child_nodes = [SubResource("Resource_rais3"), SubResource("Resource_k4jbo"), SubResource("Resource_tn3o0"), SubResource("Resource_ig26p"), SubResource("Resource_20sxs"), SubResource("Resource_l6im5"), SubResource("Resource_uqph8"), SubResource("Resource_8kvup")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -5293,7 +5293,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_k1d27"]
+[sub_resource type="Resource" id="Resource_ealo2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5314,7 +5314,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D28"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_b2sm8"]
+[sub_resource type="Resource" id="Resource_pcxpy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5335,7 +5335,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D29"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_om2ls"]
+[sub_resource type="Resource" id="Resource_llrhf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5356,7 +5356,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D26"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_uod0a"]
+[sub_resource type="Resource" id="Resource_yhcoc"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5377,7 +5377,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D151"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_dtgg1"]
+[sub_resource type="Resource" id="Resource_npty5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5398,7 +5398,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D152"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ocgnc"]
+[sub_resource type="Resource" id="Resource_l0t7k"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5419,7 +5419,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D153"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4covf"]
+[sub_resource type="Resource" id="Resource_vqtu8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5440,7 +5440,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D154"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4moo0"]
+[sub_resource type="Resource" id="Resource_5o23w"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5461,7 +5461,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D155"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_klcrn"]
+[sub_resource type="Resource" id="Resource_r5clf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5482,7 +5482,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D156"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_raq8r"]
+[sub_resource type="Resource" id="Resource_yhwsh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5503,14 +5503,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D157"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ch4lk"]
+[sub_resource type="Resource" id="Resource_se3sw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_om2ls"), SubResource("Resource_uod0a"), SubResource("Resource_dtgg1"), SubResource("Resource_ocgnc"), SubResource("Resource_4covf"), SubResource("Resource_4moo0"), SubResource("Resource_klcrn"), SubResource("Resource_raq8r")]
+child_nodes = [SubResource("Resource_llrhf"), SubResource("Resource_yhcoc"), SubResource("Resource_npty5"), SubResource("Resource_l0t7k"), SubResource("Resource_vqtu8"), SubResource("Resource_5o23w"), SubResource("Resource_r5clf"), SubResource("Resource_yhwsh")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -5524,7 +5524,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_r7y31"]
+[sub_resource type="Resource" id="Resource_mhais"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5545,7 +5545,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D9"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_7x68j"]
+[sub_resource type="Resource" id="Resource_l15no"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5566,7 +5566,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D32"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2jybh"]
+[sub_resource type="Resource" id="Resource_sd6e5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5587,7 +5587,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D33"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4yms7"]
+[sub_resource type="Resource" id="Resource_kk83l"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5608,7 +5608,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D34"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wal5j"]
+[sub_resource type="Resource" id="Resource_s6els"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5629,7 +5629,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D35"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nbqbq"]
+[sub_resource type="Resource" id="Resource_24kga"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5650,7 +5650,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D36"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rn2p6"]
+[sub_resource type="Resource" id="Resource_o2s0a"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5671,7 +5671,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D37"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jqbbb"]
+[sub_resource type="Resource" id="Resource_103fl"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5692,14 +5692,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D38"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_00ogg"]
+[sub_resource type="Resource" id="Resource_n7umb"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_r7y31"), SubResource("Resource_7x68j"), SubResource("Resource_2jybh"), SubResource("Resource_4yms7"), SubResource("Resource_wal5j"), SubResource("Resource_nbqbq"), SubResource("Resource_rn2p6"), SubResource("Resource_jqbbb")]
+child_nodes = [SubResource("Resource_mhais"), SubResource("Resource_l15no"), SubResource("Resource_sd6e5"), SubResource("Resource_kk83l"), SubResource("Resource_s6els"), SubResource("Resource_24kga"), SubResource("Resource_o2s0a"), SubResource("Resource_103fl")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -5713,14 +5713,14 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_yat40"]
+[sub_resource type="Resource" id="Resource_dxs0b"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_lbb85"), SubResource("Resource_jqggv"), SubResource("Resource_1kpss"), SubResource("Resource_wpj2m"), SubResource("Resource_k1d27"), SubResource("Resource_b2sm8"), SubResource("Resource_ch4lk"), SubResource("Resource_00ogg")]
+child_nodes = [SubResource("Resource_70mc4"), SubResource("Resource_pqhul"), SubResource("Resource_2vkob"), SubResource("Resource_t2lwg"), SubResource("Resource_ealo2"), SubResource("Resource_pcxpy"), SubResource("Resource_se3sw"), SubResource("Resource_n7umb")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 5
@@ -5730,11 +5730,11 @@ extent = 8.0
 bounds = AABB(1, -11, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_r4wdm"]
+[sub_resource type="Resource" id="Resource_rnsyg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5751,11 +5751,11 @@ extent = 8.0
 bounds = AABB(1, 5, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D10"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6m40j"]
+[sub_resource type="Resource" id="Resource_hc86n"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5772,18 +5772,18 @@ extent = 8.0
 bounds = AABB(1, 5, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D25"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_tcnte"]
+[sub_resource type="Resource" id="Resource_c0ihh"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_3kshs"), SubResource("Resource_y2ew6"), SubResource("Resource_exebe"), SubResource("Resource_xf3sh"), SubResource("Resource_fkl8w"), SubResource("Resource_yat40"), SubResource("Resource_r4wdm"), SubResource("Resource_6m40j")]
+child_nodes = [SubResource("Resource_5bsh7"), SubResource("Resource_84vps"), SubResource("Resource_7o17u"), SubResource("Resource_rooc3"), SubResource("Resource_nmwc1"), SubResource("Resource_dxs0b"), SubResource("Resource_rnsyg"), SubResource("Resource_hc86n")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -5793,11 +5793,11 @@ extent = 16.0
 bounds = AABB(-15, -11, -15, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xamth"]
+[sub_resource type="Resource" id="Resource_551pm"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5814,11 +5814,11 @@ extent = 16.0
 bounds = AABB(17, -43, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D43"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gaex3"]
+[sub_resource type="Resource" id="Resource_ukakc"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5835,11 +5835,11 @@ extent = 16.0
 bounds = AABB(17, -43, -15, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D44"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6u886"]
+[sub_resource type="Resource" id="Resource_31ywj"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5856,11 +5856,11 @@ extent = 16.0
 bounds = AABB(17, -11, -47, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D45"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_cdjja"]
+[sub_resource type="Resource" id="Resource_i73g3"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5877,11 +5877,11 @@ extent = 4.0
 bounds = AABB(17, -11, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D46"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_66bda"]
+[sub_resource type="Resource" id="Resource_iksqt"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5902,7 +5902,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D53"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kn3pj"]
+[sub_resource type="Resource" id="Resource_41l2i"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5919,11 +5919,11 @@ extent = 2.0
 bounds = AABB(17, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D55"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_5uofk"]
+[sub_resource type="Resource" id="Resource_t751e"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5940,11 +5940,11 @@ extent = 2.0
 bounds = AABB(17, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D165"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_5iywb"]
+[sub_resource type="Resource" id="Resource_4okct"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5961,11 +5961,11 @@ extent = 2.0
 bounds = AABB(17, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D166"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_umi5f"]
+[sub_resource type="Resource" id="Resource_ijp7p"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -5982,11 +5982,11 @@ extent = 2.0
 bounds = AABB(17, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D167"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_puxs1"]
+[sub_resource type="Resource" id="Resource_k64yf"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6003,11 +6003,11 @@ extent = 2.0
 bounds = AABB(21, -3, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D168"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_aejfi"]
+[sub_resource type="Resource" id="Resource_nf1y8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6024,11 +6024,11 @@ extent = 2.0
 bounds = AABB(21, -3, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D169"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xo5y8"]
+[sub_resource type="Resource" id="Resource_7b5bu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6045,11 +6045,11 @@ extent = 2.0
 bounds = AABB(21, 1, -15, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D170"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ovbw3"]
+[sub_resource type="Resource" id="Resource_cc5pv"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6066,18 +6066,18 @@ extent = 2.0
 bounds = AABB(21, 1, -11, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D171"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_skbeh"]
+[sub_resource type="Resource" id="Resource_fmm3j"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_kn3pj"), SubResource("Resource_5uofk"), SubResource("Resource_5iywb"), SubResource("Resource_umi5f"), SubResource("Resource_puxs1"), SubResource("Resource_aejfi"), SubResource("Resource_xo5y8"), SubResource("Resource_ovbw3")]
+child_nodes = [SubResource("Resource_41l2i"), SubResource("Resource_t751e"), SubResource("Resource_4okct"), SubResource("Resource_ijp7p"), SubResource("Resource_k64yf"), SubResource("Resource_nf1y8"), SubResource("Resource_7b5bu"), SubResource("Resource_cc5pv")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -6087,11 +6087,11 @@ extent = 4.0
 bounds = AABB(17, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0ec1p"]
+[sub_resource type="Resource" id="Resource_oedhp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6108,11 +6108,11 @@ extent = 2.0
 bounds = AABB(17, -3, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D30"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xvnih"]
+[sub_resource type="Resource" id="Resource_enukp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6133,7 +6133,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D158"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_qxgih"]
+[sub_resource type="Resource" id="Resource_nttne"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6150,11 +6150,11 @@ extent = 2.0
 bounds = AABB(17, 1, -7, 4, 4, 4)
 max_bounds_to_center_dist = 3.4641
 min_bounds_to_center_dist = 2.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D159"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_sgj4c"]
+[sub_resource type="Resource" id="Resource_37ndn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6175,7 +6175,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D160"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_sil5r"]
+[sub_resource type="Resource" id="Resource_jtye7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6196,7 +6196,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D161"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_dkxok"]
+[sub_resource type="Resource" id="Resource_5e3if"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6217,7 +6217,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D162"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_5f5q7"]
+[sub_resource type="Resource" id="Resource_4kts1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6238,7 +6238,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D163"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_lfv0p"]
+[sub_resource type="Resource" id="Resource_qfwua"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6259,14 +6259,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D164"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4lvcy"]
+[sub_resource type="Resource" id="Resource_fktlp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_0ec1p"), SubResource("Resource_xvnih"), SubResource("Resource_qxgih"), SubResource("Resource_sgj4c"), SubResource("Resource_sil5r"), SubResource("Resource_dkxok"), SubResource("Resource_5f5q7"), SubResource("Resource_lfv0p")]
+child_nodes = [SubResource("Resource_oedhp"), SubResource("Resource_enukp"), SubResource("Resource_nttne"), SubResource("Resource_37ndn"), SubResource("Resource_jtye7"), SubResource("Resource_5e3if"), SubResource("Resource_4kts1"), SubResource("Resource_qfwua")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -6276,11 +6276,11 @@ extent = 4.0
 bounds = AABB(17, -3, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6xfq3"]
+[sub_resource type="Resource" id="Resource_h07em"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6301,7 +6301,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D56"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_pjosv"]
+[sub_resource type="Resource" id="Resource_6kr0d"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6322,7 +6322,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D57"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4ls35"]
+[sub_resource type="Resource" id="Resource_jy0ni"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6343,7 +6343,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D58"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0bh54"]
+[sub_resource type="Resource" id="Resource_yntkw"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6364,14 +6364,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D59"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jleeq"]
+[sub_resource type="Resource" id="Resource_yj20i"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_cdjja"), SubResource("Resource_66bda"), SubResource("Resource_skbeh"), SubResource("Resource_4lvcy"), SubResource("Resource_6xfq3"), SubResource("Resource_pjosv"), SubResource("Resource_4ls35"), SubResource("Resource_0bh54")]
+child_nodes = [SubResource("Resource_i73g3"), SubResource("Resource_iksqt"), SubResource("Resource_fmm3j"), SubResource("Resource_fktlp"), SubResource("Resource_h07em"), SubResource("Resource_6kr0d"), SubResource("Resource_jy0ni"), SubResource("Resource_yntkw")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 0
@@ -6381,11 +6381,11 @@ extent = 8.0
 bounds = AABB(17, -11, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mms2e"]
+[sub_resource type="Resource" id="Resource_jqkan"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6406,7 +6406,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D201"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_obtcl"]
+[sub_resource type="Resource" id="Resource_wb1ib"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6427,7 +6427,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D298"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_iyoqx"]
+[sub_resource type="Resource" id="Resource_o14pv"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6448,7 +6448,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D238"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_aw5ab"]
+[sub_resource type="Resource" id="Resource_lxj8u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6469,7 +6469,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D312"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xcsxg"]
+[sub_resource type="Resource" id="Resource_uwx7j"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6490,7 +6490,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D313"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_c0bat"]
+[sub_resource type="Resource" id="Resource_lob2k"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6511,7 +6511,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D314"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_m5ylc"]
+[sub_resource type="Resource" id="Resource_scgn2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6532,7 +6532,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D315"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_l25iw"]
+[sub_resource type="Resource" id="Resource_y3sqm"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6553,7 +6553,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D316"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2bum7"]
+[sub_resource type="Resource" id="Resource_vjvw2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6574,7 +6574,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D317"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_i8hmr"]
+[sub_resource type="Resource" id="Resource_7482y"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6595,14 +6595,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D318"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_k2qn6"]
+[sub_resource type="Resource" id="Resource_jx3y5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_iyoqx"), SubResource("Resource_aw5ab"), SubResource("Resource_xcsxg"), SubResource("Resource_c0bat"), SubResource("Resource_m5ylc"), SubResource("Resource_l25iw"), SubResource("Resource_2bum7"), SubResource("Resource_i8hmr")]
+child_nodes = [SubResource("Resource_o14pv"), SubResource("Resource_lxj8u"), SubResource("Resource_uwx7j"), SubResource("Resource_lob2k"), SubResource("Resource_scgn2"), SubResource("Resource_y3sqm"), SubResource("Resource_vjvw2"), SubResource("Resource_7482y")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -6616,7 +6616,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kmi0r"]
+[sub_resource type="Resource" id="Resource_jrju1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6637,7 +6637,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D299"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_hsrwk"]
+[sub_resource type="Resource" id="Resource_7mrvq"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6658,7 +6658,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D319"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1rwlt"]
+[sub_resource type="Resource" id="Resource_e5wac"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6679,7 +6679,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D320"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_l1x6e"]
+[sub_resource type="Resource" id="Resource_k5qpo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6700,7 +6700,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D321"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xut8n"]
+[sub_resource type="Resource" id="Resource_4jrl8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6721,7 +6721,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D322"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gkako"]
+[sub_resource type="Resource" id="Resource_aqjab"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6742,7 +6742,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D323"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0olvp"]
+[sub_resource type="Resource" id="Resource_t4pa2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6763,7 +6763,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D324"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_gshhm"]
+[sub_resource type="Resource" id="Resource_emoo1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6784,14 +6784,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D325"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3lyq2"]
+[sub_resource type="Resource" id="Resource_q3yw7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_kmi0r"), SubResource("Resource_hsrwk"), SubResource("Resource_1rwlt"), SubResource("Resource_l1x6e"), SubResource("Resource_xut8n"), SubResource("Resource_gkako"), SubResource("Resource_0olvp"), SubResource("Resource_gshhm")]
+child_nodes = [SubResource("Resource_jrju1"), SubResource("Resource_7mrvq"), SubResource("Resource_e5wac"), SubResource("Resource_k5qpo"), SubResource("Resource_4jrl8"), SubResource("Resource_aqjab"), SubResource("Resource_t4pa2"), SubResource("Resource_emoo1")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 3
@@ -6805,7 +6805,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ke714"]
+[sub_resource type="Resource" id="Resource_eolyi"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6826,7 +6826,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D301"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_yd5it"]
+[sub_resource type="Resource" id="Resource_dkww1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6847,7 +6847,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D302"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_t601i"]
+[sub_resource type="Resource" id="Resource_b083e"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6868,7 +6868,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D300"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_i7rbx"]
+[sub_resource type="Resource" id="Resource_mweyl"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6889,7 +6889,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D326"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ypq1l"]
+[sub_resource type="Resource" id="Resource_bmcal"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6910,7 +6910,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D327"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_um5ss"]
+[sub_resource type="Resource" id="Resource_0dvuk"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6931,7 +6931,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D328"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xjbj1"]
+[sub_resource type="Resource" id="Resource_41ow8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6952,7 +6952,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D329"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_rkcqt"]
+[sub_resource type="Resource" id="Resource_wdsd1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6973,7 +6973,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D330"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_cld8n"]
+[sub_resource type="Resource" id="Resource_c41kn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -6994,7 +6994,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D331"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wbtu3"]
+[sub_resource type="Resource" id="Resource_vyfwb"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7015,14 +7015,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D332"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_otgst"]
+[sub_resource type="Resource" id="Resource_q8g1u"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_t601i"), SubResource("Resource_i7rbx"), SubResource("Resource_ypq1l"), SubResource("Resource_um5ss"), SubResource("Resource_xjbj1"), SubResource("Resource_rkcqt"), SubResource("Resource_cld8n"), SubResource("Resource_wbtu3")]
+child_nodes = [SubResource("Resource_b083e"), SubResource("Resource_mweyl"), SubResource("Resource_bmcal"), SubResource("Resource_0dvuk"), SubResource("Resource_41ow8"), SubResource("Resource_wdsd1"), SubResource("Resource_c41kn"), SubResource("Resource_vyfwb")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 6
@@ -7036,7 +7036,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_iiimf"]
+[sub_resource type="Resource" id="Resource_cxu3p"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7057,14 +7057,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D304"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xjuem"]
+[sub_resource type="Resource" id="Resource_m3ls4"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_mms2e"), SubResource("Resource_obtcl"), SubResource("Resource_k2qn6"), SubResource("Resource_3lyq2"), SubResource("Resource_ke714"), SubResource("Resource_yd5it"), SubResource("Resource_otgst"), SubResource("Resource_iiimf")]
+child_nodes = [SubResource("Resource_jqkan"), SubResource("Resource_wb1ib"), SubResource("Resource_jx3y5"), SubResource("Resource_q3yw7"), SubResource("Resource_eolyi"), SubResource("Resource_dkww1"), SubResource("Resource_q8g1u"), SubResource("Resource_cxu3p")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 1
@@ -7078,7 +7078,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1dh4c"]
+[sub_resource type="Resource" id="Resource_35v7s"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7095,11 +7095,11 @@ extent = 8.0
 bounds = AABB(17, 5, -15, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D47"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ide1v"]
+[sub_resource type="Resource" id="Resource_kp7fi"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7116,11 +7116,11 @@ extent = 8.0
 bounds = AABB(17, 5, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D48"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_wgn1t"]
+[sub_resource type="Resource" id="Resource_vlrjy"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7141,7 +7141,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D49"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_d1aq3"]
+[sub_resource type="Resource" id="Resource_gcot7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7162,7 +7162,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D50"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_1fs8s"]
+[sub_resource type="Resource" id="Resource_gbv5p"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7183,7 +7183,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D51"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vash7"]
+[sub_resource type="Resource" id="Resource_6pfgv"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7204,14 +7204,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D52"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_egi0d"]
+[sub_resource type="Resource" id="Resource_ckqos"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_jleeq"), SubResource("Resource_xjuem"), SubResource("Resource_1dh4c"), SubResource("Resource_ide1v"), SubResource("Resource_wgn1t"), SubResource("Resource_d1aq3"), SubResource("Resource_1fs8s"), SubResource("Resource_vash7")]
+child_nodes = [SubResource("Resource_yj20i"), SubResource("Resource_m3ls4"), SubResource("Resource_35v7s"), SubResource("Resource_kp7fi"), SubResource("Resource_vlrjy"), SubResource("Resource_gcot7"), SubResource("Resource_gbv5p"), SubResource("Resource_6pfgv")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 7
@@ -7221,18 +7221,18 @@ extent = 16.0
 bounds = AABB(17, -11, -15, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3easq"]
+[sub_resource type="Resource" id="Resource_udjd0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_y266m"), SubResource("Resource_4d6vh"), SubResource("Resource_ljb3d"), SubResource("Resource_tcnte"), SubResource("Resource_xamth"), SubResource("Resource_gaex3"), SubResource("Resource_6u886"), SubResource("Resource_egi0d")]
+child_nodes = [SubResource("Resource_n1weo"), SubResource("Resource_bk1t1"), SubResource("Resource_wgg6k"), SubResource("Resource_c0ihh"), SubResource("Resource_551pm"), SubResource("Resource_ukakc"), SubResource("Resource_31ywj"), SubResource("Resource_ckqos")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 4
@@ -7242,11 +7242,11 @@ extent = 32.0
 bounds = AABB(-15, -43, -47, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_xns87"]
+[sub_resource type="Resource" id="Resource_gchwk"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7267,7 +7267,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D136"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nt8ar"]
+[sub_resource type="Resource" id="Resource_tyslb"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7288,7 +7288,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D228"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ey727"]
+[sub_resource type="Resource" id="Resource_576lg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7309,7 +7309,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D229"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_lax4u"]
+[sub_resource type="Resource" id="Resource_ye6mu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7330,7 +7330,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D242"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_p10t2"]
+[sub_resource type="Resource" id="Resource_5537y"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7351,7 +7351,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D243"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_mqplm"]
+[sub_resource type="Resource" id="Resource_f5eke"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7372,7 +7372,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D244"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_dcl8v"]
+[sub_resource type="Resource" id="Resource_sagcu"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7393,7 +7393,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D245"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_pg1kh"]
+[sub_resource type="Resource" id="Resource_b6nb1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7414,7 +7414,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D246"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_s0v5l"]
+[sub_resource type="Resource" id="Resource_sre4f"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7435,7 +7435,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D247"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ycqdw"]
+[sub_resource type="Resource" id="Resource_1nbcn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7456,14 +7456,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D248"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_lwe7i"]
+[sub_resource type="Resource" id="Resource_foufe"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_ey727"), SubResource("Resource_lax4u"), SubResource("Resource_p10t2"), SubResource("Resource_mqplm"), SubResource("Resource_dcl8v"), SubResource("Resource_pg1kh"), SubResource("Resource_s0v5l"), SubResource("Resource_ycqdw")]
+child_nodes = [SubResource("Resource_576lg"), SubResource("Resource_ye6mu"), SubResource("Resource_5537y"), SubResource("Resource_f5eke"), SubResource("Resource_sagcu"), SubResource("Resource_b6nb1"), SubResource("Resource_sre4f"), SubResource("Resource_1nbcn")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 0
@@ -7477,7 +7477,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_nwsdp"]
+[sub_resource type="Resource" id="Resource_3upto"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7498,7 +7498,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D235"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_vgncf"]
+[sub_resource type="Resource" id="Resource_ce1kj"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7519,7 +7519,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D236"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_tyr7u"]
+[sub_resource type="Resource" id="Resource_ckus8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7540,7 +7540,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D237"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_4log7"]
+[sub_resource type="Resource" id="Resource_flklo"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7561,7 +7561,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D42"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_kr4d2"]
+[sub_resource type="Resource" id="Resource_1ugf2"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7582,7 +7582,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D305"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_54scx"]
+[sub_resource type="Resource" id="Resource_b0plr"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7603,7 +7603,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D306"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3a7eq"]
+[sub_resource type="Resource" id="Resource_5s7ub"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7624,7 +7624,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D307"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_iu41v"]
+[sub_resource type="Resource" id="Resource_eiwty"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7645,7 +7645,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D308"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_dv5f2"]
+[sub_resource type="Resource" id="Resource_h2jgp"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7666,7 +7666,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D309"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_c23vf"]
+[sub_resource type="Resource" id="Resource_fr8v1"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7687,7 +7687,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D310"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_w6hs5"]
+[sub_resource type="Resource" id="Resource_td4hb"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7708,14 +7708,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D311"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_to3kb"]
+[sub_resource type="Resource" id="Resource_ci2he"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_4log7"), SubResource("Resource_kr4d2"), SubResource("Resource_54scx"), SubResource("Resource_3a7eq"), SubResource("Resource_iu41v"), SubResource("Resource_dv5f2"), SubResource("Resource_c23vf"), SubResource("Resource_w6hs5")]
+child_nodes = [SubResource("Resource_flklo"), SubResource("Resource_1ugf2"), SubResource("Resource_b0plr"), SubResource("Resource_5s7ub"), SubResource("Resource_eiwty"), SubResource("Resource_h2jgp"), SubResource("Resource_fr8v1"), SubResource("Resource_td4hb")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 4
@@ -7729,7 +7729,7 @@ active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_ddpge"]
+[sub_resource type="Resource" id="Resource_y1wym"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7750,7 +7750,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D239"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_841ca"]
+[sub_resource type="Resource" id="Resource_2fffj"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7771,7 +7771,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D240"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6qp68"]
+[sub_resource type="Resource" id="Resource_ce1um"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7792,14 +7792,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D241"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_0y6pp"]
+[sub_resource type="Resource" id="Resource_557pg"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_lwe7i"), SubResource("Resource_nwsdp"), SubResource("Resource_vgncf"), SubResource("Resource_tyr7u"), SubResource("Resource_to3kb"), SubResource("Resource_ddpge"), SubResource("Resource_841ca"), SubResource("Resource_6qp68")]
+child_nodes = [SubResource("Resource_foufe"), SubResource("Resource_3upto"), SubResource("Resource_ce1kj"), SubResource("Resource_ckus8"), SubResource("Resource_ci2he"), SubResource("Resource_y1wym"), SubResource("Resource_2fffj"), SubResource("Resource_ce1um")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 2
@@ -7809,11 +7809,11 @@ extent = 16.0
 bounds = AABB(-15, -11, 17, 32, 32, 32)
 max_bounds_to_center_dist = 27.7128
 min_bounds_to_center_dist = 16.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_pu1c2"]
+[sub_resource type="Resource" id="Resource_tjwhx"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7834,7 +7834,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D230"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_02qrr"]
+[sub_resource type="Resource" id="Resource_3kana"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7855,7 +7855,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D231"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_jc5mw"]
+[sub_resource type="Resource" id="Resource_iqnm0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7876,7 +7876,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D232"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_6k2y5"]
+[sub_resource type="Resource" id="Resource_724ls"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7897,7 +7897,7 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D233"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_2vxi6"]
+[sub_resource type="Resource" id="Resource_j68ac"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7918,14 +7918,14 @@ active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D234"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_muoc7"]
+[sub_resource type="Resource" id="Resource_smcvn"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_xns87"), SubResource("Resource_nt8ar"), SubResource("Resource_0y6pp"), SubResource("Resource_pu1c2"), SubResource("Resource_02qrr"), SubResource("Resource_jc5mw"), SubResource("Resource_6k2y5"), SubResource("Resource_2vxi6")]
+child_nodes = [SubResource("Resource_gchwk"), SubResource("Resource_tyslb"), SubResource("Resource_557pg"), SubResource("Resource_tjwhx"), SubResource("Resource_3kana"), SubResource("Resource_iqnm0"), SubResource("Resource_724ls"), SubResource("Resource_j68ac")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = 5
@@ -7935,11 +7935,11 @@ extent = 32.0
 bounds = AABB(-15, -43, 17, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_8ui7a"]
+[sub_resource type="Resource" id="Resource_xr1i0"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7956,11 +7956,11 @@ extent = 32.0
 bounds = AABB(-15, 21, -47, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D66"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_3anv4"]
+[sub_resource type="Resource" id="Resource_e4vu5"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -7977,18 +7977,18 @@ extent = 32.0
 bounds = AABB(-15, 21, 17, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D67"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_37bxi"]
+[sub_resource type="Resource" id="Resource_sdjg7"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
 member_origin_offsets = PackedFloat32Array()
 member_surface_normals = PackedVector3Array()
 member_octants = PackedByteArray()
-child_nodes = [SubResource("Resource_vh737"), SubResource("Resource_54g6d"), SubResource("Resource_kf63a"), SubResource("Resource_p8tmf"), SubResource("Resource_3easq"), SubResource("Resource_muoc7"), SubResource("Resource_8ui7a"), SubResource("Resource_3anv4")]
+child_nodes = [SubResource("Resource_ol2y6"), SubResource("Resource_hpov0"), SubResource("Resource_3k23h"), SubResource("Resource_jmms0"), SubResource("Resource_udjd0"), SubResource("Resource_smcvn"), SubResource("Resource_xr1i0"), SubResource("Resource_e4vu5")]
 max_members = 300
 min_leaf_extent = 1.0
 octant = -1
@@ -7998,15 +7998,15 @@ extent = 64.0
 bounds = AABB(-79, -43, -47, 128, 128, 128)
 max_bounds_to_center_dist = 110.851
 min_bounds_to_center_dist = 64.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_aqn3i"]
+[sub_resource type="Resource" id="Resource_sot6p"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeManager"
 script = ExtResource("19_vysbr")
-root_octree_node = SubResource("Resource_37bxi")
+root_octree_node = SubResource("Resource_sdjg7")
 LOD_variants = Array[ExtResource("17_g7rnj")]([SubResource("Resource_1xhij")])
 LOD_max_distance = 9.99
 LOD_kill_distance = 21.0
@@ -8032,7 +8032,7 @@ script = ExtResource("17_g7rnj")
 cast_shadow = 1
 metadata/class = "Greenhouse_LODVariant"
 
-[sub_resource type="Resource" id="Resource_qp5ru"]
+[sub_resource type="Resource" id="Resource_w3612"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeNode"
 script = ExtResource("18_ifk37")
@@ -8049,18 +8049,18 @@ extent = 32.0
 bounds = AABB(-31, -25, -25, 64, 64, 64)
 max_bounds_to_center_dist = 55.4256
 min_bounds_to_center_dist = 32.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D2"
 metadata/class = "MMIOctreeNode"
 
-[sub_resource type="Resource" id="Resource_oxmhf"]
+[sub_resource type="Resource" id="Resource_w36k8"]
 resource_local_to_scene = true
 resource_name = "MMIOctreeManager"
 script = ExtResource("19_vysbr")
-root_octree_node = SubResource("Resource_qp5ru")
+root_octree_node = SubResource("Resource_w3612")
 LOD_variants = Array[ExtResource("17_g7rnj")]([SubResource("Resource_ush75"), SubResource("Resource_2qlip"), SubResource("Resource_aqq55")])
-LOD_max_distance = 15.0
-LOD_kill_distance = 300.0
+LOD_max_distance = 21.0
+LOD_kill_distance = 500.0
 metadata/class = "MMIOctreeManager"
 
 [sub_resource type="MultiMesh" id="MultiMesh_i4iub"]
@@ -8380,7 +8380,7 @@ metadata/class = "Gardener"
 
 [node name="Arborist" type="Node3D" parent="Gardener"]
 script = ExtResource("15_pmxtk")
-octree_managers = [SubResource("Resource_aqn3i"), SubResource("Resource_oxmhf")]
+octree_managers = [SubResource("Resource_sot6p"), SubResource("Resource_w36k8")]
 metadata/class = "Arborist"
 
 [node name="MMI_container" type="Node3D" parent="Gardener/Arborist"]
