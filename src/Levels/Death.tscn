@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://chyfne07s8mwn"]
+[gd_scene load_steps=7 format=3 uid="uid://chyfne07s8mwn"]
 
 [ext_resource type="Script" path="res://Levels/Death.cs" id="1_uqjds"]
 [ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_81p3g"]
+[ext_resource type="AudioStream" uid="uid://3xtji25vjnua" path="res://Sounds/explosion.wav" id="3_vemvw"]
 
 [sub_resource type="Environment" id="Environment_kshmy"]
 background_mode = 1
@@ -57,5 +58,10 @@ theme = ExtResource("2_81p3g")
 theme_type_variation = &"DeathText"
 text = "Be more careful next time"
 horizontal_alignment = 1
+
+[node name="Boom" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vemvw")
+volume_db = -20.0
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="EndDeathScene"]
