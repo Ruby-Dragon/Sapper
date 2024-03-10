@@ -10,6 +10,9 @@ public partial class detector : Node3D
 	[Export] 
 	public Node3D FlagPlacementLocation;
 
+	[Export] 
+	private AudioStreamPlayer3D Beeper;
+
 	public bool Detection = false;
 
 	private float MineDepth = 0.0f;
@@ -61,6 +64,8 @@ public partial class detector : Node3D
 		CurrentMine = ((anti_personnel_mine) Mine);
 		
 		SetLights();
+
+		Beeper.Playing = true;
 		
 		ThePlayer.OnDetect();
 	}
@@ -83,6 +88,8 @@ public partial class detector : Node3D
 		GD.Print("Unfound");
 
 		CurrentMine = null;
+		
+		Beeper.Playing = false;
 		
 		SetLights();
 	}

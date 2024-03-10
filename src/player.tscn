@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://demhgiqaiflw4"]
+[gd_scene load_steps=15 format=3 uid="uid://demhgiqaiflw4"]
 
 [ext_resource type="Script" path="res://player.cs" id="1_sfoyg"]
 [ext_resource type="PackedScene" uid="uid://dk2tiah10p1rw" path="res://Detector/detector.blend" id="2_dm284"]
@@ -8,6 +8,8 @@
 [ext_resource type="Script" path="res://PauseMenu.cs" id="4_dfrhy"]
 [ext_resource type="ArrayMesh" uid="uid://by52d6u5gbwra" path="res://Detector/detector_Cylinder_light.res" id="4_ret0p"]
 [ext_resource type="PackedScene" uid="uid://dk5axh5pqfniv" path="res://MineFlag/MineFlag.tscn" id="7_ch2mt"]
+[ext_resource type="AudioStream" uid="uid://b4rmw4ql3vnuv" path="res://Sounds/beeping.wav" id="9_5d4us"]
+[ext_resource type="AudioStream" uid="uid://biwrvhmtaw7iq" path="res://Sounds/footsteps.wav" id="9_jswgx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jdyjx"]
 radius = 0.4
@@ -27,7 +29,7 @@ size = Vector2(2, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4fpsu"]
 size = Vector3(0.592, 0.157, 0.729)
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel", "MissionLabel", "FogMesh")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("MetalDetector", "InteractLabel", "MissionLabel", "FogMesh", "FootSteps")]
 collision_layer = 9
 collision_mask = 9
 script = ExtResource("1_sfoyg")
@@ -35,6 +37,7 @@ MetalDetector = NodePath("detector")
 InteractLabel = NodePath("Camera/InteractLabel")
 MissionLabel = NodePath("Camera/MissionLabel")
 FogMesh = NodePath("Camera/MeshInstance3D")
+FootSteps = NodePath("FootSteps")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_jdyjx")
@@ -153,11 +156,14 @@ layout_mode = 2
 theme_type_variation = &"PauseMenuButton"
 text = "Back"
 
-[node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagPlacementLocation", "ThePlayer") instance=ExtResource("2_dm284")]
+[node name="Ears" type="AudioListener3D" parent="Camera"]
+
+[node name="detector" parent="." node_paths=PackedStringArray("Lights", "FlagPlacementLocation", "Beeper", "ThePlayer") instance=ExtResource("2_dm284")]
 transform = Transform3D(0.763699, 0, 0.0948529, 0, 0.806922, 0, -0.0975476, 0, 0.742602, 0.186321, -0.145105, -0.658809)
 script = ExtResource("3_l8hgk")
 Lights = [NodePath("light_1"), NodePath("light_2"), NodePath("light_3"), NodePath("light_4"), NodePath("light_5"), NodePath("light_6"), NodePath("light_7")]
 FlagPlacementLocation = NodePath("FlagPlacementNode")
+Beeper = NodePath("Beeper")
 MineFlagScene = ExtResource("7_ch2mt")
 ThePlayer = NodePath("..")
 
@@ -200,6 +206,16 @@ shape = SubResource("BoxShape3D_4fpsu")
 
 [node name="FlagPlacementNode" type="Node3D" parent="detector"]
 transform = Transform3D(1, 0, -1.78814e-07, 0, 0.999998, 0, 2.23517e-07, 0, 0.999999, -0.00370905, -0.676234, -2.13391)
+
+[node name="Beeper" type="AudioStreamPlayer3D" parent="detector"]
+transform = Transform3D(1.29886, 0, -8.9407e-08, 0, 1.23928, 0, 2.98023e-08, 0, 1.33576, 0.00692847, 0.776197, 0.541514)
+stream = ExtResource("9_5d4us")
+volume_db = 6.0
+max_db = 6.0
+
+[node name="FootSteps" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.792956, 0)
+stream = ExtResource("9_jswgx")
 
 [connection signal="UpdateSettings" from="Camera/PauseMenuOwner" to="." method="EmmitUpdateSettings"]
 [connection signal="pressed" from="Camera/PauseMenuOwner/PauseMenu/Resume" to="Camera/PauseMenuOwner" method="Resume"]

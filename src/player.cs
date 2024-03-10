@@ -30,6 +30,9 @@ public partial class player : CharacterBody3D
 
 	[Export] 
 	private MeshInstance3D FogMesh;
+
+	[Export] 
+	private AudioStreamPlayer3D FootSteps;
 	
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
@@ -100,6 +103,19 @@ public partial class player : CharacterBody3D
 		}
 
 		Velocity = velocity;
+
+		if (Velocity.LengthSquared() > 0.0f)
+		{
+			if (!FootSteps.Playing)
+			{
+				FootSteps.Playing = true;
+			}
+		}
+		else
+		{
+			FootSteps.Playing = false;
+		}
+		
 		MoveAndSlide();
 		
 		if (Input.IsActionJustPressed("Flag"))
