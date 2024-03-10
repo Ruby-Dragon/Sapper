@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d13ls4vas8q07"]
+[gd_scene load_steps=6 format=3 uid="uid://d13ls4vas8q07"]
 
 [ext_resource type="Script" path="res://Levels/MainMenu.cs" id="1_ow6fm"]
 [ext_resource type="PackedScene" uid="uid://ii37fsxehx8p" path="res://Levels/Tutorial.tscn" id="2_e6u7o"]
 [ext_resource type="Theme" uid="uid://pdijop5b0yp4" path="res://HUDTheme.tres" id="2_sfb48"]
 [ext_resource type="Texture2D" uid="uid://c1s3nxr4pexem" path="res://SapperMenu.png" id="3_gi62l"]
+[ext_resource type="AudioStream" uid="uid://xql6nvtv8y47" path="res://Sounds/MainMenu.wav" id="5_yxpvp"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_ow6fm")
@@ -30,6 +31,10 @@ text = "Start"
 layout_mode = 2
 theme_type_variation = &"PauseMenuButton"
 text = "Quit"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_yxpvp")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="Start"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="Quit"]
