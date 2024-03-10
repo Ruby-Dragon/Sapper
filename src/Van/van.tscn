@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://begxemvgcowv7"]
+[gd_scene load_steps=6 format=3 uid="uid://begxemvgcowv7"]
 
 [ext_resource type="ArrayMesh" uid="uid://bro7s4vdbuqp6" path="res://Van/Van.res" id="1_b66dq"]
 [ext_resource type="Script" path="res://Van/van.cs" id="1_wtxg3"]
+[ext_resource type="AudioStream" uid="uid://b6dii4cj57cj5" path="res://Sounds/tutorialmusicradio.wav" id="3_t7p7j"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_aioow"]
 points = PackedVector3Array(2.99463, 2.15959, 0.999881, 3.50039, 1.92105, 0.999881, 2.99463, 2.15959, -1.00014, 1.46574, 2.15959, 0.999881, -1.19222, 1.19879, 1.23474, -1.08628, 1.19475, 1.23474, 3.82692, -0.18856, 0.999881, 3.50039, 1.92105, -1.00014, 1.46574, 2.15959, -1.00014, -1.08556, 1.19561, -1.2413, -1.19367, 1.19821, -1.2413, -0.961474, 1.92105, 0.999881, -3.44021, 0.324043, 0.999881, -3.57518, -0.223215, 0.999881, -3.58533, -0.362123, 0.999881, -3.491, -0.369343, 0.999881, -2.82343, -0.369343, 0.999881, 3.82692, -0.347683, 0.999881, 3.82692, -0.18856, -1.00014, -0.961474, 1.92105, -1.00014, -2.82343, -0.369343, -1.00014, -3.491, -0.369343, -1.00014, 3.82692, -0.347683, -1.00014, -3.58533, -0.362123, -1.00014, -3.57518, -0.223215, -1.00014, -3.44021, 0.324043, -1.00014, -1.96356, -0.780869, 0.861973, -1.86197, -0.790688, 0.861973, 1.99545, -0.790688, 0.861973, 2.09776, -0.780869, 0.861973, 1.99545, -0.790688, -0.872658, -1.86197, -0.790688, -0.872658, 2.09776, -0.780869, -0.872658, -1.96356, -0.780869, -0.872658)
@@ -26,6 +27,15 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="LeaveLevelDetect"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.687203, 0.703186, -0.0106235)
 shape = SubResource("BoxShape3D_onpou")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.33042, 0.781612, 0)
+stream = ExtResource("3_t7p7j")
+attenuation_model = 1
+volume_db = -40.0
+max_db = -5.0
+autoplay = true
+stream_paused = true
 
 [connection signal="body_entered" from="LeaveLevelDetect" to="." method="PlayerNearby"]
 [connection signal="body_exited" from="LeaveLevelDetect" to="." method="PlayerLeft"]

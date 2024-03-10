@@ -376,7 +376,7 @@ extent = 4.0
 bounds = AABB(-31, -3, -15, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = -1
+active_LOD_index = 0
 MMI_name = "MultiMeshInstance3D82"
 metadata/class = "MMIOctreeNode"
 
@@ -5899,7 +5899,7 @@ extent = 4.0
 bounds = AABB(17, -11, -7, 8, 8, 8)
 max_bounds_to_center_dist = 6.9282
 min_bounds_to_center_dist = 4.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = "MultiMeshInstance3D53"
 metadata/class = "MMIOctreeNode"
 
@@ -7075,7 +7075,7 @@ extent = 8.0
 bounds = AABB(17, -11, 1, 16, 16, 16)
 max_bounds_to_center_dist = 13.8564
 min_bounds_to_center_dist = 8.0
-active_LOD_index = 0
+active_LOD_index = -1
 MMI_name = ""
 metadata/class = "MMIOctreeNode"
 
