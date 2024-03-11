@@ -22,6 +22,9 @@ Copyright (c) 2020-present HungryProton.
 ### Spatial Garden: 
 Copyright (c) 2022 Greg Woods
 
+### Godot Simple Sky Project
+Copyright (c) 2023 krzmig
+
 ### Godot:
 Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md).
 Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
