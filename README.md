@@ -1,6 +1,6 @@
 # Sapper: my 2024 Acerola Game Jam entry.
 
-###### GNU Public Licence v3, 2022, Ruby-Dragon - Assets licenced under CC BY-SA 4.0
+###### GNU Public Licence v3, 2024, Ruby-Dragon - Assets licenced under CC BY-SA 4.0
 
 This is the source code for the submission on itch.io.
 
